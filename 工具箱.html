@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>硬件学习工具箱 · 离线交互计算</title>
+<style>
+:root{--ink:#111827;--mut:#6b7280;--line:#e5e7eb;--bg:#f6f8fb;--card:#fff;--acc:#2563eb;--red:#dc2626;--grn:#059669}
+*{box-sizing:border-box}body{margin:0;font:15px/1.65 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--bg)}
+header{background:#0f172a;color:#fff;padding:28px 24px}header h1{margin:0 0 6px;font-size:24px}header p{margin:0;color:#94a3b8}
+nav{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);padding:10px 16px;display:flex;gap:8px;flex-wrap:wrap;z-index:9}
+nav button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;cursor:pointer;font-size:13px}
+nav button.on{background:var(--acc);color:#fff;border-color:var(--acc)}
+main{max-width:1080px;margin:0 auto;padding:20px 16px 80px}
+section{display:none}section.on{display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin:14px 0;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+h2{font-size:19px;margin:0 0 4px}h3{font-size:15px;margin:18px 0 8px}
+.sub{color:var(--mut);font-size:13px;margin:0 0 14px}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end}
+label{display:block;font-size:12.5px;color:var(--mut);margin:0 0 4px}
+input,select{border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:14px;background:#fff;min-width:110px}
+button.go{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:9px 18px;font-size:14px;cursor:pointer}
+.out{margin-top:14px;padding:12px 14px;border-radius:10px;background:#f0f6ff;border:1px solid #dbeafe;font-size:15px}
+.out b{color:var(--acc)} .warn{background:#fef2f2;border-color:#fecaca;color:#991b1b}
+table{border-collapse:collapse;width:100%;font-size:13px}th,td{border:1px solid var(--line);padding:6px 8px;text-align:left}th{background:#f3f4f6}
+.bands{display:flex;gap:6px;align-items:center;margin:10px 0}
+.band{width:34px;height:64px;border-radius:4px;border:1px solid #0003}
+.res{height:64px;background:#e8c9a0;border-radius:20px;display:flex;align-items:center;padding:0 18px;gap:8px;border:1px solid #8a6a3f}
+.lead{width:40px;height:4px;background:#334155}
+figure{margin:14px 0}figure img{max-width:100%;border:1px solid var(--line);border-radius:10px;background:#fff}
+figcaption{font-size:12.5px;color:var(--mut);margin-top:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+code{background:#f3f4f6;padding:1px 6px;border-radius:5px;font-size:13px}
+</style>
+</head>
+<body>
+<header><h1>硬件学习工具箱</h1><p>离线可用 · 色环 / 欧姆 / LED 限流 / 分压 / RC / 功耗续航 / ESP32 引脚查询 / 图例画廊</p></header>
+<nav id="nav"></nav>
+<main>
+
+<section id="s-color"><div class="card">
+<h2>电阻色环计算器</h2><p class="sub">选择色环 → 得阻值；或输入阻值 → 得五环颜色。</p>
+<div class="row">
+<div><label>环数</label><select id="cn"><option value="4">4 环</option><option value="5" selected>5 环</option></select></div>
+<div><label>第1环</label><select class="b" data-i="0"></select></div>
+<div><label>第2环</label><select class="b" data-i="1"></select></div>
+<div id="d3w"><label>第3环</label><select class="b" data-i="2"></select></div>
+<div><label>倍率环</label><select class="b" data-i="3"></select></div>
+<div><label>误差环</label><select class="b" data-i="4"></select></div>
+</div>
+<div class="res"><div class="lead"></div><div class="bands" id="bandsView"></div><div class="lead"></div></div>
+<div class="out" id="colorOut"></div>
+<h3>反向：输入阻值求五环</h3>
+<div class="row"><div><label>阻值</label><input id="rv" value="10000"></div>
+<div><label>单位</label><select id="ru"><option value="1">Ω</option><option value="1000">kΩ</option><option value="1000000">MΩ</option></select></div>
+<button class="go" onclick="revCalc()">求色环</button></div>
+<div class="out" id="revOut"></div>
+</div></section>
+
+<section id="s-ohm"><div class="card">
+<h2>欧姆定律 / 功率</h2><p class="sub">任填两个量，自动求其余。U=I·R，P=U·I。</p>
+<div class="row">
+<div><label>电压 U (V)</label><input id="oU" placeholder="留空"></div>
+<div><label>电流 I (mA)</label><input id="oI" placeholder="留空"></div>
+<div><label>电阻 R (Ω)</label><input id="oR" placeholder="留空"></div>
+<button class="go" onclick="ohm()">计算</button>
+</div><div class="out" id="ohmOut"></div>
+</div></section>
+
+<section id="s-led"><div class="card">
+<h2>LED 限流电阻</h2><p class="sub">R = (Vcc − Vf) / If，并给出功耗与推荐标称值。</p>
+<div class="row">
+<div><label>电源 Vcc (V)</label><input id="lV" value="3.3"></div>
+<div><label>LED 压降 Vf (V)</label><input id="lF" value="2.0"></div>
+<div><label>目标电流 If (mA)</label><input id="lI" value="5"></div>
+<button class="go" onclick="led()">计算</button>
+</div>
+<div class="row" style="margin-top:10px"><div><label>常见 Vf 速选</label>
+<select onchange="document.getElementById('lF').value=this.value;led()">
+<option value="">选择…</option><option value="1.8">红 1.8V</option><option value="2.0">红/黄 2.0V</option><option value="2.2">绿 2.2V</option><option value="3.0">白/蓝 3.0V</option><option value="3.2">蓝/白 3.2V</option></select></div></div>
+<div class="out" id="ledOut"></div>
+</div></section>
+
+<section id="s-div"><div class="card">
+<h2>分压电路</h2><p class="sub">Vout = Vin × R2 / (R1+R2)；也可由目标 Vout 反推比例。</p>
+<div class="row">
+<div><label>Vin (V)</label><input id="dVin" value="12"></div>
+<div><label>R1 (上, Ω)</label><input id="dR1" value="30000"></div>
+<div><label>R2 (下, Ω)</label><input id="dR2" value="10000"></div>
+<button class="go" onclick="div1()">正向</button>
+</div>
+<div class="row" style="margin-top:10px">
+<div><label>目标 Vout (V)</label><input id="dVout" value="3.0"></div>
+<div><label>固定 R2 (Ω)</label><input id="dR2b" value="10000"></div>
+<button class="go" onclick="div2()">反推 R1</button>
+</div>
+<div class="out" id="divOut"></div>
+</div></section>
+
+<section id="s-rc"><div class="card">
+<h2>RC 时间常数 / 截止频率</h2><p class="sub">τ = R·C；fc = 1/(2πRC)。</p>
+<div class="row">
+<div><label>R</label><input id="rR" value="10"></div>
+<div><label>R 单位</label><select id="rRu"><option value="1">Ω</option><option value="1000" selected>kΩ</option><option value="1000000">MΩ</option></select></div>
+<div><label>C</label><input id="rC" value="100"></div>
+<div><label>C 单位</label><select id="rCu"><option value="1e-12">pF</option><option value="1e-9" selected>nF</option><option value="1e-6">µF</option></select></div>
+<button class="go" onclick="rc()">计算</button>
+</div><div class="out" id="rcOut"></div>
+</div></section>
+
+<section id="s-bat"><div class="card">
+<h2>电池续航估算</h2><p class="sub">平均电流 = (唤醒秒×工作mA + 睡眠秒×睡眠µA/1000) / 周期秒。</p>
+<div class="row">
+<div><label>电池容量 (mAh)</label><input id="bCap" value="1000"></div>
+<div><label>周期 (s)</label><input id="bPer" value="300"></div>
+<div><label>唤醒时间 (s)</label><input id="bAw" value="1.5"></div>
+<div><label>工作电流 (mA)</label><input id="bIw" value="80"></div>
+<div><label>睡眠电流 (µA)</label><input id="bIs" value="10"></div>
+<button class="go" onclick="bat()">计算</button>
+</div><div class="out" id="batOut"></div>
+</div></section>
+
+<section id="s-pin"><div class="card">
+<h2>ESP32 引脚查询</h2><p class="sub">输入 GPIO 号或关键词（如 i2c、adc、flash）筛选。</p>
+<div class="row"><div style="flex:1"><input id="pq" style="width:100%" placeholder="例如 21 或 i2c 或 flash" oninput="pinFilter()"></div></div>
+<div style="overflow:auto;max-height:420px;margin-top:10px"><table id="pinTab"></table></div>
+</div></section>
+
+<section id="s-fig"><div class="card">
+<h2>图例画廊</h2><p class="sub">全部图例的 PNG 版本（SVG 源文件在 figures/ 目录）。</p>
+<div class="grid" id="figGrid"></div>
+</div></section>
+
+</main>
+<script>
+const COL=[["黑",0,"#000"],["棕",1,"#8b4513"],["红",2,"#dc2626"],["橙",3,"#f97316"],["黄",4,"#eab308"],["绿",5,"#22c55e"],["蓝",6,"#2563eb"],["紫",7,"#7c3aed"],["灰",8,"#6b7280"],["白",9,"#f8fafc"]];
+const MUL=[["黑",1],["棕",10],["红",100],["橙",1e3],["黄",1e4],["绿",1e5],["蓝",1e6],["紫",1e7],["金",0.1],["银",0.01]];
+const TOL=[["棕","±1%"],["红","±2%"],["绿","±0.5%"],["蓝","±0.25%"],["紫","±0.1%"],["灰","±0.05%"],["金","±5%"],["银","±10%"]];
+const $=id=>document.getElementById(id);
+function colorFor(n){const c=COL.find(x=>x[0]===n);if(c)return c[2];if(n==="金")return "#d4af37";if(n==="银")return "#c0c0c0";return "#eee";}
+function fmt(v){if(v>=1e6)return (v/1e6)+" MΩ";if(v>=1e3)return (v/1e3)+" kΩ";if(v<1)return v+" Ω";return v+" Ω";}
+function fmtT(s){if(s>=3600*24)return (s/86400).toFixed(1)+" 天";if(s>=3600)return (s/3600).toFixed(1)+" 小时";if(s>=60)return (s/60).toFixed(1)+" 分钟";return s.toFixed(1)+" 秒";}
+// ---- nav
+const SECS=[["s-color","色环"],["s-ohm","欧姆"],["s-led","LED限流"],["s-div","分压"],["s-rc","RC"],["s-bat","续航"],["s-pin","引脚"],["s-fig","图例"]];
+SECS.forEach(([id,n],i)=>{const b=document.createElement("button");b.textContent=n;b.onclick=()=>show(id);b.dataset.t=id;$("nav").appendChild(b);});
+function show(id){document.querySelectorAll("section").forEach(s=>s.classList.toggle("on",s.id===id));
+document.querySelectorAll("nav button").forEach(b=>b.classList.toggle("on",b.dataset.t===id));}
+show("s-color");
+// ---- color code
+document.querySelectorAll("select.b").forEach(sel=>{
+ const i=+sel.dataset.i;
+ let opts=i<3?COL:(i===3?MUL:TOL);
+ sel.innerHTML=opts.map((o,k)=>`<option value="${k}">${o[0]}</option>`).join("");
+ if(i===3)sel.value=2; if(i===4)sel.value=0;
+ sel.onchange=calc;
+});
+$("cn").onchange=()=>{$("d3w").style.display=$("cn").value==="4"?"none":"block";calc();};
+function bandColors(){const n=+$("cn").value;const s=[...document.querySelectorAll("select.b")].map(x=>+x.value);
+ if(n===4)return {digits:[COL[s[0]],COL[s[1]]],mul:MUL[s[3]],tol:TOL[s[4]],seq:[COL[s[0]],COL[s[1]],MUL[s[3]],TOL[s[4]]]};
+ return {digits:[COL[s[0]],COL[s[1]],COL[s[2]]],mul:MUL[s[3]],tol:TOL[s[4]],seq:[COL[s[0]],COL[s[1]],COL[s[2]],MUL[s[3]],TOL[s[4]]]};}
+function calc(){const b=bandColors();let d=0;b.digits.forEach(x=>d=d*10+x[1]);const v=d*b.mul[1];
+ $("bandsView").innerHTML=b.seq.map(x=>`<div class="band" style="background:${colorFor(x[0])}"></div>`).join("");
+ $("colorOut").innerHTML=`阻值 = <b>${fmt(Math.round(v*100)/100)}</b>　误差 <b>${b.tol[1]}</b>　（读法：${b.seq.map(x=>x[0]).join(" ")}）`;}
+function revCalc(){let v=+$("rv").value*+$("ru").value;
+ const e=Math.floor(Math.log10(v));let digits;
+ if(v>=100){digits=[Math.floor(v/1e2)%10,Math.floor(v/1e1)%10,Math.floor(v)%10];}
+ else {digits=[Math.floor(v*10)%10,Math.floor(v*100)%10,Math.floor(v*1000)%10];}
+ // 通用：取3位有效数字
+ const s=v.toExponential(2).split("e");const m=s[0].replace(".","");digits=[+m[0],+m[1],+m[2]];
+ const exp=+s[1]-2; const mulIdx=MUL.findIndex(x=>Math.abs(Math.log10(x[1])-exp)<1e-9);
+ const names=digits.map(d=>COL[d][0]).concat([mulIdx>=0?MUL[mulIdx][0]:"×10^"+exp,"棕"]);
+ $("revOut").innerHTML=`${fmt(v)} 的五环 = <b>${names.join(" - ")}</b>（±1%）`;
+ // 同步到选择器
+ const sels=document.querySelectorAll("select.b");
+ sels[0].value=digits[0];sels[1].value=digits[1];sels[2].value=digits[2];
+ if(mulIdx>=0)sels[3].value=mulIdx; sels[4].value=0; $("cn").value="5";$("d3w").style.display="block";calc();}
+calc();
+// ---- ohm
+function ohm(){const U=parseFloat($("oU").value),I=parseFloat($("oI").value)/1000,R=parseFloat($("oR").value);
+ let u=U,i=I,r=R;
+ if(!isNaN(u)&&!isNaN(i)&&isNaN(r))r=u/i;
+ else if(!isNaN(u)&&!isNaN(r)&&isNaN(i))i=u/r;
+ else if(!isNaN(i)&&!isNaN(r)&&isNaN(u))u=i*r;
+ else if(isNaN(u)+isNaN(i)+isNaN(r)>1){$("ohmOut").innerHTML="请至少填写两个量";return;}
+ const p=u*i;
+ $("ohmOut").innerHTML=`U = <b>${u.toFixed(3)} V</b>　I = <b>${(i*1000).toFixed(2)} mA</b>　R = <b>${fmt(Math.round(r*100)/100)}</b>　P = <b>${p<1?(p*1000).toFixed(1)+" mW":p.toFixed(3)+" W"}</b>`;}
+// ---- led
+const E24=[1.0,1.1,1.2,1.3,1.5,1.6,1.8,2.0,2.2,2.4,2.7,3.0,3.3,3.6,3.9,4.3,4.7,5.1,5.6,6.2,6.8,7.5,8.2,9.1];
+function nearest(r){let best=1e18,bl="";for(const d of [1,10,100,1000,10000,100000])for(const m of E24){const v=m*d;const diff=v-r;if(diff>=0&&diff<best){best=diff;bl=v;}}return bl;}
+function led(){const V=+$("lV").value,F=+$("lF").value,I=+$("lI").value/1000;
+ if(V<=F){$("ledOut").className="out warn";$("ledOut").innerHTML="电源电压必须大于 LED 压降 Vf！";return;}
+ $("ledOut").className="out";
+ const r=(V-F)/I,p=I*I*r,n=nearest(r);
+ $("ledOut").innerHTML=`R = <b>${fmt(Math.round(r))}</b> → 取标称 <b>${fmt(n)}</b>　实际电流 ≈ <b>${((V-F)/n*1000).toFixed(1)} mA</b>　电阻功耗 ≈ <b>${(p*1000).toFixed(1)} mW</b>（1/16W=62mW，1/8W=125mW）`;}
+led();
+// ---- divider
+function div1(){const Vin=+$("dVin").value,R1=+$("dR1").value,R2=+$("dR2").value;
+ const Vo=Vin*R2/(R1+R2),I=Vin/(R1+R2)*1000,P=Vin*Vin/(R1+R2)*1000;
+ $("divOut").innerHTML=`Vout = <b>${Vo.toFixed(3)} V</b>　回路电流 = <b>${I.toFixed(3)} mA</b>　分压自身功耗 = <b>${P.toFixed(2)} mW</b>${Vo>3.3?'<br><span style="color:#991b1b">⚠ 超过 ESP32 ADC 3.3V 量程！</span>':""}`;}
+function div2(){const Vin=+$("dVin").value,Vo=+$("dVout").value,R2=+$("dR2b").value;
+ const R1=R2*(Vin-Vo)/Vo;
+ $("divOut").innerHTML=`R1 = <b>${fmt(Math.round(R1))}</b>（取标称 ${fmt(nearest(R1))}）　校验 Vout ≈ <b>${(Vin*R2/(nearest(R1)+R2)).toFixed(2)} V</b>`;}
+div1();
+// ---- rc
+function rc(){const R=+$("rR").value*+$("rRu").value,C=+$("rC").value*+$("rCu").value;
+ const t=R*C,fc=1/(2*Math.PI*R*C);
+ $("rcOut").innerHTML=`τ = <b>${fmtT(t)}</b>　充满(5τ) ≈ <b>${fmtT(t*5)}</b>　截止频率 fc = <b>${fc>=1000?(fc/1000).toFixed(2)+" kHz":fc.toFixed(2)+" Hz"}</b>`;}
+rc();
+// ---- battery
+function bat(){const cap=+$("bCap").value,per=+$("bPer").value,aw=+$("bAw").value,iw=+$("bIw").value,is=+$("bIs").value/1000;
+ const avg=(aw*iw+(per-aw)*is)/per;const h=cap/avg;
+ $("batOut").innerHTML=`平均电流 = <b>${avg>=1?avg.toFixed(2)+" mA":(avg*1000).toFixed(1)+" µA"}</b>　理论续航 = <b>${h>=24?(h/24).toFixed(1)+" 天":h.toFixed(1)+" 小时"}</b><br><span style="color:#6b7280">实际受电池自放电、LDO 静态电流、温度影响，按 60~80% 估算更稳妥。</span>`;}
+bat();
+// ---- pins
+const PINS=[[0,"Strapping/Touch1/ADC2_1","上电低=下载模式"],[1,"UART0 TX","烧录/日志"],[2,"Strapping/Touch2/ADC2_2","板载LED常见"],[3,"UART0 RX","烧录/日志"],[4,"Touch0/ADC2_0","常用"],[5,"Strapping/SPI CS0","上电须高"],[6,"Flash CLK","禁用"],[7,"Flash SD0","禁用"],[8,"Flash SD1","禁用"],[9,"Flash SD2","禁用"],[10,"Flash SD3","禁用"],[11,"Flash CMD","禁用"],[12,"Strapping/Touch5/ADC2_5","上电须低"],[13,"Touch4/ADC2_4","JTAG"],[14,"Touch6/ADC2_6","JTAG"],[15,"Strapping/Touch3/ADC2_3","JTAG"],[16,"UART2 RX","WROVER=PSRAM"],[17,"UART2 TX","WROVER=PSRAM"],[18,"SPI CLK","VSPI"],[19,"SPI MISO","VSPI"],[21,"I2C SDA","默认"],[22,"I2C SCL","默认"],[23,"SPI MOSI","VSPI"],[25,"DAC1/ADC2_8","真DAC"],[26,"DAC2/ADC2_9","真DAC"],[27,"Touch7/ADC2_7",""],[32,"Touch9/ADC1_4","32k晶振"],[33,"Touch8/ADC1_5","32k晶振"],[34,"ADC1_6 仅输入","无内部上拉"],[35,"ADC1_7 仅输入",""],[36,"ADC1_0 仅输入(VP)",""],[39,"ADC1_3 仅输入(VN)",""]];
+$("pinTab").innerHTML="<tr><th>GPIO</th><th>功能</th><th>备注</th></tr>"+PINS.map(p=>`<tr><td>${p[0]}</td><td>${p[1]}</td><td>${p[2]}</td></tr>`).join("");
+function pinFilter(){const q=$("pq").value.trim().toLowerCase();
+ const rows=PINS.filter(p=>!q||String(p[0])===q||(p[1]+p[2]).toLowerCase().includes(q));
+ $("pinTab").innerHTML="<tr><th>GPIO</th><th>功能</th><th>备注</th></tr>"+(rows.length?rows.map(p=>`<tr><td>${p[0]}</td><td>${p[1]}</td><td>${p[2]}</td></tr>`).join(""):"<tr><td colspan=3>无匹配</td></tr>");}
+// ---- figures
+const FIGS=["roadmap","symbols-passive","symbols-semi","symbols-io","resistor-color-code","cap-types","rc-charge-curve","diode-iv","voltage-divider","rc-filter","npn-switch","mos-switch","hbridge","555-astable","esp32-devkit-pinout","esp32-gpio-map","esp32-strapping","esp32-min-system","esp32-periph-wiring","esp32-sleep-currents","bus-timing","breadboard-anatomy","multimeter","soldering"];
+const NAMES={"roadmap":"学习路线图","symbols-passive":"无源与电源符号","symbols-semi":"半导体符号","symbols-io":"开关/机电/接口","resistor-color-code":"电阻色环","cap-types":"电容类型","rc-charge-curve":"RC 充放电","diode-iv":"二极管/LED 特性","voltage-divider":"分压","rc-filter":"RC 滤波","npn-switch":"三极管开关","mos-switch":"MOS 高低边","hbridge":"H 桥","555-astable":"555 振荡器","esp32-devkit-pinout":"ESP32 引脚图","esp32-gpio-map":"GPIO 能力表","esp32-strapping":"启动模式","esp32-min-system":"最小系统","esp32-periph-wiring":"模块接线","esp32-sleep-currents":"功耗等级","bus-timing":"总线时序","breadboard-anatomy":"面包板结构","multimeter":"万用表","soldering":"焊接"};
+$("figGrid").innerHTML=FIGS.map(f=>`<figure><img loading="lazy" src="figures/${f}.png" alt="${NAMES[f]}"><figcaption>${NAMES[f]}（figures/${f}.svg / .png）</figcaption></figure>`).join("");
+</script>
+</body></html>
