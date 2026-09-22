@@ -1,5 +1,7 @@
 # 硬件入门学习包：从基础元器件到 ESP32
 
+> 🌍 **在线访问（GitHub Pages）**：https://mawenhao147-stack.github.io/hardware-learning-kit/
+> 📦 **仓库地址**：https://github.com/mawenhao147-stack/hardware-learning-kit
 > 🌐 **想直接在浏览器里读？** 双击打开 [index.html](index.html) —— 全部 31 篇文档 + 64 张图例的网页版，带侧边目录与搜索，离线可用。
 > 🧮 **要算电阻/分压/功耗？** 打开 [工具箱.html](工具箱.html)。
 
