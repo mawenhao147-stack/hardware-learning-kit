@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="640" viewBox="0 0 1180 640" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif"><rect width="1180" height="640" fill="#ffffff"/><text x="24.0" y="40.0" font-size="24" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ESP32 启动模式与 Strapping 引脚</text>
+<text x="24.0" y="66.0" font-size="14" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">上电瞬间采样 GPIO0/2/12/15 的电平决定启动方式与闪存电压；下载程序 = 按住 BOOT(GPIO0) 再按 EN 复位</text>
+<rect x="70.0" y="110.0" width="750.0" height="260.0" rx="0" fill="#fff" stroke="#d7dee8" stroke-width="1.2" opacity="1"/>
+<rect x="70.0" y="110.0" width="750.0" height="40.0" rx="0" fill="#eef2f7" stroke="#d7dee8" stroke-width="1.2" opacity="1"/>
+<text x="86.0" y="136.0" font-size="14" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO0</text>
+<text x="196.0" y="136.0" font-size="14" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO2</text>
+<text x="306.0" y="136.0" font-size="14" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO12</text>
+<text x="416.0" y="136.0" font-size="14" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">启动模式</text>
+<text x="86.0" y="178.0" font-size="13" fill="#374151" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">高</text>
+<text x="196.0" y="178.0" font-size="13" fill="#374151" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">任意</text>
+<text x="306.0" y="178.0" font-size="13" fill="#374151" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">任意</text>
+<text x="416.0" y="178.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">SPI Flash 正常启动（默认）</text>
+<line x1="70.0" y1="150.0" x2="820.0" y2="150.0" stroke="#d7dee8" stroke-width="1" stroke-linecap="round"/>
+<text x="86.0" y="222.0" font-size="13" fill="#dc2626" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">低</text>
+<text x="196.0" y="222.0" font-size="13" fill="#374151" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">任意</text>
+<text x="306.0" y="222.0" font-size="13" fill="#374151" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">任意</text>
+<text x="416.0" y="222.0" font-size="13" fill="#dc2626" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">下载模式（串口烧录）</text>
+<line x1="70.0" y1="194.0" x2="820.0" y2="194.0" stroke="#d7dee8" stroke-width="1" stroke-linecap="round"/>
+<text x="86.0" y="266.0" font-size="13" fill="#374151" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">—</text>
+<text x="196.0" y="266.0" font-size="13" fill="#374151" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">—</text>
+<text x="306.0" y="266.0" font-size="13" fill="#dc2626" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">低</text>
+<text x="416.0" y="266.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">闪存电压设为 1.8V（多数模块会启动失败）</text>
+<line x1="70.0" y1="238.0" x2="820.0" y2="238.0" stroke="#d7dee8" stroke-width="1" stroke-linecap="round"/>
+<text x="86.0" y="310.0" font-size="13" fill="#374151" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">—</text>
+<text x="196.0" y="310.0" font-size="13" fill="#374151" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">—</text>
+<text x="306.0" y="310.0" font-size="13" fill="#374151" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">高</text>
+<text x="416.0" y="310.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">闪存电压 3.3V（正常）</text>
+<line x1="70.0" y1="282.0" x2="820.0" y2="282.0" stroke="#d7dee8" stroke-width="1" stroke-linecap="round"/>
+<rect x="830.0" y="110.0" width="300.0" height="220.0" rx="10" fill="#fbfcfe" stroke="#d7dee8" stroke-width="1.2" opacity="1"/>
+<text x="850.0" y="142.0" font-size="15" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">手动进入下载模式</text>
+<text x="850.0" y="174.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">① 按住 BOOT 键（GPIO0 拉低）</text>
+<text x="850.0" y="204.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">② 按一下 EN / RST 键后松开</text>
+<text x="850.0" y="234.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">③ 松开 BOOT 键</text>
+<text x="850.0" y="264.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">④ 点击烧录，完成后按 EN 运行</text>
+<text x="850.0" y="294.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">开发板通常有自动下载电路，无需手动</text>
+<text x="70.0" y="400.0" font-size="14" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">自动下载电路（开发板标配）：用 DTR + RTS 控制两个三极管，自动切换 GPIO0 与 EN</text>
+<line x1="70.0" y1="460.0" x2="130.0" y2="460.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<text x="70.0" y="452.0" font-size="12" fill="#2563eb" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">DTR</text>
+<line x1="70.0" y1="520.0" x2="130.0" y2="520.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<text x="70.0" y="512.0" font-size="12" fill="#2563eb" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">RTS</text>
+<rect x="130.0" y="440.0" width="120.0" height="100.0" rx="4" fill="#fff" stroke="#111827" stroke-width="2" opacity="1"/>
+<text x="190.0" y="495.0" font-size="12" fill="#111827" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">三极管逻辑</text>
+<line x1="250.0" y1="470.0" x2="310.0" y2="470.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<text x="318.0" y="474.0" font-size="13" fill="#111827" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">→ EN</text>
+<line x1="250.0" y1="510.0" x2="310.0" y2="510.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<text x="318.0" y="514.0" font-size="13" fill="#111827" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">→ GPIO0</text>
+<text x="410.0" y="474.0" font-size="12.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">DTR/RTS 四种组合分别产生：复位、BOOT 拉低、释放、运行</text>
+<text x="410.0" y="504.0" font-size="12.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">这就是「点一下烧录就能自动进下载模式」的原理</text></svg>

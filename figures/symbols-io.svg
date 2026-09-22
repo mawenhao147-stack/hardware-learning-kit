@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="508" viewBox="0 0 1060 508" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif"><rect width="1060" height="508" fill="#ffffff"/><text x="24.0" y="40.0" font-size="24" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">常用电路符号 · 开关 / 机电 / 接口</text>
+<text x="24.0" y="66.0" font-size="14" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">读图要点：先找电源与地，再顺着信号流从左到右；网络标号相同的点视为直接连通</text>
+<rect x="30.0" y="100.0" width="236.0" height="112.0" rx="8" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<line x1="96.0" y1="146.0" x2="134.0" y2="146.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<line x1="162.0" y1="146.0" x2="200.0" y2="146.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<circle cx="134.0" cy="146.0" r="3.5" fill="#1f2937" stroke="none"/>
+<circle cx="162.0" cy="146.0" r="3.5" fill="#1f2937" stroke="none"/>
+<line x1="134.0" y1="146.0" x2="164.0" y2="130.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<text x="148.0" y="186.0" font-size="14" fill="#111827" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">常开开关 SPST-NO</text>
+<text x="148.0" y="204.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">按下/拨动导通</text>
+<rect x="280.0" y="100.0" width="236.0" height="112.0" rx="8" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<line x1="346.0" y1="146.0" x2="384.0" y2="146.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<line x1="412.0" y1="146.0" x2="450.0" y2="146.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<circle cx="384.0" cy="146.0" r="3.5" fill="#1f2937" stroke="none"/>
+<circle cx="412.0" cy="146.0" r="3.5" fill="#1f2937" stroke="none"/>
+<line x1="384.0" y1="146.0" x2="412.0" y2="146.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<text x="398.0" y="186.0" font-size="14" fill="#111827" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">常闭开关 SPST-NC</text>
+<text x="398.0" y="204.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">默认导通</text>
+<rect x="530.0" y="100.0" width="236.0" height="112.0" rx="8" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<line x1="596.0" y1="146.0" x2="634.0" y2="146.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<line x1="662.0" y1="146.0" x2="700.0" y2="146.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<circle cx="634.0" cy="146.0" r="3.5" fill="#1f2937" stroke="none"/>
+<circle cx="662.0" cy="146.0" r="3.5" fill="#1f2937" stroke="none"/>
+<line x1="634.0" y1="146.0" x2="664.0" y2="130.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<line x1="640.0" y1="124.0" x2="664.0" y2="124.0" stroke="#1f2937" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="652.0" y1="124.0" x2="652.0" y2="132.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<text x="648.0" y="186.0" font-size="14" fill="#111827" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">轻触按键</text>
+<text x="648.0" y="204.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">最常用作输入</text>
+<rect x="780.0" y="100.0" width="236.0" height="112.0" rx="8" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<line x1="846.0" y1="146.0" x2="884.0" y2="146.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<circle cx="884.0" cy="146.0" r="3.5" fill="#1f2937" stroke="none"/>
+<circle cx="914.0" cy="130.0" r="3.5" fill="#1f2937" stroke="none"/>
+<circle cx="914.0" cy="162.0" r="3.5" fill="#1f2937" stroke="none"/>
+<line x1="884.0" y1="146.0" x2="912.0" y2="132.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<line x1="914.0" y1="130.0" x2="950.0" y2="130.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<line x1="914.0" y1="162.0" x2="950.0" y2="162.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<text x="898.0" y="186.0" font-size="14" fill="#111827" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">单刀双掷 SPDT</text>
+<text x="898.0" y="204.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">切换两路</text>
+<rect x="30.0" y="226.0" width="236.0" height="112.0" rx="8" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="108.0" y="242.0" width="80.0" height="60.0" rx="4" fill="#fff" stroke="#1f2937" stroke-width="2" opacity="1"/>
+<path d="M 120.0 284 A 7 7 0 0 1 134.0 284 A 7 7 0 0 1 148.0 284 A 7 7 0 0 1 162.0 284 A 7 7 0 0 1 176.0 284 " fill="none" stroke="#1f2937" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="124.0" y1="260.0" x2="156.0" y2="250.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<circle cx="124.0" cy="260.0" r="3" fill="#1f2937" stroke="none"/>
+<circle cx="166.0" cy="264.0" r="3" fill="#1f2937" stroke="none"/>
+<circle cx="166.0" cy="248.0" r="3" fill="#1f2937" stroke="none"/>
+<line x1="166.0" y1="248.0" x2="166.0" y2="242.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<line x1="166.0" y1="264.0" x2="166.0" y2="274.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<text x="148.0" y="312.0" font-size="14" fill="#111827" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">继电器</text>
+<text x="148.0" y="330.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">小电流控大电流</text>
+<rect x="280.0" y="226.0" width="236.0" height="112.0" rx="8" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<path d="M 382.0 252 A 20 20 0 0 1 382.0 292 L 382.0 252 Z" fill="#fff" stroke="#1f2937" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="346.0" y1="272.0" x2="382.0" y2="272.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<line x1="402.0" y1="272.0" x2="450.0" y2="272.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<text x="400.0" y="276.0" font-size="13" fill="#1f2937" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">+</text>
+<text x="398.0" y="312.0" font-size="14" fill="#111827" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">蜂鸣器 (有源)</text>
+<text x="398.0" y="330.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">通电即响</text>
+<rect x="530.0" y="226.0" width="236.0" height="112.0" rx="8" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<path d="M 628.0 264.0 L 640.0 264.0 L 660.0 250.0 L 660.0 294.0 L 640.0 280.0 L 628.0 280.0 Z" fill="#fff" stroke="#1f2937" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="596.0" y1="272.0" x2="628.0" y2="272.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<text x="648.0" y="312.0" font-size="14" fill="#111827" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">扬声器 / 无源蜂鸣器</text>
+<text x="648.0" y="330.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">需 PWM 驱动</text>
+<rect x="780.0" y="226.0" width="236.0" height="112.0" rx="8" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<circle cx="898.0" cy="272.0" r="20.0" fill="#fff" stroke="#1f2937" stroke-width="2"/>
+<text x="898.0" y="278.0" font-size="17" fill="#1f2937" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">M</text>
+<line x1="846.0" y1="272.0" x2="878.0" y2="272.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<line x1="918.0" y1="272.0" x2="950.0" y2="272.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<text x="898.0" y="312.0" font-size="14" fill="#111827" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">直流电机</text>
+<text x="898.0" y="330.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">感性负载，需续流</text>
+<rect x="30.0" y="352.0" width="236.0" height="112.0" rx="8" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="118.0" y="374.0" width="60.0" height="48.0" rx="3" fill="#fff" stroke="#1f2937" stroke-width="2" opacity="1"/>
+<circle cx="134.0" cy="388.0" r="4.5" fill="#fff" stroke="#1f2937" stroke-width="1.8"/>
+<circle cx="134.0" cy="408.0" r="4.5" fill="#fff" stroke="#1f2937" stroke-width="1.8"/>
+<circle cx="162.0" cy="388.0" r="4.5" fill="#fff" stroke="#1f2937" stroke-width="1.8"/>
+<circle cx="162.0" cy="408.0" r="4.5" fill="#fff" stroke="#1f2937" stroke-width="1.8"/>
+<text x="148.0" y="438.0" font-size="11" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">2×2 排针</text>
+<text x="148.0" y="438.0" font-size="14" fill="#111827" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">排针 / 连接器</text>
+<text x="148.0" y="456.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">与外界接口</text>
+<rect x="280.0" y="352.0" width="236.0" height="112.0" rx="8" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="364.0" y="380.0" width="68.0" height="36.0" rx="4" fill="#fff" stroke="#1f2937" stroke-width="2" opacity="1"/>
+<text x="398.0" y="403.0" font-size="14" fill="#1f2937" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">USB</text>
+<line x1="346.0" y1="398.0" x2="364.0" y2="398.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<line x1="432.0" y1="398.0" x2="450.0" y2="398.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<text x="398.0" y="438.0" font-size="14" fill="#111827" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">USB 接口</text>
+<text x="398.0" y="456.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">5V + D+/D−</text>
+<rect x="530.0" y="352.0" width="236.0" height="112.0" rx="8" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<line x1="648.0" y1="424.0" x2="648.0" y2="392.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<path d="M 648.0 392.0 L 628.0 368.0 L 668.0 368.0" fill="none" stroke="#1f2937" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="648.0" y="438.0" font-size="14" fill="#111827" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">天线</text>
+<text x="648.0" y="456.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">2.4GHz 走线要短</text>
+<rect x="780.0" y="352.0" width="236.0" height="112.0" rx="8" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<line x1="858.0" y1="398.0" x2="908.0" y2="398.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<path d="M 908.0 387.0 L 942.0 387.0 L 952.0 398.0 L 942.0 409.0 L 908.0 409.0 Z" fill="#e8f0fe" stroke="#2563eb" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="925.0" y="403.0" font-size="12" fill="#2563eb" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO25</text>
+<text x="898.0" y="438.0" font-size="14" fill="#111827" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">网络标号 / 测试点</text>
+<text x="898.0" y="456.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">同名为同一节点</text></svg>

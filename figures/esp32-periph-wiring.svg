@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="900" viewBox="0 0 1240 900" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif"><rect width="1240" height="900" fill="#ffffff"/><text x="24.0" y="40.0" font-size="24" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ESP32 常用模块接线图（照抄即可）</text>
+<text x="24.0" y="66.0" font-size="14" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">所有模块与 ESP32 共地(GND)；3.3V 模块接 3V3，5V 模块接 5V/VIN 但信号电平要匹配 3.3V</text>
+<rect x="70.0" y="120.0" width="90.0" height="150.0" rx="6" fill="#101828" stroke="#0b1220" stroke-width="2" opacity="1"/>
+<text x="115.0" y="189.0" font-size="14" fill="#e5e7eb" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ESP32</text>
+<text x="115.0" y="207.0" font-size="10" fill="#94a3b8" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">DevKit</text>
+<rect x="280.0" y="120.0" width="150.0" height="86.0" rx="6" fill="#fff" stroke="#111827" stroke-width="2" opacity="1"/>
+<text x="355.0" y="138.0" font-size="12.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">OLED SSD1306 (I2C)</text>
+<text x="290.0" y="158.0" font-size="11" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">VCC  GND  SCL  SDA</text>
+<line x1="160.0" y1="150.0" x2="280.0" y2="150.0" stroke="#dc2626" stroke-width="2.2" stroke-linecap="round"/>
+<text x="220.0" y="144.0" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">3V3</text>
+<line x1="160.0" y1="170.0" x2="280.0" y2="170.0" stroke="#111827" stroke-width="2.2" stroke-linecap="round"/>
+<text x="220.0" y="164.0" font-size="11" fill="#111827" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GND</text>
+<line x1="160.0" y1="190.0" x2="280.0" y2="190.0" stroke="#7c3aed" stroke-width="2.2" stroke-linecap="round"/>
+<text x="220.0" y="184.0" font-size="11" fill="#7c3aed" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO22 SCL</text>
+<line x1="160.0" y1="210.0" x2="280.0" y2="210.0" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round"/>
+<text x="220.0" y="204.0" font-size="11" fill="#2563eb" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO21 SDA</text>
+<text x="70.0" y="296.0" font-size="11.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">I2C：两线多设备，地址区分；上拉电阻模块自带</text>
+<rect x="470.0" y="120.0" width="90.0" height="150.0" rx="6" fill="#101828" stroke="#0b1220" stroke-width="2" opacity="1"/>
+<text x="515.0" y="189.0" font-size="14" fill="#e5e7eb" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ESP32</text>
+<text x="515.0" y="207.0" font-size="10" fill="#94a3b8" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">DevKit</text>
+<rect x="680.0" y="120.0" width="150.0" height="70.0" rx="6" fill="#fff" stroke="#111827" stroke-width="2" opacity="1"/>
+<text x="755.0" y="138.0" font-size="12.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">DHT22 温湿度</text>
+<text x="690.0" y="158.0" font-size="11" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">VCC  DATA  GND</text>
+<line x1="560.0" y1="150.0" x2="680.0" y2="150.0" stroke="#dc2626" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="560.0" y1="190.0" x2="680.0" y2="190.0" stroke="#111827" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="560.0" y1="170.0" x2="630.0" y2="170.0" stroke="#059669" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="630.0" y1="170.0" x2="680.0" y2="170.0" stroke="#059669" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="630.0" cy="170.0" r="3.5" fill="#1f2937" stroke="none"/>
+<line x1="630.0" y1="170.0" x2="630.0" y2="136.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<line x1="630.0" y1="136.0" x2="630.0" y2="120.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+<line x1="619.0" y1="120.0" x2="641.0" y2="120.0" stroke="#dc2626" stroke-width="2.6" stroke-linecap="round"/>
+<text x="630.0" y="112.0" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">3V3</text>
+<rect x="623.0" y="170.0" width="14.0" height="0.0" rx="0" fill="none" stroke="none" stroke-width="0" opacity="1"/>
+<rect x="610.0" y="176.0" width="0.0" height="0.0" rx="0" fill="none" stroke="none" stroke-width="0" opacity="1"/>
+<rect x="623.0" y="170.0" width="14.0" height="30.0" rx="0" fill="#fff" stroke="#1f2937" stroke-width="1.8" opacity="1"/>
+<text x="642.0" y="190.0" font-size="11" fill="#111827" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">10k</text>
+<text x="588.0" y="164.0" font-size="11" fill="#059669" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO4</text>
+<text x="470.0" y="296.0" font-size="11.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">单总线：DATA 需 4.7~10k 上拉到 VCC</text>
+<rect x="870.0" y="120.0" width="90.0" height="150.0" rx="6" fill="#101828" stroke="#0b1220" stroke-width="2" opacity="1"/>
+<text x="915.0" y="189.0" font-size="14" fill="#e5e7eb" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ESP32</text>
+<text x="915.0" y="207.0" font-size="10" fill="#94a3b8" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">DevKit</text>
+<rect x="1080.0" y="120.0" width="150.0" height="70.0" rx="6" fill="#fff" stroke="#111827" stroke-width="2" opacity="1"/>
+<text x="1155.0" y="138.0" font-size="12.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">WS2812 灯带</text>
+<text x="1090.0" y="158.0" font-size="11" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">VCC  DIN  GND</text>
+<line x1="960.0" y1="150.0" x2="1080.0" y2="150.0" stroke="#dc2626" stroke-width="2.2" stroke-linecap="round"/>
+<text x="1020.0" y="144.0" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">5V</text>
+<line x1="960.0" y1="190.0" x2="1080.0" y2="190.0" stroke="#111827" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="960.0" y1="170.0" x2="1000.0" y2="170.0" stroke="#059669" stroke-width="2.2" stroke-linecap="round"/>
+<rect x="1000.0" y="163.0" width="36.0" height="14.0" rx="0" fill="#fff" stroke="#1f2937" stroke-width="1.8" opacity="1"/>
+<line x1="1036.0" y1="170.0" x2="1080.0" y2="170.0" stroke="#059669" stroke-width="2.2" stroke-linecap="round"/>
+<text x="1018.0" y="156.0" font-size="11" fill="#111827" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">330Ω</text>
+<text x="980.0" y="184.0" font-size="11" fill="#059669" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO4</text>
+<text x="870.0" y="296.0" font-size="11.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">灯带供电 5V；首颗串 330Ω；电源并 1000µF</text>
+<rect x="70.0" y="330.0" width="90.0" height="150.0" rx="6" fill="#101828" stroke="#0b1220" stroke-width="2" opacity="1"/>
+<text x="115.0" y="399.0" font-size="14" fill="#e5e7eb" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ESP32</text>
+<text x="115.0" y="417.0" font-size="10" fill="#94a3b8" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">DevKit</text>
+<rect x="280.0" y="330.0" width="150.0" height="70.0" rx="6" fill="#fff" stroke="#111827" stroke-width="2" opacity="1"/>
+<text x="355.0" y="348.0" font-size="12.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">SG90 舵机</text>
+<text x="290.0" y="368.0" font-size="11" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">信号  5V  GND</text>
+<line x1="160.0" y1="370.0" x2="280.0" y2="370.0" stroke="#ea580c" stroke-width="2.2" stroke-linecap="round"/>
+<text x="220.0" y="364.0" font-size="11" fill="#ea580c" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO13 (LED PWM 50Hz)</text>
+<line x1="280.0" y1="350.0" x2="220.0" y2="350.0" stroke="#dc2626" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="220.0" y1="350.0" x2="220.0" y2="314.0" stroke="#dc2626" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="220.0" y1="314.0" x2="220.0" y2="298.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+<line x1="209.0" y1="298.0" x2="231.0" y2="298.0" stroke="#dc2626" stroke-width="2.6" stroke-linecap="round"/>
+<text x="220.0" y="290.0" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">外部 5~6V</text>
+<line x1="160.0" y1="400.0" x2="280.0" y2="400.0" stroke="#111827" stroke-width="2.2" stroke-linecap="round"/>
+<text x="70.0" y="506.0" font-size="11.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">舵机电流大(堵转 &gt;500mA)，勿从开发板 5V 取电；共地必接</text>
+<rect x="470.0" y="330.0" width="90.0" height="150.0" rx="6" fill="#101828" stroke="#0b1220" stroke-width="2" opacity="1"/>
+<text x="515.0" y="399.0" font-size="14" fill="#e5e7eb" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ESP32</text>
+<text x="515.0" y="417.0" font-size="10" fill="#94a3b8" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">DevKit</text>
+<rect x="700.0" y="330.0" width="150.0" height="86.0" rx="6" fill="#fff" stroke="#111827" stroke-width="2" opacity="1"/>
+<text x="775.0" y="348.0" font-size="12.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">HC-SR04 超声</text>
+<text x="710.0" y="368.0" font-size="11" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">VCC TRIG ECHO GND</text>
+<line x1="560.0" y1="350.0" x2="700.0" y2="350.0" stroke="#dc2626" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="560.0" y1="410.0" x2="700.0" y2="410.0" stroke="#111827" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="560.0" y1="370.0" x2="700.0" y2="370.0" stroke="#ea580c" stroke-width="2.2" stroke-linecap="round"/>
+<text x="630.0" y="364.0" font-size="11" fill="#ea580c" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO5 TRIG</text>
+<line x1="700.0" y1="390.0" x2="660.0" y2="390.0" stroke="#ca8a04" stroke-width="2.2" stroke-linecap="round"/>
+<rect x="646.0" y="383.0" width="14.0" height="14.0" rx="0" fill="#fff" stroke="#1f2937" stroke-width="1.6" opacity="1"/>
+<rect x="620.0" y="383.0" width="14.0" height="14.0" rx="0" fill="#fff" stroke="#1f2937" stroke-width="1.6" opacity="1"/>
+<line x1="646.0" y1="390.0" x2="634.0" y2="390.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<line x1="620.0" y1="390.0" x2="560.0" y2="390.0" stroke="#059669" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="653.0" y1="383.0" x2="653.0" y2="400.0" stroke="#1f2937" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="653.0" y1="400.0" x2="653.0" y2="408.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<line x1="645.0" y1="408.0" x2="661.0" y2="408.0" stroke="#1f2937" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="648.0" y1="414.0" x2="658.0" y2="414.0" stroke="#1f2937" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="650.9" y1="420.0" x2="655.1" y2="420.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<text x="638.0" y="426.0" font-size="10.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">20k / 10k 分压到 ≤3.3V</text>
+<text x="590.0" y="384.0" font-size="11" fill="#059669" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO18</text>
+<text x="470.0" y="506.0" font-size="11.5" fill="#dc2626" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ECHO 输出 5V！必须分压到 ≤3.3V 再接 GPIO</text>
+<rect x="870.0" y="330.0" width="90.0" height="150.0" rx="6" fill="#101828" stroke="#0b1220" stroke-width="2" opacity="1"/>
+<text x="915.0" y="399.0" font-size="14" fill="#e5e7eb" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ESP32</text>
+<text x="915.0" y="417.0" font-size="10" fill="#94a3b8" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">DevKit</text>
+<rect x="1080.0" y="330.0" width="150.0" height="70.0" rx="6" fill="#fff" stroke="#111827" stroke-width="2" opacity="1"/>
+<text x="1155.0" y="348.0" font-size="12.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">继电器模块(低触发可选)</text>
+<text x="1090.0" y="368.0" font-size="11" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">VCC IN GND</text>
+<line x1="960.0" y1="350.0" x2="1080.0" y2="350.0" stroke="#dc2626" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="960.0" y1="400.0" x2="1080.0" y2="400.0" stroke="#111827" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="960.0" y1="375.0" x2="1080.0" y2="375.0" stroke="#ea580c" stroke-width="2.2" stroke-linecap="round"/>
+<text x="1020.0" y="369.0" font-size="11" fill="#ea580c" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO26</text>
+<text x="870.0" y="506.0" font-size="11.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">选「光耦隔离+低/高触发可跳线」款；模块 VCC 接 5V</text>
+<rect x="70.0" y="560.0" width="540.0" height="300.0" rx="10" fill="#fbfcfe" stroke="#d7dee8" stroke-width="1.2" opacity="1"/>
+<text x="90.0" y="592.0" font-size="15" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">接线通用守则</text>
+<text x="90.0" y="622.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">① 先共地：所有模块 GND 与 ESP32 GND 相连</text>
+<text x="90.0" y="648.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">② 看电平：模块信号 5V 输出 → 分压/电平转换后再进 GPIO</text>
+<text x="90.0" y="674.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">③ 看电流：电机/舵机/灯带用外部电源，开发板只给信号</text>
+<text x="90.0" y="700.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">④ 上电顺序：先接信号与地，最后接电源；拆时相反</text>
+<text x="90.0" y="726.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">⑤ 杜邦线松动是「时好时坏」的头号原因</text>
+<text x="90.0" y="752.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">⑥ I2C 设备地址冲突时用 i2cscan 例程排查</text>
+<text x="90.0" y="778.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">⑦ 3.3V 引脚绝对耐压约 3.6V，超压即损坏</text>
+<rect x="650.0" y="560.0" width="540.0" height="300.0" rx="10" fill="#fbfcfe" stroke="#d7dee8" stroke-width="1.2" opacity="1"/>
+<text x="670.0" y="592.0" font-size="15" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">常用引脚分配建议（避免冲突）</text>
+<text x="670.0" y="622.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">I2C：SDA=21, SCL=22（硬件默认）</text>
+<text x="670.0" y="648.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">SPI：SCK=18, MISO=19, MOSI=23, CS=5</text>
+<text x="670.0" y="674.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">串口2：RX=16, TX=17（GPS/蓝牙模块）</text>
+<text x="670.0" y="700.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">PWM：任意 GPIO（LEDC 16 通道）</text>
+<text x="670.0" y="726.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ADC 采样：只用 ADC1 = 32~39</text>
+<text x="670.0" y="752.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">触摸：4, 0, 2, 15, 13, 12, 14, 27, 33, 32</text>
+<text x="670.0" y="778.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">避开：6~11（Flash）、16/17（WROVER PSRAM）</text></svg>

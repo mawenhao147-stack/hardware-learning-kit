@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="760" viewBox="0 0 1240 760" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif"><rect width="1240" height="760" fill="#ffffff"/><text x="24.0" y="40.0" font-size="24" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">硬件学习路线图：从元器件到 ESP32 项目</text>
+<text x="24.0" y="66.0" font-size="14" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">建议每周 5~8 小时；每个阶段都「看图 → 动手 → 复述原理」三遍过；所有图例在本包 figures 目录</text>
+<rect x="70.0" y="150.0" width="280.0" height="190.0" rx="10" fill="#fff" stroke="#2563eb" stroke-width="2" opacity="1"/>
+<rect x="70.0" y="150.0" width="280.0" height="40.0" rx="10" fill="#2563eb" stroke="#2563eb" stroke-width="2" opacity="1"/>
+<rect x="70.0" y="170.0" width="280.0" height="20.0" rx="0" fill="#2563eb" stroke="#2563eb" stroke-width="0" opacity="1"/>
+<text x="86.0" y="177.0" font-size="14" fill="#fff" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">第 1 阶段 · 认识元器件</text>
+<text x="334.0" y="177.0" font-size="12" fill="#fff" text-anchor="end" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">1 周</text>
+<text x="86.0" y="222.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">电阻/电容/二极管/三极管/MOS</text>
+<text x="86.0" y="248.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">会读色环、会看符号、会测好坏</text>
+<text x="86.0" y="324.0" font-size="11.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">📁 01-基础元器件</text>
+<line x1="356.0" y1="245.0" x2="476.0" y2="245.0" stroke="#6b7280" stroke-width="2" stroke-linecap="round"/>
+<path d="M 476.0 245.0 L 468.7 248.3 L 468.7 241.7 Z" fill="#6b7280" stroke="#6b7280" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="388.0" y="150.0" width="280.0" height="190.0" rx="10" fill="#fff" stroke="#059669" stroke-width="2" opacity="1"/>
+<rect x="388.0" y="150.0" width="280.0" height="40.0" rx="10" fill="#059669" stroke="#059669" stroke-width="2" opacity="1"/>
+<rect x="388.0" y="170.0" width="280.0" height="20.0" rx="0" fill="#059669" stroke="#059669" stroke-width="0" opacity="1"/>
+<text x="404.0" y="177.0" font-size="14" fill="#fff" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">第 2 阶段 · 电路定律</text>
+<text x="652.0" y="177.0" font-size="12" fill="#fff" text-anchor="end" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">1 周</text>
+<text x="404.0" y="222.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">欧姆/基尔霍夫/分压/RC</text>
+<text x="404.0" y="248.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">会用万用表验证计算</text>
+<text x="404.0" y="324.0" font-size="11.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">📁 02-电路基础与定律</text>
+<line x1="674.0" y1="245.0" x2="794.0" y2="245.0" stroke="#6b7280" stroke-width="2" stroke-linecap="round"/>
+<path d="M 794.0 245.0 L 786.7 248.3 L 786.7 241.7 Z" fill="#6b7280" stroke="#6b7280" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="706.0" y="150.0" width="280.0" height="190.0" rx="10" fill="#fff" stroke="#ea580c" stroke-width="2" opacity="1"/>
+<rect x="706.0" y="150.0" width="280.0" height="40.0" rx="10" fill="#ea580c" stroke="#ea580c" stroke-width="2" opacity="1"/>
+<rect x="706.0" y="170.0" width="280.0" height="20.0" rx="0" fill="#ea580c" stroke="#ea580c" stroke-width="0" opacity="1"/>
+<text x="722.0" y="177.0" font-size="14" fill="#fff" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">第 3 阶段 · 小电路实战</text>
+<text x="970.0" y="177.0" font-size="12" fill="#fff" text-anchor="end" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">2 周</text>
+<text x="722.0" y="222.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">LED/按键/三极管开关/555/H桥</text>
+<text x="722.0" y="248.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">面包板搭出来并测波形</text>
+<text x="722.0" y="324.0" font-size="11.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">📁 03-小型电路图实战</text>
+<line x1="846.0" y1="348.0" x2="846.0" y2="402.0" stroke="#6b7280" stroke-width="2" stroke-linecap="round"/>
+<path d="M 846.0 402.0 L 842.7 394.7 L 849.3 394.7 Z" fill="#6b7280" stroke="#6b7280" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="70.0" y="410.0" width="280.0" height="190.0" rx="10" fill="#fff" stroke="#7c3aed" stroke-width="2" opacity="1"/>
+<rect x="70.0" y="410.0" width="280.0" height="40.0" rx="10" fill="#7c3aed" stroke="#7c3aed" stroke-width="2" opacity="1"/>
+<rect x="70.0" y="430.0" width="280.0" height="20.0" rx="0" fill="#7c3aed" stroke="#7c3aed" stroke-width="0" opacity="1"/>
+<text x="86.0" y="437.0" font-size="14" fill="#fff" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">第 4 阶段 · ESP32 入门</text>
+<text x="334.0" y="437.0" font-size="12" fill="#fff" text-anchor="end" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">2 周</text>
+<text x="86.0" y="482.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">引脚/烧录/GPIO/ADC/PWM</text>
+<text x="86.0" y="508.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">点灯→呼吸灯→传感器上屏</text>
+<text x="86.0" y="584.0" font-size="11.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">📁 04-ESP32单片机</text>
+<line x1="356.0" y1="505.0" x2="476.0" y2="505.0" stroke="#6b7280" stroke-width="2" stroke-linecap="round"/>
+<path d="M 476.0 505.0 L 468.7 508.3 L 468.7 501.7 Z" fill="#6b7280" stroke="#6b7280" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="388.0" y="410.0" width="280.0" height="190.0" rx="10" fill="#fff" stroke="#dc2626" stroke-width="2" opacity="1"/>
+<rect x="388.0" y="410.0" width="280.0" height="40.0" rx="10" fill="#dc2626" stroke="#dc2626" stroke-width="2" opacity="1"/>
+<rect x="388.0" y="430.0" width="280.0" height="20.0" rx="0" fill="#dc2626" stroke="#dc2626" stroke-width="0" opacity="1"/>
+<text x="404.0" y="437.0" font-size="14" fill="#fff" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">第 5 阶段 · 接口与模块</text>
+<text x="652.0" y="437.0" font-size="12" fill="#fff" text-anchor="end" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">2 周</text>
+<text x="404.0" y="482.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">UART/I2C/SPI/中断/低功耗</text>
+<text x="404.0" y="508.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">多模块组合小系统</text>
+<text x="404.0" y="584.0" font-size="11.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">📁 04-ESP32单片机</text>
+<line x1="674.0" y1="505.0" x2="794.0" y2="505.0" stroke="#6b7280" stroke-width="2" stroke-linecap="round"/>
+<path d="M 794.0 505.0 L 786.7 508.3 L 786.7 501.7 Z" fill="#6b7280" stroke="#6b7280" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="706.0" y="410.0" width="280.0" height="190.0" rx="10" fill="#fff" stroke="#0d9488" stroke-width="2" opacity="1"/>
+<rect x="706.0" y="410.0" width="280.0" height="40.0" rx="10" fill="#0d9488" stroke="#0d9488" stroke-width="2" opacity="1"/>
+<rect x="706.0" y="430.0" width="280.0" height="20.0" rx="0" fill="#0d9488" stroke="#0d9488" stroke-width="0" opacity="1"/>
+<text x="722.0" y="437.0" font-size="14" fill="#fff" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">第 6 阶段 · 做成产品</text>
+<text x="970.0" y="437.0" font-size="12" fill="#fff" text-anchor="end" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">持续</text>
+<text x="722.0" y="482.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">画板(KiCad)/打样/焊接/外壳</text>
+<text x="722.0" y="508.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">功耗优化与可靠性测试</text>
+<text x="722.0" y="584.0" font-size="11.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">📁 05/06 章节</text>
+<text x="70.0" y="690.0" font-size="13" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">配套：交互式计算工具箱（电阻/LED/分压/RC/功耗）见 工具箱.html；采购清单见 06-项目实战。</text></svg>

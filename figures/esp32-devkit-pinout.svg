@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="1140" viewBox="0 0 1280 1140" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif"><rect width="1280" height="1140" fill="#ffffff"/><text x="24.0" y="40.0" font-size="24" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ESP32 开发板引脚图（38 脚 DevKitC / NodeMCU-32S 类）</text>
+<text x="24.0" y="66.0" font-size="14" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">颜色=功能类别；30 脚 DOIT 版本未引出 GPIO6~11（内部 Flash）。接线前请以板子丝印核对；GPIO34~39 只能做输入</text>
+<rect x="560.0" y="120.0" width="200.0" height="874.0" rx="10" fill="#101828" stroke="#0b1220" stroke-width="2" opacity="1"/>
+<rect x="626.0" y="94.0" width="68.0" height="26.0" rx="4" fill="#94a3b8" stroke="#64748b" stroke-width="1.5" opacity="1"/>
+<text x="660.0" y="111.0" font-size="12" fill="#0f172a" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">USB</text>
+<text x="660.0" y="160.0" font-size="16" fill="#e5e7eb" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ESP32-WROOM</text>
+<text x="660.0" y="182.0" font-size="12" fill="#94a3b8" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">DevKit V1 / DevKitC V4</text>
+<rect x="534.0" y="128.0" width="26.0" height="30.0" rx="3" fill="#ca8a04" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="534.0" y1="143.0" x2="560.0" y2="143.0" stroke="#ca8a04" stroke-width="2" stroke-linecap="round"/>
+<text x="524.0" y="141.0" font-size="14" fill="#111827" text-anchor="end" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">EN</text>
+<text x="310.0" y="147.0" font-size="10.5" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">复位脚：低电平复位，板载 RC+按键</text>
+<rect x="534.0" y="174.0" width="26.0" height="30.0" rx="3" fill="#ea580c" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="534.0" y1="189.0" x2="560.0" y2="189.0" stroke="#ea580c" stroke-width="2" stroke-linecap="round"/>
+<text x="524.0" y="187.0" font-size="14" fill="#111827" text-anchor="end" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO36</text>
+<text x="524.0" y="204.0" font-size="11" fill="#ea580c" text-anchor="end" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">VP · ADC1_CH0</text>
+<text x="310.0" y="193.0" font-size="10.5" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">仅输入，可做 ADC/唤醒</text>
+<rect x="534.0" y="220.0" width="26.0" height="30.0" rx="3" fill="#ea580c" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="534.0" y1="235.0" x2="560.0" y2="235.0" stroke="#ea580c" stroke-width="2" stroke-linecap="round"/>
+<text x="524.0" y="233.0" font-size="14" fill="#111827" text-anchor="end" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO39</text>
+<text x="524.0" y="250.0" font-size="11" fill="#ea580c" text-anchor="end" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">VN · ADC1_CH3</text>
+<text x="310.0" y="239.0" font-size="10.5" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">仅输入</text>
+<rect x="534.0" y="266.0" width="26.0" height="30.0" rx="3" fill="#ea580c" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="534.0" y1="281.0" x2="560.0" y2="281.0" stroke="#ea580c" stroke-width="2" stroke-linecap="round"/>
+<text x="524.0" y="279.0" font-size="14" fill="#111827" text-anchor="end" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO34</text>
+<text x="524.0" y="296.0" font-size="11" fill="#ea580c" text-anchor="end" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ADC1_CH6</text>
+<text x="310.0" y="285.0" font-size="10.5" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">仅输入</text>
+<rect x="534.0" y="312.0" width="26.0" height="30.0" rx="3" fill="#ea580c" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="534.0" y1="327.0" x2="560.0" y2="327.0" stroke="#ea580c" stroke-width="2" stroke-linecap="round"/>
+<text x="524.0" y="325.0" font-size="14" fill="#111827" text-anchor="end" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO35</text>
+<text x="524.0" y="342.0" font-size="11" fill="#ea580c" text-anchor="end" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ADC1_CH7</text>
+<text x="310.0" y="331.0" font-size="10.5" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">仅输入</text>
+<rect x="534.0" y="358.0" width="26.0" height="30.0" rx="3" fill="#7c3aed" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="534.0" y1="373.0" x2="560.0" y2="373.0" stroke="#7c3aed" stroke-width="2" stroke-linecap="round"/>
+<text x="524.0" y="371.0" font-size="14" fill="#111827" text-anchor="end" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO32</text>
+<text x="524.0" y="388.0" font-size="11" fill="#7c3aed" text-anchor="end" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ADC1_CH4 · TOUCH9</text>
+<text x="310.0" y="377.0" font-size="10.5" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">可接 32.768kHz 晶振</text>
+<rect x="534.0" y="404.0" width="26.0" height="30.0" rx="3" fill="#7c3aed" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="534.0" y1="419.0" x2="560.0" y2="419.0" stroke="#7c3aed" stroke-width="2" stroke-linecap="round"/>
+<text x="524.0" y="417.0" font-size="14" fill="#111827" text-anchor="end" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO33</text>
+<text x="524.0" y="434.0" font-size="11" fill="#7c3aed" text-anchor="end" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ADC1_CH5 · TOUCH8</text>
+<text x="310.0" y="423.0" font-size="10.5" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">可接 32.768kHz 晶振</text>
+<rect x="534.0" y="450.0" width="26.0" height="30.0" rx="3" fill="#0d9488" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="534.0" y1="465.0" x2="560.0" y2="465.0" stroke="#0d9488" stroke-width="2" stroke-linecap="round"/>
+<text x="524.0" y="463.0" font-size="14" fill="#111827" text-anchor="end" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO25</text>
+<text x="524.0" y="480.0" font-size="11" fill="#0d9488" text-anchor="end" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ADC2_CH8 · DAC1</text>
+<text x="310.0" y="469.0" font-size="10.5" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">真 DAC 输出</text>
+<rect x="534.0" y="496.0" width="26.0" height="30.0" rx="3" fill="#0d9488" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="534.0" y1="511.0" x2="560.0" y2="511.0" stroke="#0d9488" stroke-width="2" stroke-linecap="round"/>
+<text x="524.0" y="509.0" font-size="14" fill="#111827" text-anchor="end" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO26</text>
+<text x="524.0" y="526.0" font-size="11" fill="#0d9488" text-anchor="end" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ADC2_CH9 · DAC2</text>
+<text x="310.0" y="515.0" font-size="10.5" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">真 DAC 输出</text>
+<rect x="534.0" y="542.0" width="26.0" height="30.0" rx="3" fill="#7c3aed" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="534.0" y1="557.0" x2="560.0" y2="557.0" stroke="#7c3aed" stroke-width="2" stroke-linecap="round"/>
+<text x="524.0" y="555.0" font-size="14" fill="#111827" text-anchor="end" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO27</text>
+<text x="524.0" y="572.0" font-size="11" fill="#7c3aed" text-anchor="end" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ADC2_CH7 · TOUCH7</text>
+<rect x="534.0" y="588.0" width="26.0" height="30.0" rx="3" fill="#7c3aed" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="534.0" y1="603.0" x2="560.0" y2="603.0" stroke="#7c3aed" stroke-width="2" stroke-linecap="round"/>
+<text x="524.0" y="601.0" font-size="14" fill="#111827" text-anchor="end" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO14</text>
+<text x="524.0" y="618.0" font-size="11" fill="#7c3aed" text-anchor="end" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ADC2_CH6 · TOUCH6</text>
+<text x="310.0" y="607.0" font-size="10.5" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">HSPI_CLK / JTAG MTMS</text>
+<rect x="534.0" y="634.0" width="26.0" height="30.0" rx="3" fill="#ca8a04" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="534.0" y1="649.0" x2="560.0" y2="649.0" stroke="#ca8a04" stroke-width="2" stroke-linecap="round"/>
+<text x="524.0" y="647.0" font-size="14" fill="#111827" text-anchor="end" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO12</text>
+<text x="524.0" y="664.0" font-size="11" fill="#ca8a04" text-anchor="end" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ADC2_CH5 · TOUCH5</text>
+<text x="310.0" y="653.0" font-size="10.5" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">HSPI_MISO；上电须为低，否则闪存电压错</text>
+<rect x="534.0" y="680.0" width="26.0" height="30.0" rx="3" fill="#64748b" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="534.0" y1="695.0" x2="560.0" y2="695.0" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+<text x="524.0" y="693.0" font-size="14" fill="#111827" text-anchor="end" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GND</text>
+<rect x="534.0" y="726.0" width="26.0" height="30.0" rx="3" fill="#7c3aed" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="534.0" y1="741.0" x2="560.0" y2="741.0" stroke="#7c3aed" stroke-width="2" stroke-linecap="round"/>
+<text x="524.0" y="739.0" font-size="14" fill="#111827" text-anchor="end" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO13</text>
+<text x="524.0" y="756.0" font-size="11" fill="#7c3aed" text-anchor="end" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ADC2_CH4 · TOUCH4</text>
+<text x="310.0" y="745.0" font-size="10.5" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">HSPI_MOSI / JTAG MTCK</text>
+<rect x="534.0" y="772.0" width="26.0" height="30.0" rx="3" fill="#dc2626" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="534.0" y1="787.0" x2="560.0" y2="787.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+<text x="524.0" y="785.0" font-size="14" fill="#111827" text-anchor="end" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO9</text>
+<text x="524.0" y="802.0" font-size="11" fill="#dc2626" text-anchor="end" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">SD2 · Flash</text>
+<text x="310.0" y="791.0" font-size="10.5" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">接内部 Flash，勿用</text>
+<rect x="534.0" y="818.0" width="26.0" height="30.0" rx="3" fill="#dc2626" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="534.0" y1="833.0" x2="560.0" y2="833.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+<text x="524.0" y="831.0" font-size="14" fill="#111827" text-anchor="end" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO10</text>
+<text x="524.0" y="848.0" font-size="11" fill="#dc2626" text-anchor="end" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">SD3 · Flash</text>
+<text x="310.0" y="837.0" font-size="10.5" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">接内部 Flash，勿用</text>
+<rect x="534.0" y="864.0" width="26.0" height="30.0" rx="3" fill="#dc2626" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="534.0" y1="879.0" x2="560.0" y2="879.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+<text x="524.0" y="877.0" font-size="14" fill="#111827" text-anchor="end" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO11</text>
+<text x="524.0" y="894.0" font-size="11" fill="#dc2626" text-anchor="end" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">CMD · Flash</text>
+<text x="310.0" y="883.0" font-size="10.5" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">接内部 Flash，勿用</text>
+<rect x="534.0" y="910.0" width="26.0" height="30.0" rx="3" fill="#64748b" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="534.0" y1="925.0" x2="560.0" y2="925.0" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+<text x="524.0" y="923.0" font-size="14" fill="#111827" text-anchor="end" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">5V</text>
+<text x="524.0" y="940.0" font-size="11" fill="#64748b" text-anchor="end" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">VIN / USB</text>
+<text x="310.0" y="929.0" font-size="10.5" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">USB 或外部 5V 输入</text>
+<rect x="534.0" y="956.0" width="26.0" height="30.0" rx="3" fill="#dc2626" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="534.0" y1="971.0" x2="560.0" y2="971.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+<text x="524.0" y="969.0" font-size="14" fill="#111827" text-anchor="end" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO6</text>
+<text x="524.0" y="986.0" font-size="11" fill="#dc2626" text-anchor="end" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">CLK · Flash</text>
+<text x="310.0" y="975.0" font-size="10.5" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">接内部 Flash，勿用</text>
+<rect x="760.0" y="128.0" width="26.0" height="30.0" rx="3" fill="#64748b" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="760.0" y1="143.0" x2="786.0" y2="143.0" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+<text x="796.0" y="141.0" font-size="14" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">3V3</text>
+<text x="950.0" y="147.0" font-size="10.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">3.3V 输出/输入，最大约 500mA(视 LDO)</text>
+<rect x="760.0" y="174.0" width="26.0" height="30.0" rx="3" fill="#64748b" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="760.0" y1="189.0" x2="786.0" y2="189.0" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+<text x="796.0" y="187.0" font-size="14" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GND</text>
+<rect x="760.0" y="220.0" width="26.0" height="30.0" rx="3" fill="#dc2626" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="760.0" y1="235.0" x2="786.0" y2="235.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+<text x="796.0" y="233.0" font-size="14" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO7</text>
+<text x="796.0" y="250.0" font-size="11" fill="#dc2626" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">SD0 · Flash</text>
+<text x="950.0" y="239.0" font-size="10.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">接内部 Flash，勿用</text>
+<rect x="760.0" y="266.0" width="26.0" height="30.0" rx="3" fill="#dc2626" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="760.0" y1="281.0" x2="786.0" y2="281.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+<text x="796.0" y="279.0" font-size="14" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO8</text>
+<text x="796.0" y="296.0" font-size="11" fill="#dc2626" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">SD1 · Flash</text>
+<text x="950.0" y="285.0" font-size="10.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">接内部 Flash，勿用</text>
+<rect x="760.0" y="312.0" width="26.0" height="30.0" rx="3" fill="#ca8a04" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="760.0" y1="327.0" x2="786.0" y2="327.0" stroke="#ca8a04" stroke-width="2" stroke-linecap="round"/>
+<text x="796.0" y="325.0" font-size="14" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO15</text>
+<text x="796.0" y="342.0" font-size="11" fill="#ca8a04" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ADC2_CH3 · TOUCH3</text>
+<text x="950.0" y="331.0" font-size="10.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">上电决定打印波特率；JTAG MTDO</text>
+<rect x="760.0" y="358.0" width="26.0" height="30.0" rx="3" fill="#ca8a04" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="760.0" y1="373.0" x2="786.0" y2="373.0" stroke="#ca8a04" stroke-width="2" stroke-linecap="round"/>
+<text x="796.0" y="371.0" font-size="14" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO2</text>
+<text x="796.0" y="388.0" font-size="11" fill="#ca8a04" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ADC2_CH2 · TOUCH2</text>
+<text x="950.0" y="377.0" font-size="10.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">板载 LED 常见于此；上电须为低或悬空</text>
+<rect x="760.0" y="404.0" width="26.0" height="30.0" rx="3" fill="#ca8a04" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="760.0" y1="419.0" x2="786.0" y2="419.0" stroke="#ca8a04" stroke-width="2" stroke-linecap="round"/>
+<text x="796.0" y="417.0" font-size="14" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO0</text>
+<text x="796.0" y="434.0" font-size="11" fill="#ca8a04" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ADC2_CH1 · TOUCH1</text>
+<text x="950.0" y="423.0" font-size="10.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">BOOT：上电拉低进下载模式</text>
+<rect x="760.0" y="450.0" width="26.0" height="30.0" rx="3" fill="#7c3aed" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="760.0" y1="465.0" x2="786.0" y2="465.0" stroke="#7c3aed" stroke-width="2" stroke-linecap="round"/>
+<text x="796.0" y="463.0" font-size="14" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO4</text>
+<text x="796.0" y="480.0" font-size="11" fill="#7c3aed" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ADC2_CH0 · TOUCH0</text>
+<rect x="760.0" y="496.0" width="26.0" height="30.0" rx="3" fill="#2563eb" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="760.0" y1="511.0" x2="786.0" y2="511.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<text x="796.0" y="509.0" font-size="14" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO16</text>
+<text x="796.0" y="526.0" font-size="11" fill="#2563eb" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">U2RXD</text>
+<text x="950.0" y="515.0" font-size="10.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">WROVER 模组上接 PSRAM，勿用</text>
+<rect x="760.0" y="542.0" width="26.0" height="30.0" rx="3" fill="#2563eb" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="760.0" y1="557.0" x2="786.0" y2="557.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<text x="796.0" y="555.0" font-size="14" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO17</text>
+<text x="796.0" y="572.0" font-size="11" fill="#2563eb" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">U2TXD</text>
+<text x="950.0" y="561.0" font-size="10.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">WROVER 模组上接 PSRAM，勿用</text>
+<rect x="760.0" y="588.0" width="26.0" height="30.0" rx="3" fill="#ca8a04" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="760.0" y1="603.0" x2="786.0" y2="603.0" stroke="#ca8a04" stroke-width="2" stroke-linecap="round"/>
+<text x="796.0" y="601.0" font-size="14" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO5</text>
+<text x="796.0" y="618.0" font-size="11" fill="#ca8a04" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">VSPI_CS0</text>
+<text x="950.0" y="607.0" font-size="10.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">上电须为高</text>
+<rect x="760.0" y="634.0" width="26.0" height="30.0" rx="3" fill="#2563eb" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="760.0" y1="649.0" x2="786.0" y2="649.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<text x="796.0" y="647.0" font-size="14" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO18</text>
+<text x="796.0" y="664.0" font-size="11" fill="#2563eb" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">VSPI_CLK</text>
+<text x="950.0" y="653.0" font-size="10.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">SPI 时钟</text>
+<rect x="760.0" y="680.0" width="26.0" height="30.0" rx="3" fill="#2563eb" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="760.0" y1="695.0" x2="786.0" y2="695.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<text x="796.0" y="693.0" font-size="14" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO19</text>
+<text x="796.0" y="710.0" font-size="11" fill="#2563eb" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">VSPI_MISO</text>
+<text x="950.0" y="699.0" font-size="10.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">SPI 入</text>
+<rect x="760.0" y="726.0" width="26.0" height="30.0" rx="3" fill="#64748b" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="760.0" y1="741.0" x2="786.0" y2="741.0" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+<text x="796.0" y="739.0" font-size="14" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GND</text>
+<rect x="760.0" y="772.0" width="26.0" height="30.0" rx="3" fill="#2563eb" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="760.0" y1="787.0" x2="786.0" y2="787.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<text x="796.0" y="785.0" font-size="14" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO23</text>
+<text x="796.0" y="802.0" font-size="11" fill="#2563eb" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">VSPI_MOSI</text>
+<text x="950.0" y="791.0" font-size="10.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">SPI 出</text>
+<rect x="760.0" y="818.0" width="26.0" height="30.0" rx="3" fill="#2563eb" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="760.0" y1="833.0" x2="786.0" y2="833.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<text x="796.0" y="831.0" font-size="14" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO22</text>
+<text x="796.0" y="848.0" font-size="11" fill="#2563eb" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">I2C SCL(默认)</text>
+<rect x="760.0" y="864.0" width="26.0" height="30.0" rx="3" fill="#2563eb" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="760.0" y1="879.0" x2="786.0" y2="879.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<text x="796.0" y="877.0" font-size="14" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO1</text>
+<text x="796.0" y="894.0" font-size="11" fill="#2563eb" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">TXD0</text>
+<text x="950.0" y="883.0" font-size="10.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">串口0 发送，烧录占用</text>
+<rect x="760.0" y="910.0" width="26.0" height="30.0" rx="3" fill="#2563eb" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="760.0" y1="925.0" x2="786.0" y2="925.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<text x="796.0" y="923.0" font-size="14" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO3</text>
+<text x="796.0" y="940.0" font-size="11" fill="#2563eb" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">RXD0</text>
+<text x="950.0" y="929.0" font-size="10.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">串口0 接收，烧录占用</text>
+<rect x="760.0" y="956.0" width="26.0" height="30.0" rx="3" fill="#2563eb" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="760.0" y1="971.0" x2="786.0" y2="971.0" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+<text x="796.0" y="969.0" font-size="14" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO21</text>
+<text x="796.0" y="986.0" font-size="11" fill="#2563eb" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">I2C SDA(默认)</text>
+<rect x="90.0" y="1034.0" width="18.0" height="18.0" rx="3" fill="#64748b" stroke="none" stroke-width="0" opacity="1"/>
+<text x="116.0" y="1048.0" font-size="13" fill="#111827" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">电源 / 地</text>
+<rect x="228.0" y="1034.0" width="18.0" height="18.0" rx="3" fill="#ea580c" stroke="none" stroke-width="0" opacity="1"/>
+<text x="254.0" y="1048.0" font-size="13" fill="#111827" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">仅输入 (34~39)</text>
+<rect x="431.0" y="1034.0" width="18.0" height="18.0" rx="3" fill="#7c3aed" stroke="none" stroke-width="0" opacity="1"/>
+<text x="457.0" y="1048.0" font-size="13" fill="#111827" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ADC / Touch</text>
+<rect x="634.0" y="1034.0" width="18.0" height="18.0" rx="3" fill="#0d9488" stroke="none" stroke-width="0" opacity="1"/>
+<text x="660.0" y="1048.0" font-size="13" fill="#111827" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">DAC</text>
+<rect x="733.0" y="1034.0" width="18.0" height="18.0" rx="3" fill="#2563eb" stroke="none" stroke-width="0" opacity="1"/>
+<text x="759.0" y="1048.0" font-size="13" fill="#111827" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">通信 / 普通 IO</text>
+<rect x="923.0" y="1034.0" width="18.0" height="18.0" rx="3" fill="#ca8a04" stroke="none" stroke-width="0" opacity="1"/>
+<text x="949.0" y="1048.0" font-size="13" fill="#111827" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">Strapping 上电配置</text>
+<rect x="1165.0" y="1034.0" width="18.0" height="18.0" rx="3" fill="#dc2626" stroke="none" stroke-width="0" opacity="1"/>
+<text x="1191.0" y="1048.0" font-size="13" fill="#111827" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">Flash 占用，勿用</text>
+<text x="90.0" y="1084.0" font-size="13" fill="#dc2626" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ADC2 与 WiFi 互斥：WiFi 工作时 ADC2 读数无效，模拟采样请优先用 ADC1（GPIO32~39）。</text></svg>

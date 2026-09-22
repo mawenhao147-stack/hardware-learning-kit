@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif"><rect width="1120" height="620" fill="#ffffff"/><text x="24.0" y="40.0" font-size="24" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">三极管做开关：GPIO 驱动继电器 / 大电流负载</text>
+<text x="24.0" y="66.0" font-size="14" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO 只有几十 mA 能力，用三极管放大；继电器是感性负载，必须并联续流二极管，否则关断瞬间的反峰电压会击穿三极管</text>
+<text x="60.0" y="335.0" font-size="14" fill="#2563eb" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">GPIO</text>
+<line x1="100.0" y1="330.0" x2="150.0" y2="330.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<rect x="150.0" y="323.0" width="44.0" height="14.0" rx="0" fill="#fff" stroke="#1f2937" stroke-width="2" opacity="1"/>
+<line x1="194.0" y1="330.0" x2="250.0" y2="330.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<text x="172.0" y="314.0" font-size="13" fill="#111827" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">Rb 1kΩ</text>
+<line x1="248.0" y1="330.0" x2="290.0" y2="330.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<line x1="290.0" y1="312.0" x2="290.0" y2="348.0" stroke="#1f2937" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="290.0" y1="321.0" x2="314.0" y2="306.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<line x1="314.0" y1="306.0" x2="314.0" y2="284.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<line x1="290.0" y1="339.0" x2="314.0" y2="354.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<line x1="314.0" y1="354.0" x2="314.0" y2="376.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<line x1="304.0" y1="348.0" x2="314.0" y2="354.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<path d="M 314.0 354.0 L 306.1 353.0 L 309.4 347.4 Z" fill="#1f2937" stroke="#1f2937" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="314.0" y="278.0" font-size="13" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">C</text>
+<text x="314.0" y="392.0" font-size="13" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">E</text>
+<text x="242.0" y="324.0" font-size="13" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">B</text>
+<line x1="314.0" y1="284.0" x2="314.0" y2="260.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<path d="M 314 190 A 11.666666666666666 11.666666666666666 0 0 1 314 213.33333333333334 A 11.666666666666666 11.666666666666666 0 0 1 314 236.66666666666666 A 11.666666666666666 11.666666666666666 0 0 1 314 260.0 " fill="none" stroke="#1f2937" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="314.0" y1="190.0" x2="314.0" y2="172.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<line x1="314.0" y1="172.0" x2="314.0" y2="156.0" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+<line x1="303.0" y1="156.0" x2="325.0" y2="156.0" stroke="#dc2626" stroke-width="2.6" stroke-linecap="round"/>
+<text x="314.0" y="148.0" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">+5V / +12V</text>
+<text x="336.0" y="222.0" font-size="13" fill="#111827" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">继电器线圈</text>
+<line x1="314.0" y1="260.0" x2="420.0" y2="260.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<circle cx="314.0" cy="260.0" r="3.5" fill="#1f2937" stroke="none"/>
+<line x1="420.0" y1="260.0" x2="420.0" y2="272.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<path d="M 410.0 272.0 L 430.0 272.0 L 420.0 254.0 Z" fill="#fff" stroke="#1f2937" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M 410.0 290.0 L 430.0 290.0 L 420.0 272.0 Z" fill="#fff" stroke="#1f2937" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="410.0" y1="272.0" x2="430.0" y2="272.0" stroke="#1f2937" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="420.0" y1="290.0" x2="420.0" y2="190.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<line x1="420.0" y1="190.0" x2="314.0" y2="190.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<circle cx="314.0" cy="190.0" r="3.5" fill="#1f2937" stroke="none"/>
+<text x="440.0" y="266.0" font-size="13" fill="#dc2626" text-anchor="start" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">续流二极管</text>
+<text x="440.0" y="286.0" font-size="12" fill="#dc2626" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">1N4148 / SS34</text>
+<text x="440.0" y="306.0" font-size="12" fill="#dc2626" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">阴极(横杠)接电源正</text>
+<line x1="314.0" y1="376.0" x2="314.0" y2="400.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<line x1="314.0" y1="400.0" x2="314.0" y2="414.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<line x1="300.0" y1="414.0" x2="328.0" y2="414.0" stroke="#1f2937" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="305.3" y1="420.0" x2="322.7" y2="420.0" stroke="#1f2937" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="310.4" y1="426.0" x2="317.6" y2="426.0" stroke="#1f2937" stroke-width="2" stroke-linecap="round"/>
+<rect x="560.0" y="90.0" width="500.0" height="210.0" rx="10" fill="#fbfcfe" stroke="#d7dee8" stroke-width="1.2" opacity="1"/>
+<text x="580.0" y="122.0" font-size="15" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">基极电阻怎么算</text>
+<text x="580.0" y="152.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">目标：让三极管进入「饱和」，Vce≈0.2V</text>
+<text x="580.0" y="178.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">Ic = 负载电流（继电器约 70mA）</text>
+<text x="580.0" y="204.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">饱和按强制 β=10 取 Ib = Ic/10 = 7mA</text>
+<text x="580.0" y="230.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">Rb = (Vgpio − Vbe)/Ib = (3.3−0.7)/7mA ≈ 371Ω</text>
+<text x="580.0" y="256.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">→ 取 330Ω；负载小(如 LED 20mA) 用 1kΩ 即可</text>
+<text x="580.0" y="282.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">发射极接地 = 低边开关；高边请用 PNP / PMOS</text>
+<rect x="560.0" y="330.0" width="500.0" height="220.0" rx="10" fill="#fbfcfe" stroke="#d7dee8" stroke-width="1.2" opacity="1"/>
+<text x="580.0" y="362.0" font-size="15" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">选型与坑</text>
+<text x="580.0" y="392.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">小信号管：S8050 / S9013 (NPN)，S8550 / S9012 (PNP)</text>
+<text x="580.0" y="418.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">大电流：TIP122 达林顿，或直接用 NMOS (AO3400)</text>
+<text x="580.0" y="444.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">① 忘接续流二极管 → 烧 GPIO / 烧三极管</text>
+<text x="580.0" y="470.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">② Rb 太大 → 不饱和，三极管发烫</text>
+<text x="580.0" y="496.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">③ 负载接发射极 = 射极跟随，压降大、难饱和</text>
+<text x="580.0" y="522.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">④ 驱动 12V 负载时，GPIO 与负载电源必须共地</text></svg>

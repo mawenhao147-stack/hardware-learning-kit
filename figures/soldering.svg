@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="640" viewBox="0 0 1180 640" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif"><rect width="1180" height="640" fill="#ffffff"/><text x="24.0" y="40.0" font-size="24" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">焊接入门：好焊点长什么样</text>
+<text x="24.0" y="66.0" font-size="14" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">温度 320~360°C、单次加热 ≤3 秒；焊点应光亮、呈凹面圆锥；灰暗、球状、裂纹都是坏焊点</text>
+<line x1="140.0" y1="220.0" x2="260.0" y2="220.0" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+<line x1="200.0" y1="220.0" x2="200.0" y2="180.0" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+<path d="M 174.0 220.0 L 226.0 220.0 L 203.0 190.0 L 197.0 190.0 Z" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="200.0" y="250.0" font-size="12" fill="#059669" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">好焊点：光亮、凹面、润湿良好</text>
+<line x1="420.0" y1="220.0" x2="540.0" y2="220.0" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+<line x1="480.0" y1="220.0" x2="480.0" y2="180.0" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+<circle cx="480.0" cy="206.0" r="20.0" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5"/>
+<text x="480.0" y="250.0" font-size="12" fill="#dc2626" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">坏焊点：球状/灰暗=虚焊</text>
+<rect x="660.0" y="120.0" width="460.0" height="200.0" rx="10" fill="#fbfcfe" stroke="#d7dee8" stroke-width="1.2" opacity="1"/>
+<text x="680.0" y="152.0" font-size="15" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">五步法</text>
+<text x="680.0" y="182.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">① 烙铁头同时接触焊盘与引脚，预热 1 秒</text>
+<text x="680.0" y="208.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">② 送锡丝到焊点（不是送到烙铁头）</text>
+<text x="680.0" y="234.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">③ 锡流动覆盖焊盘后先撤锡丝</text>
+<text x="680.0" y="260.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">④ 再撤烙铁，静置 2 秒不要吹</text>
+<text x="680.0" y="286.0" font-size="13" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">⑤ 剪脚留 1~2mm；洗板水清理助焊剂</text>
+<rect x="80.0" y="340.0" width="500.0" height="240.0" rx="10" fill="#fbfcfe" stroke="#d7dee8" stroke-width="1.2" opacity="1"/>
+<text x="100.0" y="372.0" font-size="15" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">工具与参数</text>
+<text x="100.0" y="402.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">烙铁：恒温焊台 60W 以上，刀头/尖头各一</text>
+<text x="100.0" y="428.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">温度：有铅 320°C / 无铅 350°C 左右</text>
+<text x="100.0" y="454.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">锡丝：0.5~0.8mm，含助焊剂芯</text>
+<text x="100.0" y="480.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">必备：镊子、吸锡器/吸锡带、放大镜、洗板水</text>
+<text x="100.0" y="506.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">安全：通风、防烫架、断电收纳；焊完洗手</text>
+<rect x="620.0" y="340.0" width="500.0" height="240.0" rx="10" fill="#fbfcfe" stroke="#d7dee8" stroke-width="1.2" opacity="1"/>
+<text x="640.0" y="372.0" font-size="15" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">拆焊与返修</text>
+<text x="640.0" y="402.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">吸锡带：压在焊点上用烙铁加热后提起</text>
+<text x="640.0" y="428.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">吸锡器：加热熔化后按键吸走</text>
+<text x="640.0" y="454.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">热风枪：350°C、小风量吹贴片件</text>
+<text x="640.0" y="480.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">多引脚 IC：堆锡法逐排拖焊</text>
+<text x="640.0" y="506.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">焊点发灰/接触时好时坏 = 虚焊，补焊即可</text></svg>

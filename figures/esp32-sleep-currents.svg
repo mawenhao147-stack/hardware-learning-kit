@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif"><rect width="1120" height="620" fill="#ffffff"/><text x="24.0" y="40.0" font-size="24" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ESP32 功耗等级与电池续航</text>
+<text x="24.0" y="66.0" font-size="14" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">深度睡眠 + 定时唤醒是电池项目的标准做法；10µA 级电流下，电池自放电与 LDO 静态电流才是续航瓶颈</text>
+<line x1="120.0" y1="440.0" x2="880.0" y2="440.0" stroke="#111827" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="120.0" y1="440.0" x2="120.0" y2="110.0" stroke="#111827" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="866.0" y1="440.0" x2="886.0" y2="440.0" stroke="#111827" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M 886.0 440.0 L 879.6 442.9 L 879.6 437.1 Z" fill="#111827" stroke="#111827" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="120.0" y1="124.0" x2="120.0" y2="104.0" stroke="#111827" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M 120.0 104.0 L 122.9 110.4 L 117.1 110.4 Z" fill="#111827" stroke="#111827" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="112.0" y="108.0" font-size="12" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">电流 (mA, 对数轴)</text>
+<line x1="120.0" y1="440.0" x2="880.0" y2="440.0" stroke="#d7dee8" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3 4"/>
+<text x="112.0" y="444.0" font-size="11" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">1µA</text>
+<line x1="120.0" y1="385.0" x2="880.0" y2="385.0" stroke="#d7dee8" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3 4"/>
+<text x="112.0" y="389.0" font-size="11" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">10µA</text>
+<line x1="120.0" y1="330.0" x2="880.0" y2="330.0" stroke="#d7dee8" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3 4"/>
+<text x="112.0" y="334.0" font-size="11" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">100µA</text>
+<line x1="120.0" y1="275.0" x2="880.0" y2="275.0" stroke="#d7dee8" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3 4"/>
+<text x="112.0" y="279.0" font-size="11" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">1mA</text>
+<line x1="120.0" y1="220.0" x2="880.0" y2="220.0" stroke="#d7dee8" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3 4"/>
+<text x="112.0" y="224.0" font-size="11" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">10mA</text>
+<line x1="120.0" y1="165.0" x2="880.0" y2="165.0" stroke="#d7dee8" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3 4"/>
+<text x="112.0" y="169.0" font-size="11" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">100mA</text>
+<line x1="120.0" y1="110.0" x2="880.0" y2="110.0" stroke="#d7dee8" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3 4"/>
+<text x="112.0" y="114.0" font-size="11" fill="#6b7280" text-anchor="end" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">1A</text>
+<rect x="153.4" y="153.8" width="85.1" height="286.2" rx="3" fill="#dc2626" stroke="none" stroke-width="0" opacity="1"/>
+<text x="196.0" y="143.8" font-size="12.5" fill="#dc2626" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">160 mA</text>
+<text x="196.0" y="462.0" font-size="11.5" fill="#111827" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">主动运行</text>
+<text x="196.0" y="478.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">WiFi 收发</text>
+<rect x="305.4" y="203.4" width="85.1" height="236.6" rx="3" fill="#ea580c" stroke="none" stroke-width="0" opacity="1"/>
+<text x="348.0" y="193.4" font-size="12.5" fill="#ea580c" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">20 mA</text>
+<text x="348.0" y="462.0" font-size="11.5" fill="#111827" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">Modem-sleep</text>
+<text x="348.0" y="478.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">(WiFi 保持连接)</text>
+<rect x="457.4" y="280.3" width="85.1" height="159.7" rx="3" fill="#ca8a04" stroke="none" stroke-width="0" opacity="1"/>
+<text x="500.0" y="270.3" font-size="12.5" fill="#ca8a04" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">800 µA</text>
+<text x="500.0" y="462.0" font-size="11.5" fill="#111827" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">Light-sleep</text>
+<text x="500.0" y="478.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">(CPU 暂停)</text>
+<rect x="609.4" y="385.0" width="85.1" height="55.0" rx="3" fill="#059669" stroke="none" stroke-width="0" opacity="1"/>
+<text x="652.0" y="375.0" font-size="12.5" fill="#059669" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">10 µA</text>
+<text x="652.0" y="462.0" font-size="11.5" fill="#111827" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">Deep-sleep</text>
+<text x="652.0" y="478.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">(RTC 域工作)</text>
+<rect x="761.4" y="418.1" width="85.1" height="21.9" rx="3" fill="#0d9488" stroke="none" stroke-width="0" opacity="1"/>
+<text x="804.0" y="408.1" font-size="12.5" fill="#0d9488" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">2 µA</text>
+<text x="804.0" y="462.0" font-size="11.5" fill="#111827" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">Hibernation</text>
+<text x="804.0" y="478.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">(仅 RTC 内存)</text>
+<rect x="640.0" y="470.0" width="420.0" height="120.0" rx="10" fill="#fbfcfe" stroke="#d7dee8" stroke-width="1.2" opacity="1"/>
+<text x="660.0" y="502.0" font-size="15" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">1000mAh 电池理论续航</text>
+<text x="660.0" y="532.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">Deep-sleep 10µA + 每秒唤醒 40mA×20ms → 平均 ≈1.8mA → 约 23 天</text>
+<text x="660.0" y="558.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">纯 Deep-sleep → 受电池自放电限制（数月）</text></svg>

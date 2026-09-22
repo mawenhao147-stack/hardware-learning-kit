@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="700" viewBox="0 0 1180 700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif"><rect width="1180" height="700" fill="#ffffff"/><text x="24.0" y="40.0" font-size="24" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">电容类型与选型对照</text>
+<text x="24.0" y="66.0" font-size="14" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">去耦电容要「靠近芯片电源脚」放置；大电解滤低频、小陶瓷滤高频，两者并联使用</text>
+<rect x="100.0" y="158.0" width="80.0" height="44.0" rx="4" fill="#c9a06a" stroke="#8a6a3f" stroke-width="2" opacity="1"/>
+<rect x="88.0" y="158.0" width="12.0" height="44.0" rx="0" fill="#b8bcc4" stroke="#7c828c" stroke-width="1.5" opacity="1"/>
+<rect x="180.0" y="158.0" width="12.0" height="44.0" rx="0" fill="#b8bcc4" stroke="#7c828c" stroke-width="1.5" opacity="1"/>
+<text x="140.0" y="220.0" font-size="13" fill="#111827" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">MLCC 贴片陶瓷</text>
+<text x="140.0" y="238.0" font-size="11" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">0402/0603/0805</text>
+<rect x="339.0" y="146.0" width="52.0" height="68.0" rx="6" fill="#1f2937" stroke="#0b1220" stroke-width="2" opacity="1"/>
+<rect x="339.0" y="146.0" width="10.0" height="68.0" rx="0" fill="#e5e7eb" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="349.0" y1="146.0" x2="349.0" y2="214.0" stroke="#9ca3af" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="357.0" y1="214.0" x2="357.0" y2="232.0" stroke="#1f2937" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="373.0" y1="214.0" x2="373.0" y2="232.0" stroke="#1f2937" stroke-width="2.5" stroke-linecap="round"/>
+<text x="365.0" y="252.0" font-size="13" fill="#111827" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">铝电解（直插）</text>
+<text x="365.0" y="270.0" font-size="11" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">有极性，条纹侧为负</text>
+<rect x="556.0" y="160.0" width="68.0" height="40.0" rx="4" fill="#d97706" stroke="#92400e" stroke-width="2" opacity="1"/>
+<rect x="556.0" y="160.0" width="10.0" height="40.0" rx="0" fill="#f8fafc" stroke="none" stroke-width="0" opacity="1"/>
+<text x="590.0" y="218.0" font-size="13" fill="#111827" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">钽电容</text>
+<text x="590.0" y="236.0" font-size="11" fill="#dc2626" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">色条侧为正极！</text>
+<rect x="771.0" y="154.0" width="88.0" height="52.0" rx="6" fill="#fde68a" stroke="#b45309" stroke-width="2" opacity="1"/>
+<line x1="795.0" y1="206.0" x2="795.0" y2="224.0" stroke="#1f2937" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="835.0" y1="206.0" x2="835.0" y2="224.0" stroke="#1f2937" stroke-width="2.5" stroke-linecap="round"/>
+<text x="815.0" y="242.0" font-size="13" fill="#111827" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">薄膜电容 CBB/CL</text>
+<text x="815.0" y="260.0" font-size="11" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">无极性，音频/安规</text>
+<circle cx="1040.0" cy="180.0" r="30.0" fill="#065f46" stroke="#064e3b" stroke-width="2"/>
+<text x="1040.0" y="185.0" font-size="12" fill="#fff" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">2.7V</text>
+<text x="1040.0" y="232.0" font-size="13" fill="#111827" text-anchor="middle" font-weight="600" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">超级电容</text>
+<text x="1040.0" y="250.0" font-size="11" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">断电保持 / RTC 备份</text>
+<rect x="60.0" y="330.0" width="1030.0" height="278.0" rx="0" fill="#fff" stroke="#d7dee8" stroke-width="1.2" opacity="1"/>
+<rect x="60.0" y="330.0" width="1030.0" height="38.0" rx="0" fill="#eef2f7" stroke="#d7dee8" stroke-width="1.2" opacity="1"/>
+<text x="70.0" y="355.0" font-size="13" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">类型</text>
+<text x="180.0" y="355.0" font-size="13" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">典型容量</text>
+<text x="300.0" y="355.0" font-size="13" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">耐压</text>
+<text x="390.0" y="355.0" font-size="13" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ESR</text>
+<text x="450.0" y="355.0" font-size="13" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">极性</text>
+<text x="510.0" y="355.0" font-size="13" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">典型用途</text>
+<text x="680.0" y="355.0" font-size="13" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">注意事项</text>
+<text x="70.0" y="393.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">陶瓷 MLCC</text>
+<text x="180.0" y="393.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">1pF ~ 47µF</text>
+<text x="300.0" y="393.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">6.3~100V</text>
+<text x="390.0" y="393.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">极低</text>
+<text x="450.0" y="393.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">无</text>
+<text x="510.0" y="393.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">去耦/滤波/耦合</text>
+<text x="680.0" y="393.0" font-size="11.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">X7R 稳定；Y5V 容量随电压大跌；有压电啸叫</text>
+<line x1="60.0" y1="368.0" x2="1090.0" y2="368.0" stroke="#d7dee8" stroke-width="1" stroke-linecap="round"/>
+<text x="70.0" y="433.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">铝电解</text>
+<text x="180.0" y="433.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">1µF ~ 10000µF</text>
+<text x="300.0" y="433.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">6.3~450V</text>
+<text x="390.0" y="433.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">高</text>
+<text x="450.0" y="433.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">有</text>
+<text x="510.0" y="433.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">电源储能/低频滤波</text>
+<text x="680.0" y="433.0" font-size="11.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">寿命随温度衰减；反接会鼓包</text>
+<line x1="60.0" y1="408.0" x2="1090.0" y2="408.0" stroke="#d7dee8" stroke-width="1" stroke-linecap="round"/>
+<text x="70.0" y="473.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">钽电容</text>
+<text x="180.0" y="473.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">0.1µF ~ 470µF</text>
+<text x="300.0" y="473.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">6.3~50V</text>
+<text x="390.0" y="473.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">低</text>
+<text x="450.0" y="473.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">有</text>
+<text x="510.0" y="473.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">空间受限的储能</text>
+<text x="680.0" y="473.0" font-size="11.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">浪涌电流易失效，降额 50%</text>
+<line x1="60.0" y1="448.0" x2="1090.0" y2="448.0" stroke="#d7dee8" stroke-width="1" stroke-linecap="round"/>
+<text x="70.0" y="513.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">薄膜</text>
+<text x="180.0" y="513.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">1nF ~ 10µF</text>
+<text x="300.0" y="513.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">63~630V</text>
+<text x="390.0" y="513.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">低</text>
+<text x="450.0" y="513.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">无</text>
+<text x="510.0" y="513.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">音频/谐振/安规 X2</text>
+<text x="680.0" y="513.0" font-size="11.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">体积大</text>
+<line x1="60.0" y1="488.0" x2="1090.0" y2="488.0" stroke="#d7dee8" stroke-width="1" stroke-linecap="round"/>
+<text x="70.0" y="553.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">超级电容</text>
+<text x="180.0" y="553.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">0.1F ~ 3000F</text>
+<text x="300.0" y="553.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">2.3~2.7V/节</text>
+<text x="390.0" y="553.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">中</text>
+<text x="450.0" y="553.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">有</text>
+<text x="510.0" y="553.0" font-size="12.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">断电保持</text>
+<text x="680.0" y="553.0" font-size="11.5" fill="#374151" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">需均压，不能过压</text>
+<line x1="60.0" y1="528.0" x2="1090.0" y2="528.0" stroke="#d7dee8" stroke-width="1" stroke-linecap="round"/></svg>
