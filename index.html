@@ -1,76 +1,153 @@
 <!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>硬件入门学习包 · 在线阅读</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1d4ed8">
+<title>硬件入门学习包</title>
 <style>
-:root{--ink:#16202e;--mut:#66707f;--line:#e4e8ee;--bg:#f4f6fa;--card:#fff;--acc:#2563eb;--acc2:#0ea5e9;--code:#f2f5f9}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font:15.5px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--bg)}
-#side{position:fixed;inset:0 auto 0 0;width:280px;background:#0f172a;color:#cbd5e1;overflow-y:auto;padding:18px 14px 60px;z-index:5}
-#side .brand{color:#fff;font-weight:700;font-size:17px;padding:4px 10px 12px;border-bottom:1px solid #1e293b;margin-bottom:10px}
-#side .brand small{display:block;color:#64748b;font-weight:400;font-size:11.5px;margin-top:4px}
-#side input{width:100%;margin:0 0 12px;padding:8px 10px;border-radius:8px;border:1px solid #334155;background:#1e293b;color:#e2e8f0;font-size:13px}
-#side .ch{color:#7dd3fc;font-size:12px;letter-spacing:.06em;margin:14px 10px 6px;font-weight:700}
-#side .it{display:block;color:#cbd5e1;text-decoration:none;font-size:13px;padding:5px 10px;border-radius:7px;line-height:1.45}
-#side .it:hover{background:#1e293b;color:#fff}
-#side .it.on{background:var(--acc);color:#fff}
-#side .grp{display:flex;flex-direction:column;gap:6px;margin-bottom:6px}
-#side .toplink{color:#0f172a;background:#e2e8f0;text-decoration:none;font-size:13px;padding:7px 10px;border-radius:8px;font-weight:600}
-#side .toplink.tool{background:#fbbf24}
-#main{margin-left:280px;padding:34px 44px 120px;max-width:1020px}
-.doc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:30px 36px;margin:0 0 26px;box-shadow:0 1px 3px rgba(16,24,40,.05)}
-.crumb{font-size:12px;color:var(--mut);margin-bottom:6px}
-h1{font-size:26px;margin:0 0 10px;line-height:1.35}
-h2{font-size:20px;margin:30px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--line)}
-h3{font-size:16.5px;margin:22px 0 8px}
-h4{font-size:15px;margin:18px 0 6px}
-p{margin:10px 0}
-ul{margin:8px 0;padding-left:22px}li{margin:4px 0}
-code{background:var(--code);border:1px solid var(--line);border-radius:5px;padding:1px 6px;font:13px/1.6 "SF Mono",Menlo,Consolas,monospace}
-pre{background:#0f172a;color:#e2e8f0;border-radius:12px;padding:14px 16px;overflow-x:auto}
-pre code{background:none;border:0;color:inherit;font-size:13px;line-height:1.65}
-table{border-collapse:collapse;width:100%;margin:12px 0;font-size:13.5px}
-th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
-th{background:#eef2f7}
-tr:nth-child(even) td{background:#fafbfd}
-blockquote{margin:12px 0;padding:10px 16px;background:#fffbeb;border:1px solid #fde68a;border-left:4px solid #f59e0b;border-radius:8px;color:#78350f}
-img{max-width:100%;border:1px solid var(--line);border-radius:12px;background:#fff;margin:6px 0}
-a{color:var(--acc)}
-#fab{position:fixed;right:22px;bottom:22px;background:var(--acc);color:#fff;border:0;border-radius:999px;padding:10px 18px;font-size:14px;cursor:pointer;box-shadow:0 6px 18px rgba(37,99,235,.35);z-index:9}
-@media (max-width:900px){#side{position:static;width:auto;height:auto;max-height:45vh}#main{margin:0;padding:18px}}
-@media print{#side,#fab{display:none}#main{margin:0}.doc{border:0;box-shadow:none;page-break-inside:avoid}}
+:root{--ink:#16202e;--mut:#68727f;--line:#e4e8ee;--bg:#f2f5f9;--card:#fff;--acc:#2563eb;--acc-d:#1d4ed8;--rad:16px}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--bg)}
+/* 顶栏 */
+#bar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:10px;padding:10px 14px;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+#bar button{border:0;background:#eef2f7;border-radius:10px;width:38px;height:38px;font-size:17px;cursor:pointer;flex:0 0 auto}
+#bar button:active{background:#dde5ee}
+#bar .ttl{flex:1;min-width:0;font-weight:600;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#bar .crumb{color:var(--mut);font-weight:400;font-size:12.5px}
+#bar .sp{width:38px;height:38px;flex:0 0 auto}
+main{max-width:860px;margin:0 auto;padding:16px 14px 90px}
+.view{display:none}.view.on{display:block;animation:fade .18s ease}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+/* 首页 */
+.hero{background:linear-gradient(135deg,#1d4ed8,#0ea5e9);color:#fff;border-radius:var(--rad);padding:26px 22px;margin-bottom:16px}
+.hero h1{margin:0 0 6px;font-size:24px;line-height:1.3}
+.hero p{margin:0;opacity:.9;font-size:13.5px}
+.hero .stats{display:flex;gap:18px;margin-top:14px;font-size:13px}
+.hero .stats b{display:block;font-size:20px}
+.sec-t{font-size:14px;color:var(--mut);margin:18px 4px 10px;font-weight:600;letter-spacing:.04em}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--rad);padding:16px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:4px;position:relative;transition:transform .12s,box-shadow .12s}
+.card:active{transform:scale(.98)}
+.card .ico{font-size:26px}
+.card .t{font-weight:700;font-size:15.5px}
+.card .d{color:var(--mut);font-size:12.5px;line-height:1.5}
+.card .n{position:absolute;top:14px;right:14px;background:#eef2f7;color:var(--mut);font-size:11px;padding:2px 8px;border-radius:999px}
+.card.q{padding:14px}
+/* 章节页 */
+.chhead{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:var(--rad);padding:18px;margin-bottom:14px}
+.chhead .ico{font-size:34px}
+.chhead h2{margin:0;font-size:19px}
+.chhead p{margin:2px 0 0;color:var(--mut);font-size:13px}
+.doclist{display:flex;flex-direction:column;gap:10px}
+.doccard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:3px}
+.doccard:active{background:#f6f8fb}
+.doccard .t{font-weight:600;font-size:15px}
+.doccard .d{color:var(--mut);font-size:12.5px}
+.doccard::after{content:"›";position:absolute}
+/* 文章 */
+article{background:var(--card);border:1px solid var(--line);border-radius:var(--rad);padding:22px 20px}
+article h1{font-size:23px;margin:0 0 10px;line-height:1.4}
+article h2{font-size:18.5px;margin:26px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+article h3{font-size:16px;margin:20px 0 6px}
+article p{margin:9px 0}
+article ul{padding-left:20px;margin:8px 0}
+article li{margin:4px 0}
+article code{background:#f2f5f9;border:1px solid var(--line);border-radius:5px;padding:1px 5px;font:13px/1.6 "SF Mono",Menlo,Consolas,monospace}
+article pre{background:#0f172a;color:#e2e8f0;border-radius:12px;padding:13px 14px;overflow-x:auto}
+article pre code{background:none;border:0;color:inherit;font-size:12.8px}
+article table{border-collapse:collapse;width:100%;margin:12px 0;font-size:13px;display:block;overflow-x:auto}
+article th,article td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:top}
+article th{background:#eef2f7;white-space:nowrap}
+article blockquote{margin:12px 0;padding:10px 14px;background:#fffbeb;border:1px solid #fde68a;border-left:4px solid #f59e0b;border-radius:10px;color:#78350f}
+article img{max-width:100%;border:1px solid var(--line);border-radius:12px;background:#fff}
+article a{color:var(--acc)}
+.pn{display:flex;gap:10px;margin-top:14px}
+.pn a{flex:1;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;text-decoration:none;color:var(--ink);font-size:13.5px;min-width:0}
+.pn a span{display:block;color:var(--mut);font-size:11.5px}
+.pn a.nx{text-align:right}
+.pn a:empty{display:none}
+.pn .home{flex:0 0 auto;display:flex;align-items:center;background:var(--acc);color:#fff;border:0;font-weight:600}
+/* 图例 */
+.figgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.figgrid figure{margin:0}
+.figgrid img{width:100%;border:1px solid var(--line);border-radius:12px;background:#fff}
+.figgrid figcaption{font-size:12px;color:var(--mut);margin-top:5px;text-align:center}
+/* 搜索 */
+#search{position:fixed;inset:0;background:rgba(15,23,42,.45);z-index:30;display:none;padding:60px 16px}
+#search.on{display:block}
+#search .box{max-width:640px;margin:0 auto;background:#fff;border-radius:16px;overflow:hidden;max-height:70vh;display:flex;flex-direction:column}
+#search input{border:0;border-bottom:1px solid var(--line);padding:15px 18px;font-size:16px;outline:none}
+#search .res{overflow-y:auto}
+#search .res a{display:block;padding:12px 18px;text-decoration:none;color:var(--ink);border-bottom:1px solid #f1f5f9;font-size:14.5px}
+#search .res a small{color:var(--mut);display:block;font-size:11.5px}
+#search .res a:active{background:#f1f5f9}
+/* 悬浮 */
+#fab{position:fixed;right:16px;bottom:calc(18px + env(safe-area-inset-bottom));width:46px;height:46px;border-radius:50%;border:0;background:var(--acc);color:#fff;font-size:18px;box-shadow:0 6px 18px rgba(37,99,235,.35);z-index:15;display:none}
+@media (max-width:640px){
+ body{font-size:15.5px}
+ main{padding:12px 10px 90px}
+ .grid{grid-template-columns:1fr 1fr;gap:10px}
+ .card{padding:13px}
+ .card .ico{font-size:22px}
+ .card .t{font-size:14px}
+ .card .d{font-size:11.5px}
+ .hero{padding:20px 16px}
+ .hero h1{font-size:20px}
+ article{padding:16px 14px;border-radius:14px}
+ article h1{font-size:20px}
+ .figgrid{grid-template-columns:1fr}
+ .pn{flex-wrap:wrap}
+}
+@media (min-width:900px){.grid{grid-template-columns:repeat(3,1fr)}.figgrid{grid-template-columns:repeat(3,1fr)}}
+@media print{#bar,#fab,#search,.pn{display:none!important}article{border:0}}
 </style></head>
-<body id="top">
-<aside id="side">
-<div class="brand">硬件入门学习包<small>元器件 → 电路 → ESP32 · 离线可读</small></div>
-<input id="q" placeholder="搜索章节或内容…">
-<div class="grp"><a class="toplink" href="#top">🏠 返回顶部</a><a class="toplink tool" href="工具箱.html" target="_blank">🧮 打开计算工具箱</a></div><div class="ch">首页</div><a class="it" href="#sec-README" data-s="硬件入门学习包：从基础元器件到 esp32">硬件入门学习包：从基础元器件到 ESP32</a><a class="it" href="#sec-00-学习路线图" data-s="00 学习路线图">00 学习路线图</a><div class="ch">01-基础元器件</div><a class="it" href="#sec-01-基础元器件-01-电阻" data-s="01 电阻 resistor">01 电阻 Resistor</a><a class="it" href="#sec-01-基础元器件-02-电容" data-s="02 电容 capacitor">02 电容 Capacitor</a><a class="it" href="#sec-01-基础元器件-03-电感与磁珠" data-s="03 电感、磁珠与变压器">03 电感、磁珠与变压器</a><a class="it" href="#sec-01-基础元器件-04-二极管与LED" data-s="04 二极管与 led">04 二极管与 LED</a><a class="it" href="#sec-01-基础元器件-05-三极管与MOS管" data-s="05 三极管 bjt 与 mos 管">05 三极管 BJT 与 MOS 管</a><a class="it" href="#sec-01-基础元器件-06-其他常用元器件" data-s="06 其他常用元器件速览">06 其他常用元器件速览</a><div class="ch">02-电路基础与定律</div><a class="it" href="#sec-02-电路基础与定律-01-电压电流电阻与欧姆定律" data-s="01 电压、电流、电阻与欧姆定律">01 电压、电流、电阻与欧姆定律</a><a class="it" href="#sec-02-电路基础与定律-02-串并联-基尔霍夫-分压分流" data-s="02 串并联、基尔霍夫定律、分压与分流">02 串并联、基尔霍夫定律、分压与分流</a><a class="it" href="#sec-02-电路基础与定律-03-RC电路与滤波" data-s="03 rc 电路与滤波">03 RC 电路与滤波</a><a class="it" href="#sec-02-电路基础与定律-04-电源与供电" data-s="04 电源与供电：ldo、dc-dc 与电池">04 电源与供电：LDO、DC-DC 与电池</a><a class="it" href="#sec-02-电路基础与定律-05-数字信号-逻辑电平-ADC-PWM" data-s="05 数字信号、逻辑电平、adc 与 pwm">05 数字信号、逻辑电平、ADC 与 PWM</a><a class="it" href="#sec-02-电路基础与定律-06-通信接口UART-I2C-SPI" data-s="06 通信接口：uart / i2c / spi">06 通信接口：UART / I2C / SPI</a><div class="ch">03-小型电路图实战</div><a class="it" href="#sec-03-小型电路图实战-01-如何读懂一张原理图" data-s="01 如何读懂一张原理图">01 如何读懂一张原理图</a><a class="it" href="#sec-03-小型电路图实战-02-十个必会小电路" data-s="02 十个必会小电路（含计算与接线）">02 十个必会小电路（含计算与接线）</a><a class="it" href="#sec-03-小型电路图实战-03-用KiCad画第一张原理图与PCB" data-s="03 用 kicad 画第一张原理图与 pcb">03 用 KiCad 画第一张原理图与 PCB</a><div class="ch">04-ESP32单片机</div><a class="it" href="#sec-04-ESP32单片机-01-认识ESP32家族" data-s="01 认识 esp32 家族">01 认识 ESP32 家族</a><a class="it" href="#sec-04-ESP32单片机-02-引脚图与安全使用" data-s="02 引脚图与安全使用">02 引脚图与安全使用</a><a class="it" href="#sec-04-ESP32单片机-03-最小系统与硬件设计" data-s="03 最小系统与硬件设计">03 最小系统与硬件设计</a><a class="it" href="#sec-04-ESP32单片机-04-开发环境搭建" data-s="04 开发环境搭建（arduino / platformio / esp-idf）">04 开发环境搭建（Arduino / PlatformIO / ESP-IDF）</a><a class="it" href="#sec-04-ESP32单片机-05-外设编程与代码示例" data-s="05 外设编程与代码示例（arduino 框架）">05 外设编程与代码示例（Arduino 框架）</a><a class="it" href="#sec-04-ESP32单片机-06-常用模块接线手册" data-s="06 常用模块接线手册">06 常用模块接线手册</a><a class="it" href="#sec-04-ESP32单片机-07-低功耗设计" data-s="07 低功耗设计：让电池活几个月">07 低功耗设计：让电池活几个月</a><a class="it" href="#sec-04-ESP32单片机-08-常见问题排查" data-s="08 常见问题排查（故障树）">08 常见问题排查（故障树）</a><div class="ch">05-工具与焊接</div><a class="it" href="#sec-05-工具与焊接-01-工具清单与万用表" data-s="01 工具清单与万用表使用">01 工具清单与万用表使用</a><a class="it" href="#sec-05-工具与焊接-02-面包板与杜邦线" data-s="02 面包板与杜邦线">02 面包板与杜邦线</a><a class="it" href="#sec-05-工具与焊接-03-焊接入门" data-s="03 焊接入门">03 焊接入门</a><a class="it" href="#sec-05-工具与焊接-04-调试方法与仪器" data-s="04 调试方法与仪器">04 调试方法与仪器</a><div class="ch">06-项目实战</div><a class="it" href="#sec-06-项目实战-01-十个循序渐进项目" data-s="01 十个循序渐进项目">01 十个循序渐进项目</a><a class="it" href="#sec-06-项目实战-02-采购清单与预算" data-s="02 采购清单与预算（2026 年参考价）">02 采购清单与预算（2026 年参考价）</a>
-</aside>
-<main id="main">
-<section class="doc" id="sec-README" data-title="硬件入门学习包：从基础元器件到 ESP32"><div class="crumb">首页</div><h1>硬件入门学习包：从基础元器件到 ESP32</h1>
-<blockquote>🌐 <strong>想直接在浏览器里读？</strong> 双击打开 <a href="index.html">index.html</a> —— 全部 31 篇文档 + 64 张图例的网页版，带侧边目录与搜索，离线可用。 🧮 <strong>要算电阻/分压/功耗？</strong> 打开 <a href="工具箱.html">工具箱.html</a>。</blockquote>
+<body>
+<header id="bar">
+<button id="bBack" aria-label="返回">←</button>
+<div class="ttl">硬件入门学习包<div class="crumb">首页</div></div>
+<button id="bSearch" aria-label="搜索">🔍</button>
+<button id="bHome" aria-label="首页">🏠</button>
+</header>
+<main>
+
+<section class="view" id="v-home" data-kind="home" data-title="首页">
+<div class="hero"><h1>硬件入门学习包</h1><p>从基础元器件到 ESP32 · 图例齐全 · 离线可读</p>
+<div class="stats"><span><b>31</b>篇文档</span><span><b>24</b>组图例</span><span><b>6</b>大章节</span><span><b>12</b>段代码</span></div></div>
+<div class="sec-t">📚 按章节学习</div>
+<div class="grid">['<a class="card ch" href="#/ch/01-基础元器件"><span class="ico">🔩</span><span class="t">基础元器件</span><span class="d">电阻 / 电容 / 二极管 / 三极管 / MOS / 继电器</span><span class="n">6 篇</span></a>', '<a class="card ch" href="#/ch/02-电路基础与定律"><span class="ico">⚡</span><span class="t">电路基础与定律</span><span class="d">欧姆定律 / 分压 / RC / 电源 / ADC / 总线</span><span class="n">6 篇</span></a>', '<a class="card ch" href="#/ch/03-小型电路图实战"><span class="ico">🧩</span><span class="t">小型电路图实战</span><span class="d">读图方法 / 10 个必会电路 / KiCad 画板</span><span class="n">3 篇</span></a>', '<a class="card ch" href="#/ch/04-ESP32单片机"><span class="ico">📶</span><span class="t">ESP32 单片机</span><span class="d">引脚 / 烧录 / 代码示例 / 模块接线 / 低功耗</span><span class="n">8 篇</span></a>', '<a class="card ch" href="#/ch/05-工具与焊接"><span class="ico">🛠️</span><span class="t">工具与焊接</span><span class="d">万用表 / 面包板 / 焊接 / 调试仪器</span><span class="n">4 篇</span></a>', '<a class="card ch" href="#/ch/06-项目实战"><span class="ico">🚀</span><span class="t">项目实战</span><span class="d">10 个递进项目 / 采购清单与预算</span><span class="n">2 篇</span></a>']</div>
+<div class="sec-t">⚡ 快捷入口</div>
+<div class="grid"><a class="card q" href="#/doc/d-00-学习路线图"><span class="ico">🗺️</span><span class="t">学习路线图</span><span class="d">六阶段怎么走</span></a><a class="card q" href="#/fig"><span class="ico">🖼️</span><span class="t">图例画廊</span><span class="d">24 张图一次看全</span></a><a class="card q" href="工具箱.html"><span class="ico">🧮</span><span class="t">计算工具箱</span><span class="d">色环/分压/RC/续航</span></a><a class="card q" href="#/doc/d-04-ESP32单片机-02-引脚图与安全使用"><span class="ico">📌</span><span class="t">ESP32 引脚图</span><span class="d">哪些脚不能用</span></a><a class="card q" href="#/doc/d-04-ESP32单片机-05-外设编程与代码示例"><span class="ico">💻</span><span class="t">代码示例</span><span class="d">12 段可直接编译</span></a><a class="card q" href="#/doc/d-04-ESP32单片机-08-常见问题排查"><span class="ico">🚑</span><span class="t">故障排查</span><span class="d">烧录/连网/读数问题</span></a><a class="card q" href="https://github.com/mawenhao147-stack/hardware-learning-kit"><span class="ico">☁️</span><span class="t">GitHub 仓库</span><span class="d">源码与更新</span></a></div>
+</section>
+<section class="view" id="v-fig" data-kind="ch" data-title="图例画廊">
+<div class="chhead"><span class="ico">🖼️</span><div><h2>图例画廊</h2><p>全部 24 张图例，点击可放大查看</p></div></div>
+<div class="figgrid"><figure><img loading="lazy" src="figures/roadmap.png" alt="学习路线图"><figcaption>学习路线图</figcaption></figure><figure><img loading="lazy" src="figures/symbols-passive.png" alt="无源与电源符号"><figcaption>无源与电源符号</figcaption></figure><figure><img loading="lazy" src="figures/symbols-semi.png" alt="半导体符号"><figcaption>半导体符号</figcaption></figure><figure><img loading="lazy" src="figures/symbols-io.png" alt="开关/机电/接口"><figcaption>开关/机电/接口</figcaption></figure><figure><img loading="lazy" src="figures/resistor-color-code.png" alt="电阻色环"><figcaption>电阻色环</figcaption></figure><figure><img loading="lazy" src="figures/cap-types.png" alt="电容类型"><figcaption>电容类型</figcaption></figure><figure><img loading="lazy" src="figures/rc-charge-curve.png" alt="RC 充放电"><figcaption>RC 充放电</figcaption></figure><figure><img loading="lazy" src="figures/diode-iv.png" alt="二极管/LED 特性"><figcaption>二极管/LED 特性</figcaption></figure><figure><img loading="lazy" src="figures/voltage-divider.png" alt="分压"><figcaption>分压</figcaption></figure><figure><img loading="lazy" src="figures/rc-filter.png" alt="RC 滤波"><figcaption>RC 滤波</figcaption></figure><figure><img loading="lazy" src="figures/npn-switch.png" alt="三极管开关"><figcaption>三极管开关</figcaption></figure><figure><img loading="lazy" src="figures/mos-switch.png" alt="MOS 高低边"><figcaption>MOS 高低边</figcaption></figure><figure><img loading="lazy" src="figures/hbridge.png" alt="H 桥"><figcaption>H 桥</figcaption></figure><figure><img loading="lazy" src="figures/555-astable.png" alt="555 振荡器"><figcaption>555 振荡器</figcaption></figure><figure><img loading="lazy" src="figures/esp32-devkit-pinout.png" alt="ESP32 引脚图"><figcaption>ESP32 引脚图</figcaption></figure><figure><img loading="lazy" src="figures/esp32-gpio-map.png" alt="GPIO 能力表"><figcaption>GPIO 能力表</figcaption></figure><figure><img loading="lazy" src="figures/esp32-strapping.png" alt="启动模式"><figcaption>启动模式</figcaption></figure><figure><img loading="lazy" src="figures/esp32-min-system.png" alt="最小系统"><figcaption>最小系统</figcaption></figure><figure><img loading="lazy" src="figures/esp32-periph-wiring.png" alt="模块接线"><figcaption>模块接线</figcaption></figure><figure><img loading="lazy" src="figures/esp32-sleep-currents.png" alt="功耗等级"><figcaption>功耗等级</figcaption></figure><figure><img loading="lazy" src="figures/bus-timing.png" alt="总线时序"><figcaption>总线时序</figcaption></figure><figure><img loading="lazy" src="figures/breadboard-anatomy.png" alt="面包板结构"><figcaption>面包板结构</figcaption></figure><figure><img loading="lazy" src="figures/multimeter.png" alt="万用表"><figcaption>万用表</figcaption></figure><figure><img loading="lazy" src="figures/soldering.png" alt="焊接"><figcaption>焊接</figcaption></figure></div>
+</section>
+
+<section class="view" id="ch-01-基础元器件" data-kind="ch" data-title="基础元器件"><div class="chhead"><span class="ico">🔩</span><div><h2>基础元器件</h2><p>电阻 / 电容 / 二极管 / 三极管 / MOS / 继电器</p></div></div><div class="doclist"><a class="doccard" href="#/doc/d-01-基础元器件-01-电阻"><span class="t">01 电阻 Resistor</span><span class="d">一句话：电阻限制电流、分配电压，是电路里数量最多的元件。</span></a><a class="doccard" href="#/doc/d-01-基础元器件-02-电容"><span class="t">02 电容 Capacitor</span><span class="d">一句话：电容存电荷、通交流隔直流，是电源干净与否的关键。</span></a><a class="doccard" href="#/doc/d-01-基础元器件-03-电感与磁珠"><span class="t">03 电感、磁珠与变压器</span><span class="d">一句话：电感「抗拒电流变化」，把电能存在磁场里；磁珠是高频电阻；变压器用磁耦合传能量。</span></a><a class="doccard" href="#/doc/d-01-基础元器件-04-二极管与LED"><span class="t">04 二极管与 LED</span><span class="d">一句话：二极管只让电流单方向通过；LED 是会发光的二极管，但必须限流。</span></a><a class="doccard" href="#/doc/d-01-基础元器件-05-三极管与MOS管"><span class="t">05 三极管 BJT 与 MOS 管</span><span class="d">一句话：它们是「用小信号控制大电流」的电子开关；三极管靠电流驱动，MOS 靠电压驱动。</span></a><a class="doccard" href="#/doc/d-01-基础元器件-06-其他常用元器件"><span class="t">06 其他常用元器件速览</span><span class="d">- 无源晶振（2 脚）+ 2 个 12~22pF 负载电容；有源晶振（4 脚）直接供电输出。</span></a></div></section><section class="view" id="ch-02-电路基础与定律" data-kind="ch" data-title="电路基础与定律"><div class="chhead"><span class="ico">⚡</span><div><h2>电路基础与定律</h2><p>欧姆定律 / 分压 / RC / 电源 / ADC / 总线</p></div></div><div class="doclist"><a class="doccard" href="#/doc/d-02-电路基础与定律-01-电压电流电阻与欧姆定律"><span class="t">01 电压、电流、电阻与欧姆定律</span><span class="d">一句话：电压是「推」，电流是「流」，电阻是「拦」；三者关系 U = I × R。</span></a><a class="doccard" href="#/doc/d-02-电路基础与定律-02-串并联-基尔霍夫-分压分流"><span class="t">02 串并联、基尔霍夫定律、分压与分流</span><span class="d">一句话：串联分压、并联分流；节点电流守恒（KCL）、回路电压守恒（KVL）。</span></a><a class="doccard" href="#/doc/d-02-电路基础与定律-03-RC电路与滤波"><span class="t">03 RC 电路与滤波</span><span class="d">一句话：R 与 C 组合产生「时间」与「频率选择」，是模拟电路的第一课。</span></a><a class="doccard" href="#/doc/d-02-电路基础与定律-04-电源与供电"><span class="t">04 电源与供电：LDO、DC-DC 与电池</span><span class="d">一句话：电源是电路的心脏；选错电源，后面一切调试都是徒劳。</span></a><a class="doccard" href="#/doc/d-02-电路基础与定律-05-数字信号-逻辑电平-ADC-PWM"><span class="t">05 数字信号、逻辑电平、ADC 与 PWM</span><span class="d">一句话：数字世界只有高低电平；ADC 把模拟变数字，PWM 把数字变「伪模拟」。</span></a><a class="doccard" href="#/doc/d-02-电路基础与定律-06-通信接口UART-I2C-SPI"><span class="t">06 通信接口：UART / I2C / SPI</span><span class="d">一句话：设备之间说话的方式；UART 最简单、I2C 最省线、SPI 最快。</span></a></div></section><section class="view" id="ch-03-小型电路图实战" data-kind="ch" data-title="小型电路图实战"><div class="chhead"><span class="ico">🧩</span><div><h2>小型电路图实战</h2><p>读图方法 / 10 个必会电路 / KiCad 画板</p></div></div><div class="doclist"><a class="doccard" href="#/doc/d-03-小型电路图实战-01-如何读懂一张原理图"><span class="t">01 如何读懂一张原理图</span><span class="d">一句话：原理图是「电气连接」的地图，不是「物理位置」的照片；先找电源与地，再顺信号流读。</span></a><a class="doccard" href="#/doc/d-03-小型电路图实战-02-十个必会小电路"><span class="t">02 十个必会小电路（含计算与接线）</span><span class="d">- R = (Vcc−Vf)/If；3.3V 红 LED 5mA → 270~330Ω。</span></a><a class="doccard" href="#/doc/d-03-小型电路图实战-03-用KiCad画第一张原理图与PCB"><span class="t">03 用 KiCad 画第一张原理图与 PCB</span><span class="d">一句话：把面包板上的电路「固化」成板子：原理图 → 网络表 → 布局 → 布线 → 打样。</span></a></div></section><section class="view" id="ch-04-ESP32单片机" data-kind="ch" data-title="ESP32 单片机"><div class="chhead"><span class="ico">📶</span><div><h2>ESP32 单片机</h2><p>引脚 / 烧录 / 代码示例 / 模块接线 / 低功耗</p></div></div><div class="doclist"><a class="doccard" href="#/doc/d-04-ESP32单片机-01-认识ESP32家族"><span class="t">01 认识 ESP32 家族</span><span class="d">一句话：ESP32 是乐鑫(Espressif)的 Wi-Fi+蓝牙 MCU 系列；入门买「ESP32 或 ESP32-S3 的</span></a><a class="doccard" href="#/doc/d-04-ESP32单片机-02-引脚图与安全使用"><span class="t">02 引脚图与安全使用</span><span class="d">一句话：ESP32 的 39 个 GPIO 里，有 6 个被 Flash 占用、4 个只能输入、5 个是上电配置脚——用错就「玄</span></a><a class="doccard" href="#/doc/d-04-ESP32单片机-03-最小系统与硬件设计"><span class="t">03 最小系统与硬件设计</span><span class="d">一句话：让 ESP32 可靠工作只需五部分：供电、复位、启动配置、烧录接口、天线。</span></a><a class="doccard" href="#/doc/d-04-ESP32单片机-04-开发环境搭建"><span class="t">04 开发环境搭建（Arduino / PlatformIO / ESP-IDF）</span><span class="d">一句话：三条路线任选其一；入门推荐 Arduino IDE 或 PlatformIO，产品/进阶用 ESP-IDF。</span></a><a class="doccard" href="#/doc/d-04-ESP32单片机-05-外设编程与代码示例"><span class="t">05 外设编程与代码示例（Arduino 框架）</span><span class="d">const int LED = 2;</span></a><a class="doccard" href="#/doc/d-04-ESP32单片机-06-常用模块接线手册"><span class="t">06 常用模块接线手册</span><span class="d">1. 共地：所有模块 GND 与 ESP32 GND 相连，包括外部电源供电的模块。</span></a><a class="doccard" href="#/doc/d-04-ESP32单片机-07-低功耗设计"><span class="t">07 低功耗设计：让电池活几个月</span><span class="d">每 N 分钟唤醒 → 读传感器 → 上报(MQTT/BLE) → 立即 deep-sleep</span></a><a class="doccard" href="#/doc/d-04-ESP32单片机-08-常见问题排查"><span class="t">08 常见问题排查（故障树）</span><span class="d">1. 二分法：注释一半代码，定位问题区间。</span></a></div></section><section class="view" id="ch-05-工具与焊接" data-kind="ch" data-title="工具与焊接"><div class="chhead"><span class="ico">🛠️</span><div><h2>工具与焊接</h2><p>万用表 / 面包板 / 焊接 / 调试仪器</p></div></div><div class="doclist"><a class="doccard" href="#/doc/d-05-工具与焊接-01-工具清单与万用表"><span class="t">01 工具清单与万用表使用</span><span class="d">- 测小电流：串 1Ω 电阻测压降换算，避免 µA 档压降影响电路。</span></a><a class="doccard" href="#/doc/d-05-工具与焊接-02-面包板与杜邦线"><span class="t">02 面包板与杜邦线</span><span class="d">- 中间区：每 5 孔一列 横向导通（a-e 一组、f-j 一组），列与列之间绝缘。</span></a><a class="doccard" href="#/doc/d-05-工具与焊接-03-焊接入门"><span class="t">03 焊接入门</span><span class="d">1. 烙铁头同时接触焊盘与引脚预热 1s。</span></a><a class="doccard" href="#/doc/d-05-工具与焊接-04-调试方法与仪器"><span class="t">04 调试方法与仪器</span><span class="d">1. 看：电源灯、LED、屏幕、串口日志。</span></a></div></section><section class="view" id="ch-06-项目实战" data-kind="ch" data-title="项目实战"><div class="chhead"><span class="ico">🚀</span><div><h2>项目实战</h2><p>10 个递进项目 / 采购清单与预算</p></div></div><div class="doclist"><a class="doccard" href="#/doc/d-06-项目实战-01-十个循序渐进项目"><span class="t">01 十个循序渐进项目</span><span class="d">[电池3.7V]─[TP4056]─[LDO 3.3V]─[ESP32]</span></a><a class="doccard" href="#/doc/d-06-项目实战-02-采购清单与预算"><span class="t">02 采购清单与预算（2026 年参考价）</span><span class="d">- 优先选带「自动下载电路」的开发板。</span></a></div></section>
+<section class="view docview" id="doc-d-README" data-kind="doc" data-parent="#/" data-ch="首页" data-title="硬件入门学习包：从基础元器件到 ESP32"><article><h1>硬件入门学习包：从基础元器件到 ESP32</h1>
+<blockquote>🌍 <strong>在线访问（GitHub Pages）</strong>：https://mawenhao147-stack.github.io/hardware-learning-kit/ 📦 <strong>仓库地址</strong>：https://github.com/mawenhao147-stack/hardware-learning-kit 🌐 <strong>想直接在浏览器里读？</strong> 双击打开 <a href="index.html">index.html</a> —— 全部 31 篇文档 + 64 张图例的网页版，带侧边目录与搜索，离线可用。 🧮 <strong>要算电阻/分压/功耗？</strong> 打开 <a href="工具箱.html">工具箱.html</a>。</blockquote>
 <blockquote>一套可以「照着学、照着搭、照着画」的硬件自学资料。 特点：<strong>每个知识点都配图例</strong>（<code>figures/</code> 目录，SVG 源文件 + PNG 高清图），并附带一个可离线使用的交互式计算工具箱。</blockquote>
 <h2>怎么用这套资料</h2>
 <ul><li>先看 <code>00-学习路线图.md</code>，确认自己从哪个阶段开始。</li><li>按章节顺序阅读，<strong>每读一个图例，就在面包板或仿真里复现一次</strong>。</li><li>遇到计算（限流电阻、分压、RC 截止频率、功耗续航）打开 <code>工具箱.html</code> 直接算。</li><li>学完第 4 章后，从 <code>06-项目实战</code> 里挑一个项目做出来，做不出来就回 <code>04-ESP32单片机/08-常见问题排查.md</code>。</li></ul>
 <h2>目录</h2>
-<table><thead><tr><th>章节</th><th>内容</th><th>你会获得的能力</th></tr></thead><tbody><tr><td><a href="#sec-00-学习路线图">00-学习路线图</a></td><td>六阶段路线、时间投入、检查点</td><td>知道自己在哪、下一步做什么</td></tr><tr><td><a href="#sec-01-基础元器件-01-电阻">01-基础元器件</a></td><td>电阻/电容/电感/二极管/三极管/MOS/继电器/晶振…</td><td>看懂符号、读得懂参数、选得对型号</td></tr><tr><td><a href="#sec-02-电路基础与定律-01-电压电流电阻与欧姆定律">02-电路基础与定律</a></td><td>欧姆定律、基尔霍夫、分压分流、RC、电源、ADC/PWM、总线</td><td>会算、会估、会验证</td></tr><tr><td><a href="#sec-03-小型电路图实战-01-如何读懂一张原理图">03-小型电路图实战</a></td><td>读图方法、10 个必会小电路、KiCad 入门</td><td>能读图、能搭电路、能画自己的板子</td></tr><tr><td><a href="#sec-04-ESP32单片机-01-认识ESP32家族">04-ESP32单片机</a></td><td>芯片家族、引脚、最小系统、环境搭建、外设代码、模块接线、低功耗、排错</td><td>独立完成一个联网/传感/控制项目</td></tr><tr><td><a href="#sec-05-工具与焊接-01-工具清单与万用表">05-工具与焊接</a></td><td>万用表、面包板、焊接、调试仪器</td><td>动手不把板子烧掉</td></tr><tr><td><a href="#sec-06-项目实战-01-十个循序渐进项目">06-项目实战</a></td><td>10 个递进项目 + 采购清单与预算</td><td>把知识变成作品</td></tr><tr><td><a href="工具箱.html">工具箱.html</a></td><td>色环/欧姆/LED限流/分压/RC/功耗续航 交互计算</td><td>少按计算器、少烧元件</td></tr></tbody></table>
+<table><thead><tr><th>章节</th><th>内容</th><th>你会获得的能力</th></tr></thead><tbody><tr><td><a href="#/doc/d-00-学习路线图">00-学习路线图</a></td><td>六阶段路线、时间投入、检查点</td><td>知道自己在哪、下一步做什么</td></tr><tr><td><a href="#/doc/d-01-基础元器件-01-电阻">01-基础元器件</a></td><td>电阻/电容/电感/二极管/三极管/MOS/继电器/晶振…</td><td>看懂符号、读得懂参数、选得对型号</td></tr><tr><td><a href="#/doc/d-02-电路基础与定律-01-电压电流电阻与欧姆定律">02-电路基础与定律</a></td><td>欧姆定律、基尔霍夫、分压分流、RC、电源、ADC/PWM、总线</td><td>会算、会估、会验证</td></tr><tr><td><a href="#/doc/d-03-小型电路图实战-01-如何读懂一张原理图">03-小型电路图实战</a></td><td>读图方法、10 个必会小电路、KiCad 入门</td><td>能读图、能搭电路、能画自己的板子</td></tr><tr><td><a href="#/doc/d-04-ESP32单片机-01-认识ESP32家族">04-ESP32单片机</a></td><td>芯片家族、引脚、最小系统、环境搭建、外设代码、模块接线、低功耗、排错</td><td>独立完成一个联网/传感/控制项目</td></tr><tr><td><a href="#/doc/d-05-工具与焊接-01-工具清单与万用表">05-工具与焊接</a></td><td>万用表、面包板、焊接、调试仪器</td><td>动手不把板子烧掉</td></tr><tr><td><a href="#/doc/d-06-项目实战-01-十个循序渐进项目">06-项目实战</a></td><td>10 个递进项目 + 采购清单与预算</td><td>把知识变成作品</td></tr><tr><td><a href="工具箱.html">工具箱.html</a></td><td>色环/欧姆/LED限流/分压/RC/功耗续航 交互计算</td><td>少按计算器、少烧元件</td></tr></tbody></table>
 <h2>图例总览（figures/）</h2>
 <table><thead><tr><th>图</th><th>说明</th></tr></thead><tbody><tr><td><img loading="lazy" src="figures/roadmap.png" alt="路线图"></td><td>学习路线</td></tr><tr><td><img loading="lazy" src="figures/symbols-passive.png" alt="无源符号"></td><td>无源元件与电源符号</td></tr><tr><td><img loading="lazy" src="figures/symbols-semi.png" alt="半导体符号"></td><td>半导体器件符号</td></tr><tr><td><img loading="lazy" src="figures/symbols-io.png" alt="接口符号"></td><td>开关/机电/接口符号</td></tr><tr><td><img loading="lazy" src="figures/resistor-color-code.png" alt="色环"></td><td>电阻色环与贴片丝印</td></tr><tr><td><img loading="lazy" src="figures/cap-types.png" alt="电容"></td><td>电容类型与选型</td></tr><tr><td><img loading="lazy" src="figures/rc-charge-curve.png" alt="RC"></td><td>RC 充放电与时间常数</td></tr><tr><td><img loading="lazy" src="figures/diode-iv.png" alt="二极管"></td><td>二极管特性与 LED 限流</td></tr><tr><td><img loading="lazy" src="figures/voltage-divider.png" alt="分压"></td><td>分压电路</td></tr><tr><td><img loading="lazy" src="figures/rc-filter.png" alt="滤波"></td><td>RC 滤波与截止频率</td></tr><tr><td><img loading="lazy" src="figures/npn-switch.png" alt="三极管开关"></td><td>三极管开关与续流二极管</td></tr><tr><td><img loading="lazy" src="figures/mos-switch.png" alt="MOS"></td><td>MOS 高低边与电平转换</td></tr><tr><td><img loading="lazy" src="figures/hbridge.png" alt="H桥"></td><td>H 桥电机驱动</td></tr><tr><td><img loading="lazy" src="figures/555-astable.png" alt="555"></td><td>555 无稳态振荡器</td></tr><tr><td><img loading="lazy" src="figures/esp32-devkit-pinout.png" alt="引脚图"></td><td>ESP32 开发板引脚图</td></tr><tr><td><img loading="lazy" src="figures/esp32-gpio-map.png" alt="GPIO表"></td><td>GPIO 能力总表</td></tr><tr><td><img loading="lazy" src="figures/esp32-strapping.png" alt="启动"></td><td>启动模式与自动下载</td></tr><tr><td><img loading="lazy" src="figures/esp32-min-system.png" alt="最小系统"></td><td>ESP32 最小系统五要素</td></tr><tr><td><img loading="lazy" src="figures/esp32-periph-wiring.png" alt="接线"></td><td>常用模块接线</td></tr><tr><td><img loading="lazy" src="figures/esp32-sleep-currents.png" alt="功耗"></td><td>功耗等级与续航</td></tr><tr><td><img loading="lazy" src="figures/bus-timing.png" alt="总线"></td><td>UART/I2C/SPI 时序</td></tr><tr><td><img loading="lazy" src="figures/breadboard-anatomy.png" alt="面包板"></td><td>面包板内部结构</td></tr><tr><td><img loading="lazy" src="figures/multimeter.png" alt="万用表"></td><td>万用表三种测量</td></tr><tr><td><img loading="lazy" src="figures/soldering.png" alt="焊接"></td><td>焊接要点与好焊点</td></tr></tbody></table>
 <h2>约定与安全</h2>
-<ul><li>文中电压/电流如无特别说明，指直流稳态值。</li><li><strong>ESP32 GPIO 耐压约 3.6V</strong>：任何 5V 信号进 GPIO 前必须分压或电平转换。</li><li>锂电池、12V 以上电源、市电（220V）属于危险源：市电部分本资料只讲原理不给实操，强电请找专业人士。</li><li>上电前养成「三查」习惯：查电源极性、查有无短路（通断档）、查信号电平。</li></ul></section><section class="doc" id="sec-00-学习路线图" data-title="00 学习路线图"><div class="crumb">首页</div><h1>00 学习路线图</h1>
+<ul><li>文中电压/电流如无特别说明，指直流稳态值。</li><li><strong>ESP32 GPIO 耐压约 3.6V</strong>：任何 5V 信号进 GPIO 前必须分压或电平转换。</li><li>锂电池、12V 以上电源、市电（220V）属于危险源：市电部分本资料只讲原理不给实操，强电请找专业人士。</li><li>上电前养成「三查」习惯：查电源极性、查有无短路（通断档）、查信号电平。</li></ul></article><nav class="pn" data-ch="home" data-id="d-README"></nav></section><section class="view docview" id="doc-d-00-学习路线图" data-kind="doc" data-parent="#/" data-ch="首页" data-title="00 学习路线图"><article><h1>00 学习路线图</h1>
 <p><img loading="lazy" src="figures/roadmap.png" alt="路线图"></p>
 <h2>六阶段总览</h2>
 <table><thead><tr><th>阶段</th><th>主题</th><th>建议时长</th><th>完成标志（自查）</th></tr></thead><tbody><tr><td>1</td><td>认识元器件</td><td>1 周</td><td>给我一只元件，能说出类别、关键参数、典型用途；能读色环</td></tr><tr><td>2</td><td>电路定律</td><td>1 周</td><td>给定电路能算出各点电压电流，并用万用表实测验证误差 &lt;10%</td></tr><tr><td>3</td><td>小电路实战</td><td>2 周</td><td>能在面包板上独立搭出 LED 驱动、三极管开关、555 闪烁、H 桥调速</td></tr><tr><td>4</td><td>ESP32 入门</td><td>2 周</td><td>能烧录程序，用 GPIO/ADC/PWM 完成「传感器读数上屏」</td></tr><tr><td>5</td><td>接口与模块</td><td>2 周</td><td>能组合 ≥3 个模块（显示+传感+执行），并让设备深度睡眠省电</td></tr><tr><td>6</td><td>做成产品</td><td>持续</td><td>用 KiCad 画板、打样、焊接、装壳，稳定运行 ≥7 天</td></tr></tbody></table>
 <h2>每周节奏建议</h2>
 <ul><li><strong>看图 30%</strong>：读本章图例，合上书能复述符号含义与关键公式。</li><li><strong>动手 50%</strong>：面包板/开发板实操，拍照记录接线。</li><li><strong>输出 20%</strong>：用自己的话写 3~5 行笔记（写不出=没懂）。</li></ul>
 <h2>器材准备（先买这些就够）</h2>
-<p>见 <a href="#sec-06-项目实战-02-采购清单与预算">06-项目实战/02-采购清单与预算.md</a>。最低配置约 ¥150： ESP32 开发板 ×1、面包板 ×1、杜邦线一包、电阻电容包、LED 包、按键、万用表（可后补）、USB 线。</p>
+<p>见 <a href="#/doc/d-06-项目实战-02-采购清单与预算">06-项目实战/02-采购清单与预算.md</a>。最低配置约 ¥150： ESP32 开发板 ×1、面包板 ×1、杜邦线一包、电阻电容包、LED 包、按键、万用表（可后补）、USB 线。</p>
 <h2>学习方法三条军规</h2>
-<ul><li><strong>永远先算再搭</strong>：限流电阻、分压比先手算，搭完用万用表验证。算与测对不上，就是学习发生的地方。</li><li><strong>一次只改一个变量</strong>：电路不工作时，只动一处再测，避免「乱调碰运气」。</li><li><strong>烧了不丢人，记录才值钱</strong>：把每次烧元件的原因写进笔记，三个月后它就是你的经验库。</li></ul></section><section class="doc" id="sec-01-基础元器件-01-电阻" data-title="01 电阻 Resistor"><div class="crumb">01-基础元器件</div><h1>01 电阻 Resistor</h1>
+<ul><li><strong>永远先算再搭</strong>：限流电阻、分压比先手算，搭完用万用表验证。算与测对不上，就是学习发生的地方。</li><li><strong>一次只改一个变量</strong>：电路不工作时，只动一处再测，避免「乱调碰运气」。</li><li><strong>烧了不丢人，记录才值钱</strong>：把每次烧元件的原因写进笔记，三个月后它就是你的经验库。</li></ul></article><nav class="pn" data-ch="home" data-id="d-00-学习路线图"></nav></section><section class="view docview" id="doc-d-01-基础元器件-01-电阻" data-kind="doc" data-parent="#/ch/01-基础元器件" data-ch="基础元器件" data-title="01 电阻 Resistor"><article><h1>01 电阻 Resistor</h1>
 <p><strong>一句话</strong>：电阻限制电流、分配电压，是电路里数量最多的元件。</p>
 <p><img loading="lazy" src="figures/symbols-passive.png" alt="符号"></p>
 <h2>1. 它做什么</h2>
-<ul><li><strong>限流</strong>：保护 LED、限制三极管基极电流。<code>I = U / R</code></li><li><strong>分压</strong>：两只电阻串联，把高电压按比例降低（见 <a href="#sec-02-电路基础与定律-02-串并联-基尔霍夫-分压分流">分压电路</a>）。</li><li><strong>上拉/下拉</strong>：给引脚一个确定的默认电平（ESP32 内部已有，外部常加 10k）。</li><li><strong>采样</strong>：小阻值（0.1Ω）把电流变成电压供 ADC 测量。</li><li><strong>匹配/阻尼</strong>：串口串 22~100Ω 抑制振铃；LED 数据线串 330Ω。</li></ul>
+<ul><li><strong>限流</strong>：保护 LED、限制三极管基极电流。<code>I = U / R</code></li><li><strong>分压</strong>：两只电阻串联，把高电压按比例降低（见 <a href="#/doc/d-02-电路基础与定律-02-串并联-基尔霍夫-分压分流">分压电路</a>）。</li><li><strong>上拉/下拉</strong>：给引脚一个确定的默认电平（ESP32 内部已有，外部常加 10k）。</li><li><strong>采样</strong>：小阻值（0.1Ω）把电流变成电压供 ADC 测量。</li><li><strong>匹配/阻尼</strong>：串口串 22~100Ω 抑制振铃；LED 数据线串 330Ω。</li></ul>
 <h2>2. 关键参数</h2>
 <table><thead><tr><th>参数</th><th>含义</th><th>新手要点</th></tr></thead><tbody><tr><td>阻值</td><td>Ω / kΩ / MΩ</td><td>常用 E24 系列：1.0, 1.2, 1.5, 2.2, 3.3, 4.7, 6.8…</td></tr><tr><td>功率</td><td>P = I²R = U²/R</td><td>信号级 1/16~1/8W 足够；留 2 倍余量</td></tr><tr><td>精度</td><td>±1% / ±5%</td><td>分压、采样用 ±1% 或 ±0.1%</td></tr><tr><td>封装</td><td>直插 / 0402/0603/0805</td><td>手焊选 0805 或直插</td></tr><tr><td>温度系数</td><td>ppm/°C</td><td>精密测量才关心</td></tr></tbody></table>
 <h2>3. 读色环与贴片丝印</h2>
@@ -82,7 +159,7 @@ a{color:var(--acc)}
 <h2>5. 常见坑</h2>
 <ul><li><strong>功率不够</strong>：12V 经 100Ω 到地，P=1.44W，1/8W 电阻会冒烟。</li><li><strong>把可调电阻当固定电阻用</strong>：滑动端悬空时阻值不定。</li><li><strong>忽略自身功耗</strong>：电池供电的分压电路，阻值太小会偷偷耗电（10k+10k 接 3.3V 常耗 0.55mA）。</li><li><strong>色环读反</strong>：拿不准就用万用表量，量是最快的老师。</li></ul>
 <h2>6. 动手验证（10 分钟）</h2>
-<ul><li>从电阻包挑 3 只，先读色环记录标称值。</li><li>万用表电阻档实测，计算误差。</li><li>把 1kΩ 接 3.3V，测两端电压与电流，验证 <code>I=U/R</code>。</li></ul></section><section class="doc" id="sec-01-基础元器件-02-电容" data-title="02 电容 Capacitor"><div class="crumb">01-基础元器件</div><h1>02 电容 Capacitor</h1>
+<ul><li>从电阻包挑 3 只，先读色环记录标称值。</li><li>万用表电阻档实测，计算误差。</li><li>把 1kΩ 接 3.3V，测两端电压与电流，验证 <code>I=U/R</code>。</li></ul></article><nav class="pn" data-ch="01-基础元器件" data-id="d-01-基础元器件-01-电阻"></nav></section><section class="view docview" id="doc-d-01-基础元器件-02-电容" data-kind="doc" data-parent="#/ch/01-基础元器件" data-ch="基础元器件" data-title="02 电容 Capacitor"><article><h1>02 电容 Capacitor</h1>
 <p><strong>一句话</strong>：电容存电荷、通交流隔直流，是电源干净与否的关键。</p>
 <p><img loading="lazy" src="figures/cap-types.png" alt="类型"></p>
 <h2>1. 四种典型用法</h2>
@@ -99,11 +176,11 @@ a{color:var(--acc)}
 <h2>6. 常见坑</h2>
 <ul><li><strong>电解极性接反</strong>：条纹侧是负；钽电容色条侧是<strong>正</strong>（与电解相反！）。</li><li><strong>Y5V 当 X7R 用</strong>：标称容量在 3.3V 下严重缩水。</li><li><strong>去耦电容离芯片太远</strong>：电感效应让它失效。</li><li><strong>陶瓷电容的啸叫</strong>：电源纹波大时 MLCC 会压电发声，属正常物理现象。</li><li><strong>用容量档测好坏</strong>：容量正常但 ESR 变大的电解仍会引发复位/掉线，需 ESR 表或替换法。</li></ul>
 <h2>7. 动手验证</h2>
-<ul><li>10kΩ + 100µF 接 3.3V，用万用表电压档观察充电曲线，估算 τ 是否≈1s。</li><li>给 ESP32 的 3V3 与 GND 之间临时并/不并 100µF，观察 WiFi 发射时是否更稳定（串口看有无 brownout 复位）。</li></ul></section><section class="doc" id="sec-01-基础元器件-03-电感与磁珠" data-title="03 电感、磁珠与变压器"><div class="crumb">01-基础元器件</div><h1>03 电感、磁珠与变压器</h1>
+<ul><li>10kΩ + 100µF 接 3.3V，用万用表电压档观察充电曲线，估算 τ 是否≈1s。</li><li>给 ESP32 的 3V3 与 GND 之间临时并/不并 100µF，观察 WiFi 发射时是否更稳定（串口看有无 brownout 复位）。</li></ul></article><nav class="pn" data-ch="01-基础元器件" data-id="d-01-基础元器件-02-电容"></nav></section><section class="view docview" id="doc-d-01-基础元器件-03-电感与磁珠" data-kind="doc" data-parent="#/ch/01-基础元器件" data-ch="基础元器件" data-title="03 电感、磁珠与变压器"><article><h1>03 电感、磁珠与变压器</h1>
 <p><strong>一句话</strong>：电感「抗拒电流变化」，把电能存在磁场里；磁珠是高频电阻；变压器用磁耦合传能量。</p>
 <p><img loading="lazy" src="figures/symbols-passive.png" alt="符号"></p>
 <h2>1. 电感基础</h2>
-<ul><li>单位 H / mH / µH；<code>U = L × dI/dt</code>：电流突变时产生反向电压。</li><li>关键参数：感值、<strong>饱和电流 Isat</strong>（超过后感值骤降）、直流电阻 DCR、自谐振频率 SRF。</li><li>典型用法：</li><li><strong>DC-DC 储能</strong>：Buck/Boost 里的功率电感（4.7~22µH，Isat &gt; 峰值电流）。</li><li><strong>扼流/滤波</strong>：与电容组成 LC 滤波，滤开关噪声。</li><li><strong>续流回路</strong>：继电器/电机线圈关断时，电流经续流二极管泄放（见 <a href="#sec-03-小型电路图实战-02-十个必会小电路">三极管开关</a>）。</li></ul>
+<ul><li>单位 H / mH / µH；<code>U = L × dI/dt</code>：电流突变时产生反向电压。</li><li>关键参数：感值、<strong>饱和电流 Isat</strong>（超过后感值骤降）、直流电阻 DCR、自谐振频率 SRF。</li><li>典型用法：</li><li><strong>DC-DC 储能</strong>：Buck/Boost 里的功率电感（4.7~22µH，Isat &gt; 峰值电流）。</li><li><strong>扼流/滤波</strong>：与电容组成 LC 滤波，滤开关噪声。</li><li><strong>续流回路</strong>：继电器/电机线圈关断时，电流经续流二极管泄放（见 <a href="#/doc/d-03-小型电路图实战-02-十个必会小电路">三极管开关</a>）。</li></ul>
 <h2>2. 磁珠 Ferrite Bead</h2>
 <ul><li>符号常画成「穿在导线上的矩形」。</li><li>本质：<strong>高频损耗电阻</strong>。低频近似导线，高频变成电阻把噪声变成热。</li><li>标称如 <code>600Ω@100MHz</code>：指 100MHz 时的阻抗。</li><li>用法：串在电源入口或射频/数字边界，配合电容组成 π 型滤波。</li><li>注意：磁珠有额定电流，过流会饱和失效；不要用它代替功率电感。</li></ul>
 <h2>3. 变压器与共模电感</h2>
@@ -113,7 +190,7 @@ a{color:var(--acc)}
 <h2>5. 常见坑</h2>
 <ul><li><strong>电感饱和</strong>：Isat 不够 → 电流尖峰、芯片发烫、效率骤降。</li><li><strong>把磁珠当电感储能</strong>：磁珠没有储能能力。</li><li><strong>布局比选型更重要</strong>：功率电感到开关管的环路要小，否则辐射超标。</li><li><strong>空心线圈靠近金属</strong>：感值漂移。</li></ul>
 <h2>6. 动手验证</h2>
-<p>用万用表电阻档量电感：直流电阻很小（几 mΩ~几 Ω），若为 ∞ 则断线。 感值与 Isat 需要 LCR 表/厂家曲线，入门阶段以「按参考设计选」为主。</p></section><section class="doc" id="sec-01-基础元器件-04-二极管与LED" data-title="04 二极管与 LED"><div class="crumb">01-基础元器件</div><h1>04 二极管与 LED</h1>
+<p>用万用表电阻档量电感：直流电阻很小（几 mΩ~几 Ω），若为 ∞ 则断线。 感值与 Isat 需要 LCR 表/厂家曲线，入门阶段以「按参考设计选」为主。</p></article><nav class="pn" data-ch="01-基础元器件" data-id="d-01-基础元器件-03-电感与磁珠"></nav></section><section class="view docview" id="doc-d-01-基础元器件-04-二极管与LED" data-kind="doc" data-parent="#/ch/01-基础元器件" data-ch="基础元器件" data-title="04 二极管与 LED"><article><h1>04 二极管与 LED</h1>
 <p><strong>一句话</strong>：二极管只让电流单方向通过；LED 是会发光的二极管，但必须限流。</p>
 <p><img loading="lazy" src="figures/diode-iv.png" alt="IV"></p>
 <h2>1. 核心特性</h2>
@@ -133,7 +210,7 @@ a{color:var(--acc)}
 <h2>6. 常见坑</h2>
 <ul><li><strong>LED 不限流</strong>：直接接 3.3V 会过流烧毁或寿命骤减。</li><li><strong>极性接反不亮</strong>：长脚/大电极片为负（直插 LED 切边侧为负）。</li><li><strong>用整流管做高频续流</strong>：1N4007 反向恢复慢，开关电源里会发烫，换 SS34。</li><li><strong>稳压管当电源用</strong>：效率低、负载能力差，只适合 µA~mA 级基准。</li><li><strong>TVS 方向接反</strong>：单向 TVS 有极性。</li></ul>
 <h2>7. 动手验证</h2>
-<ul><li>万用表二极管档：红笔接阳极显示 Vf（硅≈0.6），反接显示 OL。</li><li>搭 LED+330Ω 接 3.3V，测 LED 两端电压验证 Vf，测电阻两端电压算电流。</li></ul></section><section class="doc" id="sec-01-基础元器件-05-三极管与MOS管" data-title="05 三极管 BJT 与 MOS 管"><div class="crumb">01-基础元器件</div><h1>05 三极管 BJT 与 MOS 管</h1>
+<ul><li>万用表二极管档：红笔接阳极显示 Vf（硅≈0.6），反接显示 OL。</li><li>搭 LED+330Ω 接 3.3V，测 LED 两端电压验证 Vf，测电阻两端电压算电流。</li></ul></article><nav class="pn" data-ch="01-基础元器件" data-id="d-01-基础元器件-04-二极管与LED"></nav></section><section class="view docview" id="doc-d-01-基础元器件-05-三极管与MOS管" data-kind="doc" data-parent="#/ch/01-基础元器件" data-ch="基础元器件" data-title="05 三极管 BJT 与 MOS 管"><article><h1>05 三极管 BJT 与 MOS 管</h1>
 <p><strong>一句话</strong>：它们是「用小信号控制大电流」的电子开关；三极管靠电流驱动，MOS 靠电压驱动。</p>
 <p><img loading="lazy" src="figures/symbols-semi.png" alt="半导体符号"></p>
 <h2>1. 三极管 BJT（NPN / PNP）</h2>
@@ -156,7 +233,7 @@ a{color:var(--acc)}
 <h2>5. 常见坑</h2>
 <ul><li><strong>栅极悬空</strong>：MOS 栅极高阻，悬空会误导通甚至振荡烧毁 → 加 10k 下拉/上拉。</li><li><strong>把负载接在发射极</strong>：变成射极跟随器，压降大、难饱和。</li><li><strong>忘记续流二极管</strong>：感性负载反峰击穿管子。</li><li><strong>Vgs 超压</strong>：12V 直接推栅极可能超过 ±20V？不会，但 5V 逻辑推「非逻辑电平」MOS 会导通不全发烫。</li><li><strong>并联使用不匹配</strong>：MOS 并联需均流设计，入门避免。</li></ul>
 <h2>6. 动手验证</h2>
-<ul><li>NPN + 1k 基极电阻 + LED/330Ω 集电极负载：GPIO/电池切换高低，观察亮灭。</li><li>换 AO3400 重复实验，用万用表测 D-S 压降对比 Vce。</li><li>用继电器替换 LED，去掉/加上续流二极管各试一次（去掉时听「啪」的火花声并观察三极管是否发热——点到为止，别长时间）。</li></ul></section><section class="doc" id="sec-01-基础元器件-06-其他常用元器件" data-title="06 其他常用元器件速览"><div class="crumb">01-基础元器件</div><h1>06 其他常用元器件速览</h1>
+<ul><li>NPN + 1k 基极电阻 + LED/330Ω 集电极负载：GPIO/电池切换高低，观察亮灭。</li><li>换 AO3400 重复实验，用万用表测 D-S 压降对比 Vce。</li><li>用继电器替换 LED，去掉/加上续流二极管各试一次（去掉时听「啪」的火花声并观察三极管是否发热——点到为止，别长时间）。</li></ul></article><nav class="pn" data-ch="01-基础元器件" data-id="d-01-基础元器件-05-三极管与MOS管"></nav></section><section class="view docview" id="doc-d-01-基础元器件-06-其他常用元器件" data-kind="doc" data-parent="#/ch/01-基础元器件" data-ch="基础元器件" data-title="06 其他常用元器件速览"><article><h1>06 其他常用元器件速览</h1>
 <p><img loading="lazy" src="figures/symbols-io.png" alt="接口与机电符号"></p>
 <h2>1. 晶振与时钟</h2>
 <ul><li>无源晶振（2 脚）+ 2 个 12~22pF 负载电容；有源晶振（4 脚）直接供电输出。</li><li>ESP32 模组内部已带 40MHz 晶振，<strong>自己画板用模组就不用管</strong>。</li><li>32.768kHz 晶振用于 RTC 低功耗计时（ESP32 可用 GPIO32/33 外接）。</li></ul>
@@ -176,7 +253,7 @@ a{color:var(--acc)}
 <h2>8. 保护件</h2>
 <ul><li>保险丝/自恢复保险丝 PTC：过流。</li><li>TVS/压敏电阻：过压、浪涌。</li><li>ESD 管：接口防静电。</li><li>热敏电阻 NTC：测温/浪涌抑制。</li></ul>
 <h2>9. 连接器</h2>
-<ul><li>排针/排母 2.54mm：面包板友好。</li><li>PH2.0/XH2.54：电池、电机。</li><li>USB-C/Micro-USB：供电与烧录。</li><li>端子台：强电/大电流（本资料不展开强电实操）。</li></ul></section><section class="doc" id="sec-02-电路基础与定律-01-电压电流电阻与欧姆定律" data-title="01 电压、电流、电阻与欧姆定律"><div class="crumb">02-电路基础与定律</div><h1>01 电压、电流、电阻与欧姆定律</h1>
+<ul><li>排针/排母 2.54mm：面包板友好。</li><li>PH2.0/XH2.54：电池、电机。</li><li>USB-C/Micro-USB：供电与烧录。</li><li>端子台：强电/大电流（本资料不展开强电实操）。</li></ul></article><nav class="pn" data-ch="01-基础元器件" data-id="d-01-基础元器件-06-其他常用元器件"></nav></section><section class="view docview" id="doc-d-02-电路基础与定律-01-电压电流电阻与欧姆定律" data-kind="doc" data-parent="#/ch/02-电路基础与定律" data-ch="电路基础与定律" data-title="01 电压、电流、电阻与欧姆定律"><article><h1>01 电压、电流、电阻与欧姆定律</h1>
 <p><strong>一句话</strong>：电压是「推」，电流是「流」，电阻是「拦」；三者关系 <code>U = I × R</code>。</p>
 <h2>1. 水流类比</h2>
 <table><thead><tr><th>电学</th><th>水路</th><th>单位</th></tr></thead><tbody><tr><td>电压 U</td><td>水压/水位差</td><td>伏特 V</td></tr><tr><td>电流 I</td><td>水流量</td><td>安培 A（mA=千分之一）</td></tr><tr><td>电阻 R</td><td>管道粗细/阀门</td><td>欧姆 Ω</td></tr><tr><td>功率 P</td><td>水流做的功</td><td>瓦特 W</td></tr></tbody></table>
@@ -194,7 +271,7 @@ P = U × I = I² × R = U² / R</code></pre>
 <h2>5. 常见误区</h2>
 <ul><li>「电流从正极流出被用掉」→ 电流在回路中守恒，被「用掉」的是能量。</li><li>「GND 就是 0V 绝对值」→ 只是参考点；两个系统不共地，信号就没有回路。</li><li>「电压高就危险」→ 危险取决于能否驱动足够电流通过人体；但高压更易击穿绝缘。</li><li>忽略导线/接触电阻：大电流下 0.1Ω 接触电阻也会产生压降与发热。</li></ul>
 <h2>6. 动手验证</h2>
-<ul><li>3.3V + 1kΩ + LED：分别测电阻压降、LED 压降，验证两者之和≈3.3V（基尔霍夫电压定律的雏形）。</li><li>换 330Ω/1kΩ/10kΩ，观察亮度与实测电流，体会 <code>I=U/R</code>。</li></ul></section><section class="doc" id="sec-02-电路基础与定律-02-串并联-基尔霍夫-分压分流" data-title="02 串并联、基尔霍夫定律、分压与分流"><div class="crumb">02-电路基础与定律</div><h1>02 串并联、基尔霍夫定律、分压与分流</h1>
+<ul><li>3.3V + 1kΩ + LED：分别测电阻压降、LED 压降，验证两者之和≈3.3V（基尔霍夫电压定律的雏形）。</li><li>换 330Ω/1kΩ/10kΩ，观察亮度与实测电流，体会 <code>I=U/R</code>。</li></ul></article><nav class="pn" data-ch="02-电路基础与定律" data-id="d-02-电路基础与定律-01-电压电流电阻与欧姆定律"></nav></section><section class="view docview" id="doc-d-02-电路基础与定律-02-串并联-基尔霍夫-分压分流" data-kind="doc" data-parent="#/ch/02-电路基础与定律" data-ch="电路基础与定律" data-title="02 串并联、基尔霍夫定律、分压与分流"><article><h1>02 串并联、基尔霍夫定律、分压与分流</h1>
 <p><strong>一句话</strong>：串联分压、并联分流；节点电流守恒（KCL）、回路电压守恒（KVL）。</p>
 <h2>1. 串联与并联</h2>
 <table><thead><tr><th></th><th>串联</th><th>并联</th></tr></thead><tbody><tr><td>电流</td><td>处处相等</td><td>按电导分配</td></tr><tr><td>电压</td><td>按阻值分配</td><td>处处相等</td></tr><tr><td>总阻值</td><td>R1+R2+…</td><td>1/(1/R1+1/R2+…)</td></tr><tr><td>直觉</td><td>水管变长</td><td>水管变粗</td></tr></tbody></table>
@@ -213,7 +290,7 @@ P = U × I = I² × R = U² / R</code></pre>
 <h2>5. 常见坑</h2>
 <ul><li>分压电阻精度决定测量精度：用 ±1% 或 ±0.1%。</li><li>忘记 ADC 输入阻抗限制：源阻抗 &gt;100k 时读数偏低且漂移。</li><li>并联电容过大：信号变化慢（RC 变大），测快速变化量会滞后。</li><li>用分压给大电流负载供电：效率极低且不稳，请用稳压器。</li></ul>
 <h2>6. 动手验证</h2>
-<ul><li>搭 10k+10k 分压接 3.3V，实测中点电压≈1.65V。</li><li>在中点再接一只 10k 到地，重测（应≈1.1V），体会负载效应。</li><li>用工具箱.html 的分压计算器反推电阻组合。</li></ul></section><section class="doc" id="sec-02-电路基础与定律-03-RC电路与滤波" data-title="03 RC 电路与滤波"><div class="crumb">02-电路基础与定律</div><h1>03 RC 电路与滤波</h1>
+<ul><li>搭 10k+10k 分压接 3.3V，实测中点电压≈1.65V。</li><li>在中点再接一只 10k 到地，重测（应≈1.1V），体会负载效应。</li><li>用工具箱.html 的分压计算器反推电阻组合。</li></ul></article><nav class="pn" data-ch="02-电路基础与定律" data-id="d-02-电路基础与定律-02-串并联-基尔霍夫-分压分流"></nav></section><section class="view docview" id="doc-d-02-电路基础与定律-03-RC电路与滤波" data-kind="doc" data-parent="#/ch/02-电路基础与定律" data-ch="电路基础与定律" data-title="03 RC 电路与滤波"><article><h1>03 RC 电路与滤波</h1>
 <p><strong>一句话</strong>：R 与 C 组合产生「时间」与「频率选择」，是模拟电路的第一课。</p>
 <p><img loading="lazy" src="figures/rc-charge-curve.png" alt="充放电"> <img loading="lazy" src="figures/rc-filter.png" alt="滤波"></p>
 <h2>1. 时间常数 τ = RC</h2>
@@ -228,7 +305,7 @@ P = U × I = I² × R = U² / R</code></pre>
 <h2>4. 常见坑</h2>
 <ul><li>用 Y5V 电容做定时/滤波：容量随电压漂移，fc 不准。</li><li>两级 RC 直接 cascaded 会互相加载：第二级输入阻抗要 ≥10× 第一级输出阻抗。</li><li>滤得太狠：信号带宽不足，波形失真/响应慢。</li><li>忽略源阻抗：信号源内阻会叠加进 R，改变 fc。</li></ul>
 <h2>5. 动手验证</h2>
-<ul><li>10k+100nF 低通，输入 5kHz 方波（ESP32 PWM），示波器/逻辑分析仪看输出三角波幅度；改 50Hz 看是否变平。</li><li>10k+10µF 接按键到地，观察复位/输入脚波形是否干净。</li></ul></section><section class="doc" id="sec-02-电路基础与定律-04-电源与供电" data-title="04 电源与供电：LDO、DC-DC 与电池"><div class="crumb">02-电路基础与定律</div><h1>04 电源与供电：LDO、DC-DC 与电池</h1>
+<ul><li>10k+100nF 低通，输入 5kHz 方波（ESP32 PWM），示波器/逻辑分析仪看输出三角波幅度；改 50Hz 看是否变平。</li><li>10k+10µF 接按键到地，观察复位/输入脚波形是否干净。</li></ul></article><nav class="pn" data-ch="02-电路基础与定律" data-id="d-02-电路基础与定律-03-RC电路与滤波"></nav></section><section class="view docview" id="doc-d-02-电路基础与定律-04-电源与供电" data-kind="doc" data-parent="#/ch/02-电路基础与定律" data-ch="电路基础与定律" data-title="04 电源与供电：LDO、DC-DC 与电池"><article><h1>04 电源与供电：LDO、DC-DC 与电池</h1>
 <p><strong>一句话</strong>：电源是电路的心脏；选错电源，后面一切调试都是徒劳。</p>
 <h2>1. 三类稳压方案</h2>
 <table><thead><tr><th>方案</th><th>原理</th><th>效率</th><th>纹波</th><th>典型芯片</th><th>适用</th></tr></thead><tbody><tr><td>LDO</td><td>线性放大，压差变热</td><td>(Vout/Vin)</td><td>极低</td><td>AMS1117-3.3、ME6217、HT7533</td><td>压差小、电流小、射频前端</td></tr><tr><td>Buck 降压</td><td>开关+电感储能</td><td>85~95%</td><td>中（mV 级）</td><td>MP1584、TPS5430、SY8089</td><td>压差大、电流大</td></tr><tr><td>Boost 升压</td><td>开关升压</td><td>85~95%</td><td>中</td><td>MT3608、SX1308</td><td>电池升 5V/12V</td></tr></tbody></table>
@@ -246,7 +323,7 @@ P = U × I = I² × R = U² / R</code></pre>
 <h2>5. 常见坑</h2>
 <ul><li><strong>USB 口供电不足</strong> → WiFi 一连就复位（brownout）。</li><li><strong>LDO 压差不够</strong>：AMS1117 压差约 1.1~1.3V，3.7V 锂电放到 3.5V 时输出不足 3.3V → 选低压差 LDO。</li><li><strong>开关噪声进 ADC/射频</strong>：Buck 输出加 LC/磁珠滤波，布局环路要小。</li><li><strong>共地不良</strong>：多电源系统所有 GND 必须连在一起。</li><li><strong>热插拔浪涌</strong>：长导线+大电容上电瞬间电流冲击 → 加限流/预充或 TVS。</li></ul>
 <h2>6. 动手验证</h2>
-<ul><li>测开发板 3V3 在 WiFi 扫描时的最低电压（万用表 min 档或示波器），应 &gt;3.0V。</li><li>摸 AMS1117 温度，体会 P=(Vin−Vout)×I。</li></ul></section><section class="doc" id="sec-02-电路基础与定律-05-数字信号-逻辑电平-ADC-PWM" data-title="05 数字信号、逻辑电平、ADC 与 PWM"><div class="crumb">02-电路基础与定律</div><h1>05 数字信号、逻辑电平、ADC 与 PWM</h1>
+<ul><li>测开发板 3V3 在 WiFi 扫描时的最低电压（万用表 min 档或示波器），应 &gt;3.0V。</li><li>摸 AMS1117 温度，体会 P=(Vin−Vout)×I。</li></ul></article><nav class="pn" data-ch="02-电路基础与定律" data-id="d-02-电路基础与定律-04-电源与供电"></nav></section><section class="view docview" id="doc-d-02-电路基础与定律-05-数字信号-逻辑电平-ADC-PWM" data-kind="doc" data-parent="#/ch/02-电路基础与定律" data-ch="电路基础与定律" data-title="05 数字信号、逻辑电平、ADC 与 PWM"><article><h1>05 数字信号、逻辑电平、ADC 与 PWM</h1>
 <p><strong>一句话</strong>：数字世界只有高低电平；ADC 把模拟变数字，PWM 把数字变「伪模拟」。</p>
 <h2>1. 逻辑电平</h2>
 <table><thead><tr><th>家族</th><th>高电平</th><th>低电平</th><th>注意</th></tr></thead><tbody><tr><td>3.3V CMOS (ESP32)</td><td>≥2.6V 认高，≤0.8V 认低</td><td></td><td>输入耐压 ~3.6V</td></tr><tr><td>5V TTL/CMOS</td><td>≥2.0V 认高</td><td>≤0.8V</td><td>5V 输出进 3.3V 脚需分压</td></tr><tr><td>开漏/开集</td><td>需外部上拉</td><td></td><td>I2C 就是开漏</td></tr></tbody></table>
@@ -261,7 +338,7 @@ P = U × I = I² × R = U² / R</code></pre>
 <h2>5. 常见坑</h2>
 <ul><li>5V 信号直进 GPIO → 损坏；用分压/电平转换/光耦。</li><li>ADC2 与 WiFi 同时用 → 读数全 0 或乱跳。</li><li>PWM 频率太低 LED 闪烁、电机啸叫；太高开关损耗大。</li><li>开漏总线忘上拉 → 永远读低/读不到 ACK。</li><li>用 delay() 做精确时序 → 被 WiFi/中断打断；用 hardware timer 或 micros()。</li></ul>
 <h2>6. 动手验证</h2>
-<ul><li>电位器中点接 GPIO34，串口打印 ADC 值与换算电压；转动观察。</li><li>LEDC 1kHz 输出 0/25/50/75/100% 占空比，观察亮度；加 10k+10µF 低通后测平均电压是否≈占空比×3.3V。</li></ul></section><section class="doc" id="sec-02-电路基础与定律-06-通信接口UART-I2C-SPI" data-title="06 通信接口：UART / I2C / SPI"><div class="crumb">02-电路基础与定律</div><h1>06 通信接口：UART / I2C / SPI</h1>
+<ul><li>电位器中点接 GPIO34，串口打印 ADC 值与换算电压；转动观察。</li><li>LEDC 1kHz 输出 0/25/50/75/100% 占空比，观察亮度；加 10k+10µF 低通后测平均电压是否≈占空比×3.3V。</li></ul></article><nav class="pn" data-ch="02-电路基础与定律" data-id="d-02-电路基础与定律-05-数字信号-逻辑电平-ADC-PWM"></nav></section><section class="view docview" id="doc-d-02-电路基础与定律-06-通信接口UART-I2C-SPI" data-kind="doc" data-parent="#/ch/02-电路基础与定律" data-ch="电路基础与定律" data-title="06 通信接口：UART / I2C / SPI"><article><h1>06 通信接口：UART / I2C / SPI</h1>
 <p><strong>一句话</strong>：设备之间说话的方式；UART 最简单、I2C 最省线、SPI 最快。</p>
 <p><img loading="lazy" src="figures/bus-timing.png" alt="时序"></p>
 <h2>1. 三者对比</h2>
@@ -277,7 +354,7 @@ P = U × I = I² × R = U² / R</code></pre>
 <h2>6. 常见坑</h2>
 <ul><li>波特率不一致 → 乱码。</li><li>I2C 上拉缺失/过强 → 波形边沿异常、ACK 丢失。</li><li>SPI 模式错 → 读全 FF 或 00。</li><li>忘记共地 → 一切皆乱。</li><li>热插拔 I2C/SPI → 闩锁风险，先断电。</li></ul>
 <h2>7. 动手验证</h2>
-<ul><li>两块 ESP32 互发 UART 字符串。</li><li>i2cscan 扫 OLED，再点亮显示文字。</li><li>SPI 读 SD 卡文件列表（或 SPI TFT 画线）。</li></ul></section><section class="doc" id="sec-03-小型电路图实战-01-如何读懂一张原理图" data-title="01 如何读懂一张原理图"><div class="crumb">03-小型电路图实战</div><h1>01 如何读懂一张原理图</h1>
+<ul><li>两块 ESP32 互发 UART 字符串。</li><li>i2cscan 扫 OLED，再点亮显示文字。</li><li>SPI 读 SD 卡文件列表（或 SPI TFT 画线）。</li></ul></article><nav class="pn" data-ch="02-电路基础与定律" data-id="d-02-电路基础与定律-06-通信接口UART-I2C-SPI"></nav></section><section class="view docview" id="doc-d-03-小型电路图实战-01-如何读懂一张原理图" data-kind="doc" data-parent="#/ch/03-小型电路图实战" data-ch="小型电路图实战" data-title="01 如何读懂一张原理图"><article><h1>01 如何读懂一张原理图</h1>
 <p><strong>一句话</strong>：原理图是「电气连接」的地图，不是「物理位置」的照片；先找电源与地，再顺信号流读。</p>
 <h2>1. 读图五步法</h2>
 <ul><li><strong>找电源与地</strong>：VCC/3V3/5V 符号、GND 符号、电源入口（USB/电池/端子）。</li><li><strong>看框图划分</strong>：电源区、MCU 区、接口区、驱动区；大项目先读框图再读细节。</li><li><strong>顺信号流</strong>：输入(传感器/按键) → 处理(MCU) → 输出(显示/驱动)。</li><li><strong>认网络标号</strong>：同名标号 = 同一根线（如 <code>SDA</code>、<code>NET1</code>），跨页也相连。</li><li><strong>查关键值</strong>：电阻电容的数值决定行为（限流、上拉、滤波、定时）。</li></ul>
@@ -288,8 +365,8 @@ P = U × I = I² × R = U² / R</code></pre>
 <h2>4. 从原理图到实物</h2>
 <ul><li>原理图 ≠ 布局：同一网络在板上的走线可能绕很远。</li><li>看 PCB 时配合<strong>网络表/飞线图</strong>（KiCad 的 ratsnest）。</li><li>维修时：原理图 + 万用表通断档 = 最强组合。</li></ul>
 <h2>5. 练习（自测）</h2>
-<p>拿 <a href="#sec-03-小型电路图实战-02-十个必会小电路">十个必会小电路</a> 中任一张图，回答：</p>
-<ul><li>电源从哪进、经过哪些器件到地？</li><li>信号从哪进、到哪出？</li><li>每只电阻/电容的作用是什么？去掉会怎样？</li></ul></section><section class="doc" id="sec-03-小型电路图实战-02-十个必会小电路" data-title="02 十个必会小电路（含计算与接线）"><div class="crumb">03-小型电路图实战</div><h1>02 十个必会小电路（含计算与接线）</h1>
+<p>拿 <a href="#/doc/d-03-小型电路图实战-02-十个必会小电路">十个必会小电路</a> 中任一张图，回答：</p>
+<ul><li>电源从哪进、经过哪些器件到地？</li><li>信号从哪进、到哪出？</li><li>每只电阻/电容的作用是什么？去掉会怎样？</li></ul></article><nav class="pn" data-ch="03-小型电路图实战" data-id="d-03-小型电路图实战-01-如何读懂一张原理图"></nav></section><section class="view docview" id="doc-d-03-小型电路图实战-02-十个必会小电路" data-kind="doc" data-parent="#/ch/03-小型电路图实战" data-ch="小型电路图实战" data-title="02 十个必会小电路（含计算与接线）"><article><h1>02 十个必会小电路（含计算与接线）</h1>
 <blockquote>每个电路给出：原理图、关键计算、面包板要点、常见故障。全部可在面包板完成。</blockquote>
 <h2>① LED 限流</h2>
 <p><img loading="lazy" src="figures/diode-iv.png" alt="LED"></p>
@@ -320,7 +397,7 @@ P = U × I = I² × R = U² / R</code></pre>
 <p><img loading="lazy" src="figures/esp32-min-system.png" alt="电源"></p>
 <ul><li>AMS1117-3.3：输入 10µF、输出 22µF；注意压差与发热。</li><li>故障：输出不稳=电容不足/输入压差不足/过载。</li></ul>
 <h2>练习顺序建议</h2>
-<p>①→②→③ 一天；④→⑤ 一天；⑥→⑦ 一天；⑧→⑨→⑩ 两天。 每完成一个：拍照、记录实测值与计算值、写一句「我学到的」。</p></section><section class="doc" id="sec-03-小型电路图实战-03-用KiCad画第一张原理图与PCB" data-title="03 用 KiCad 画第一张原理图与 PCB"><div class="crumb">03-小型电路图实战</div><h1>03 用 KiCad 画第一张原理图与 PCB</h1>
+<p>①→②→③ 一天；④→⑤ 一天；⑥→⑦ 一天；⑧→⑨→⑩ 两天。 每完成一个：拍照、记录实测值与计算值、写一句「我学到的」。</p></article><nav class="pn" data-ch="03-小型电路图实战" data-id="d-03-小型电路图实战-02-十个必会小电路"></nav></section><section class="view docview" id="doc-d-03-小型电路图实战-03-用KiCad画第一张原理图与PCB" data-kind="doc" data-parent="#/ch/03-小型电路图实战" data-ch="小型电路图实战" data-title="03 用 KiCad 画第一张原理图与 PCB"><article><h1>03 用 KiCad 画第一张原理图与 PCB</h1>
 <p><strong>一句话</strong>：把面包板上的电路「固化」成板子：原理图 → 网络表 → 布局 → 布线 → 打样。</p>
 <h2>1. 工具与流程</h2>
 <ul><li>KiCad（免费开源，中文界面）：原理图 Eeschema + PCB Pcbnew + 3D 预览。</li><li>流程：建工程 → 画原理图(含 ERC) → 关联封装 → 导入 PCB → 布局 → 布线(DRC) → 出 Gerber → 打样 → 焊接 → 测试。</li></ul>
@@ -336,7 +413,7 @@ P = U × I = I² × R = U² / R</code></pre>
 <p>「ESP32 最小系统 + OLED + DHT22 + 一个按键 + 一个 LED」传感器节点：</p>
 <ul><li>用模组（WROOM-32）而非裸芯片，省射频与认证。</li><li>留出所有未用 GPIO 的排针，方便后续玩。</li><li>加电池座 + TP4056 充电，直接变成可穿戴原型。</li></ul>
 <h2>7. 常见新手错误</h2>
-<ul><li>封装画错（引脚顺序/间距）→ 打样前用 3D 预览 +  datasheet 核对。</li><li>电源与地网络没连全 → DRC 报 unconnected。</li><li>去耦电容画了但布局离 IC 远 → 等于没画。</li><li>丝印被焊盘/元件压住 → 装配看不清。</li><li>没留测试点 → 调试抓瞎。</li></ul></section><section class="doc" id="sec-04-ESP32单片机-01-认识ESP32家族" data-title="01 认识 ESP32 家族"><div class="crumb">04-ESP32单片机</div><h1>01 认识 ESP32 家族</h1>
+<ul><li>封装画错（引脚顺序/间距）→ 打样前用 3D 预览 +  datasheet 核对。</li><li>电源与地网络没连全 → DRC 报 unconnected。</li><li>去耦电容画了但布局离 IC 远 → 等于没画。</li><li>丝印被焊盘/元件压住 → 装配看不清。</li><li>没留测试点 → 调试抓瞎。</li></ul></article><nav class="pn" data-ch="03-小型电路图实战" data-id="d-03-小型电路图实战-03-用KiCad画第一张原理图与PCB"></nav></section><section class="view docview" id="doc-d-04-ESP32单片机-01-认识ESP32家族" data-kind="doc" data-parent="#/ch/04-ESP32单片机" data-ch="ESP32 单片机" data-title="01 认识 ESP32 家族"><article><h1>01 认识 ESP32 家族</h1>
 <p><strong>一句话</strong>：ESP32 是乐鑫(Espressif)的 Wi-Fi+蓝牙 MCU 系列；入门买「ESP32 或 ESP32-S3 的开发板」即可。</p>
 <h2>1. 家族成员（2026 年视角）</h2>
 <table><thead><tr><th>芯片</th><th>CPU</th><th>主频</th><th>无线</th><th>亮点</th><th>适合</th></tr></thead><tbody><tr><td>ESP32</td><td>Xtensa LX6 双核</td><td>240MHz</td><td>Wi-Fi 4 + BT 经典/BLE</td><td>生态最全、资料最多、有 DAC/触摸</td><td><strong>入门首选</strong></td></tr><tr><td>ESP32-S2</td><td>LX4 单核</td><td>240MHz</td><td>Wi-Fi</td><td>USB-OTG、43 GPIO</td><td>需要 USB 设备功能</td></tr><tr><td>ESP32-S3</td><td>LX7 双核</td><td>240MHz</td><td>Wi-Fi + BLE5</td><td>AI 指令、USB-OTG、更多 GPIO、八角形开发板多</td><td><strong>视觉/语音/AI 入门</strong></td></tr><tr><td>ESP32-C3</td><td>RISC-V 单核</td><td>160MHz</td><td>Wi-Fi + BLE5</td><td>便宜、小封装</td><td>成本敏感</td></tr><tr><td>ESP32-C6</td><td>RISC-V</td><td>160MHz</td><td>Wi-Fi 6 + BLE5 + <strong>Zigbee/Thread</strong></td><td>Matter 智能家居</td><td>智能家居</td></tr><tr><td>ESP32-H2</td><td>RISC-V</td><td>96MHz</td><td><strong>无 Wi-Fi</strong>，BLE5 + Zigbee/Thread</td><td>低功耗无线</td><td>传感器节点</td></tr><tr><td>ESP32-C5</td><td>RISC-V 双核</td><td>240MHz</td><td><strong>双频 Wi-Fi 6</strong> + BLE5</td><td>2.4G+5G</td><td>高吞吐无线</td></tr><tr><td>ESP32-P4</td><td>RISC-V 双核</td><td>400MHz</td><td><strong>无无线</strong>（配 C6/C5 做连接）</td><td>MIPI-CSI/DSI、H.264、AI</td><td>带屏/摄像头 HMI</td></tr></tbody></table>
@@ -349,7 +426,7 @@ P = U × I = I² × R = U² / R</code></pre>
 <table><thead><tr><th>框架</th><th>特点</th><th>建议</th></tr></thead><tbody><tr><td>Arduino (arduino-esp32 3.x, 基于 ESP-IDF 5.x)</td><td>上手最快、库最多</td><td><strong>入门首选</strong></td></tr><tr><td>ESP-IDF</td><td>官方、功能全、FreeRTOS 原生</td><td>进阶/产品</td></tr><tr><td>MicroPython</td><td>交互 REPL、开发快</td><td>教学/原型</td></tr><tr><td>ESPHome</td><td>YAML 配置接入 Home Assistant</td><td>智能家居玩家</td></tr></tbody></table>
 <h2>5. 一张图看懂资源</h2>
 <ul><li>双核 240MHz、520KB SRAM、4MB Flash（常见）、34 个可用 GPIO。</li><li>外设：ADC×2、DAC×2、触摸×10、UART×3、SPI×4、I2C×2、I2S×2、LEDC PWM 16 通道、RMT、PCNT、TWAI(CAN)、SDIO、以太网 MAC(需 PHY)。</li><li>无线：802.11 b/g/n + BT 4.2(BR/EDR+BLE)；支持 ESP-NOW、Wi-Fi Mesh、BLE Mesh。</li></ul>
-<p>下一章：<a href="#sec-04-ESP32单片机-02-引脚图与安全使用">引脚图与安全使用</a>。</p></section><section class="doc" id="sec-04-ESP32单片机-02-引脚图与安全使用" data-title="02 引脚图与安全使用"><div class="crumb">04-ESP32单片机</div><h1>02 引脚图与安全使用</h1>
+<p>下一章：<a href="#/doc/d-04-ESP32单片机-02-引脚图与安全使用">引脚图与安全使用</a>。</p></article><nav class="pn" data-ch="04-ESP32单片机" data-id="d-04-ESP32单片机-01-认识ESP32家族"></nav></section><section class="view docview" id="doc-d-04-ESP32单片机-02-引脚图与安全使用" data-kind="doc" data-parent="#/ch/04-ESP32单片机" data-ch="ESP32 单片机" data-title="02 引脚图与安全使用"><article><h1>02 引脚图与安全使用</h1>
 <p><strong>一句话</strong>：ESP32 的 39 个 GPIO 里，有 6 个被 Flash 占用、4 个只能输入、5 个是上电配置脚——用错就「玄学故障」。</p>
 <p><img loading="lazy" src="figures/esp32-devkit-pinout.png" alt="引脚图"></p>
 <h2>1. 引脚分类速记</h2>
@@ -371,7 +448,7 @@ LED   : 2 (板载)
 WS2812: 4 或 8? → 用 4（8 是 Flash）
 继电器: 26/27 (经三极管/MOS)</code></pre>
 <h2>5. 动手验证</h2>
-<ul><li>跑 <code>i2cscan</code>、<code>blink</code> 确认板子正常。</li><li>用万用表测 GPIO2 上电瞬间电平、GPIO0 静态电平（应≈3.3V）。</li><li>故意把 GPIO12 接 3.3V 上电，观察启动失败现象，再改回——深刻记忆 strapping。</li></ul></section><section class="doc" id="sec-04-ESP32单片机-03-最小系统与硬件设计" data-title="03 最小系统与硬件设计"><div class="crumb">04-ESP32单片机</div><h1>03 最小系统与硬件设计</h1>
+<ul><li>跑 <code>i2cscan</code>、<code>blink</code> 确认板子正常。</li><li>用万用表测 GPIO2 上电瞬间电平、GPIO0 静态电平（应≈3.3V）。</li><li>故意把 GPIO12 接 3.3V 上电，观察启动失败现象，再改回——深刻记忆 strapping。</li></ul></article><nav class="pn" data-ch="04-ESP32单片机" data-id="d-04-ESP32单片机-02-引脚图与安全使用"></nav></section><section class="view docview" id="doc-d-04-ESP32单片机-03-最小系统与硬件设计" data-kind="doc" data-parent="#/ch/04-ESP32单片机" data-ch="ESP32 单片机" data-title="03 最小系统与硬件设计"><article><h1>03 最小系统与硬件设计</h1>
 <p><strong>一句话</strong>：让 ESP32 可靠工作只需五部分：供电、复位、启动配置、烧录接口、天线。</p>
 <p><img loading="lazy" src="figures/esp32-min-system.png" alt="最小系统"></p>
 <h2>1. 五要素清单</h2>
@@ -386,7 +463,7 @@ WS2812: 4 或 8? → 用 4（8 是 Flash）
 <ul><li>天线伸出板边或板边净空：天线下方与前方不铺铜、不放电池/金属。</li><li>电源路径短而粗：LDO → 电容 → 模组 3V3 脚。</li><li>晶振(若裸芯片)：包地、远离串口与开关信号。</li><li>复位/启动脚走线短，避免被干扰误触发。</li><li>大面积铺地提供射频回流路径。</li></ul>
 <h2>5. 上电自检清单</h2>
 <ul><li>[ ] 3V3 稳定、纹波 &lt;50mV</li><li>[ ] EN 上电缓慢升到 3.3V（示波器/万用表 min-max）</li><li>[ ] GPIO0 上电为高</li><li>[ ] 串口 115200 有启动日志</li><li>[ ] WiFi 扫描成功、RSSI &gt; −75dBm（近路由器）</li></ul>
-<p>下一章：<a href="#sec-04-ESP32单片机-04-开发环境搭建">开发环境搭建</a>。</p></section><section class="doc" id="sec-04-ESP32单片机-04-开发环境搭建" data-title="04 开发环境搭建（Arduino / PlatformIO / ESP-IDF）"><div class="crumb">04-ESP32单片机</div><h1>04 开发环境搭建（Arduino / PlatformIO / ESP-IDF）</h1>
+<p>下一章：<a href="#/doc/d-04-ESP32单片机-04-开发环境搭建">开发环境搭建</a>。</p></article><nav class="pn" data-ch="04-ESP32单片机" data-id="d-04-ESP32单片机-03-最小系统与硬件设计"></nav></section><section class="view docview" id="doc-d-04-ESP32单片机-04-开发环境搭建" data-kind="doc" data-parent="#/ch/04-ESP32单片机" data-ch="ESP32 单片机" data-title="04 开发环境搭建（Arduino / PlatformIO / ESP-IDF）"><article><h1>04 开发环境搭建（Arduino / PlatformIO / ESP-IDF）</h1>
 <p><strong>一句话</strong>：三条路线任选其一；入门推荐 Arduino IDE 或 PlatformIO，产品/进阶用 ESP-IDF。</p>
 <h2>1. 路线 A：Arduino IDE（最快上手）</h2>
 <ul><li>安装 Arduino IDE 2.x。</li><li>偏好设置 → 附加开发板管理器网址：</li></ul>
@@ -416,8 +493,8 @@ idf.py create-project myapp &amp;&amp; cd myapp &amp;&amp; idf.py build flash mo
 <table><thead><tr><th>现象</th><th>处理</th></tr></thead><tbody><tr><td>找不到串口</td><td>装 CH340/CP2102 驱动；换 USB 线（很多线只能充电）</td></tr><tr><td>macOS 提示权限</td><td>用 <code>/dev/cu.*</code> 而非 <code>/dev/tty.*</code></td></tr><tr><td>上传卡 connecting</td><td>按住 BOOT 再点上传；或检查自动下载电路</td></tr><tr><td>乱码</td><td>波特率改 115200；日志波特率受 GPIO15 影响</td></tr></tbody></table>
 <h2>6. 第一个程序之后的练习清单</h2>
 <ul><li>Blink → 改间隔 → 用 <code>millis()</code> 非阻塞改写。</li><li>按键输入（内部上拉）+ 串口打印。</li><li>PWM 呼吸灯（LEDC）。</li><li>ADC 读电位器 → 映射到呼吸灯。</li><li>WiFi 扫描并打印 SSID/RSSI。</li></ul>
-<p>代码示例见下一章 <a href="#sec-04-ESP32单片机-05-外设编程与代码示例">外设编程与代码示例</a>。</p></section><section class="doc" id="sec-04-ESP32单片机-05-外设编程与代码示例" data-title="05 外设编程与代码示例（Arduino 框架）"><div class="crumb">04-ESP32单片机</div><h1>05 外设编程与代码示例（Arduino 框架）</h1>
-<blockquote>所有示例可直接复制进 Arduino IDE 编译。引脚按 <a href="#sec-04-ESP32单片机-02-引脚图与安全使用">引脚分配建议</a>。</blockquote>
+<p>代码示例见下一章 <a href="#/doc/d-04-ESP32单片机-05-外设编程与代码示例">外设编程与代码示例</a>。</p></article><nav class="pn" data-ch="04-ESP32单片机" data-id="d-04-ESP32单片机-04-开发环境搭建"></nav></section><section class="view docview" id="doc-d-04-ESP32单片机-05-外设编程与代码示例" data-kind="doc" data-parent="#/ch/04-ESP32单片机" data-ch="ESP32 单片机" data-title="05 外设编程与代码示例（Arduino 框架）"><article><h1>05 外设编程与代码示例（Arduino 框架）</h1>
+<blockquote>所有示例可直接复制进 Arduino IDE 编译。引脚按 <a href="#/doc/d-04-ESP32单片机-02-引脚图与安全使用">引脚分配建议</a>。</blockquote>
 <h2>1. GPIO 输出：点灯与无阻塞闪烁</h2>
 <pre><code>const int LED = 2;
 uint32_t prev = 0; bool on = false;
@@ -552,14 +629,14 @@ void setup() {
   s-&gt;getAdvertising()-&gt;start();
 }
 void loop() { delay(1000); }</code></pre>
-<blockquote>练习：把 4 + 6 + 9 组合成「温湿度上屏 + 手机网页查看」；再加 11 做成电池供电节点。</blockquote></section><section class="doc" id="sec-04-ESP32单片机-06-常用模块接线手册" data-title="06 常用模块接线手册"><div class="crumb">04-ESP32单片机</div><h1>06 常用模块接线手册</h1>
+<blockquote>练习：把 4 + 6 + 9 组合成「温湿度上屏 + 手机网页查看」；再加 11 做成电池供电节点。</blockquote></article><nav class="pn" data-ch="04-ESP32单片机" data-id="d-04-ESP32单片机-05-外设编程与代码示例"></nav></section><section class="view docview" id="doc-d-04-ESP32单片机-06-常用模块接线手册" data-kind="doc" data-parent="#/ch/04-ESP32单片机" data-ch="ESP32 单片机" data-title="06 常用模块接线手册"><article><h1>06 常用模块接线手册</h1>
 <p><img loading="lazy" src="figures/esp32-periph-wiring.png" alt="接线图"></p>
 <h2>接线总表</h2>
 <table><thead><tr><th>模块</th><th>VCC</th><th>GND</th><th>信号</th><th>备注</th></tr></thead><tbody><tr><td>SSD1306 OLED</td><td>3V3</td><td>GND</td><td>SDA=21, SCL=22</td><td>地址 0x3C</td></tr><tr><td>DHT22</td><td>3V3</td><td>GND</td><td>DATA=4</td><td>外部 4.7~10k 上拉</td></tr><tr><td>DS18B20</td><td>3V3</td><td>GND</td><td>DQ=4</td><td>4.7k 上拉，可并联多只</td></tr><tr><td>WS2812 灯带</td><td>5V</td><td>GND</td><td>DIN=4</td><td>串 330Ω；电源并 1000µF</td></tr><tr><td>HC-SR04</td><td>5V</td><td>GND</td><td>TRIG=5, ECHO=18</td><td>ECHO 需 20k/10k 分压</td></tr><tr><td>MPU6050</td><td>3V3</td><td>GND</td><td>SDA=21, SCL=22</td><td>地址 0x68</td></tr><tr><td>BMP280</td><td>3V3</td><td>GND</td><td>SDA=21, SCL=22</td><td>地址 0x76/0x77</td></tr><tr><td>SG90 舵机</td><td>外部5~6V</td><td>GND(共地)</td><td>PWM=13</td><td>勿用板载 5V</td></tr><tr><td>继电器模块</td><td>5V</td><td>GND</td><td>IN=26</td><td>选光耦隔离款</td></tr><tr><td>有源蜂鸣器</td><td>3V3</td><td>GND</td><td>IN=27</td><td>经三极管更稳</td></tr><tr><td>SD 卡模块</td><td>3V3</td><td>GND</td><td>SCK=18 MISO=19 MOSI=23 CS=5</td><td>SPI</td></tr><tr><td>GPS (NEO-6M)</td><td>5V/3V3</td><td>GND</td><td>TX→16(RX2)</td><td>9600bps</td></tr><tr><td>MAX30102 心率</td><td>3V3</td><td>GND</td><td>SDA=21, SCL=22</td><td>0x57</td></tr><tr><td>HX711 称重</td><td>3V3~5V</td><td>GND</td><td>DT=32, SCK=33</td><td></td></tr><tr><td>LoRa SX1276</td><td>3V3</td><td>GND</td><td>SPI + DIO0=26</td><td>注意天线</td></tr><tr><td>按键</td><td>—</td><td>GND</td><td>任意(内部上拉)</td><td>并 100nF</td></tr><tr><td>电位器</td><td>3V3</td><td>GND</td><td>中点=34</td><td>仅输入脚更稳</td></tr></tbody></table>
 <h2>三条铁律</h2>
 <ul><li><strong>共地</strong>：所有模块 GND 与 ESP32 GND 相连，包括外部电源供电的模块。</li><li><strong>电平</strong>：模块输出 5V → 分压/电平转换/光耦后再进 GPIO。</li><li><strong>电流</strong>：电机/舵机/灯带/继电器线圈用外部电源；ESP32 只给控制信号。</li></ul>
 <h2>排错顺序</h2>
-<p>不工作 → ① 电源灯亮吗 ② 共地了吗 ③ 引脚号对吗 ④ 电平匹配吗 ⑤ 库/地址/波特率对吗 ⑥ 换杜邦线/换列 ⑦ 换模块交叉验证。</p></section><section class="doc" id="sec-04-ESP32单片机-07-低功耗设计" data-title="07 低功耗设计：让电池活几个月"><div class="crumb">04-ESP32单片机</div><h1>07 低功耗设计：让电池活几个月</h1>
+<p>不工作 → ① 电源灯亮吗 ② 共地了吗 ③ 引脚号对吗 ④ 电平匹配吗 ⑤ 库/地址/波特率对吗 ⑥ 换杜邦线/换列 ⑦ 换模块交叉验证。</p></article><nav class="pn" data-ch="04-ESP32单片机" data-id="d-04-ESP32单片机-06-常用模块接线手册"></nav></section><section class="view docview" id="doc-d-04-ESP32单片机-07-低功耗设计" data-kind="doc" data-parent="#/ch/04-ESP32单片机" data-ch="ESP32 单片机" data-title="07 低功耗设计：让电池活几个月"><article><h1>07 低功耗设计：让电池活几个月</h1>
 <p><img loading="lazy" src="figures/esp32-sleep-currents.png" alt="功耗"></p>
 <h2>1. 功耗等级</h2>
 <table><thead><tr><th>模式</th><th>典型电流</th><th>保留</th><th>唤醒</th></tr></thead><tbody><tr><td>Active (WiFi TX)</td><td>160~240mA 峰值</td><td>全部</td><td>—</td></tr><tr><td>Modem-sleep</td><td>平均 ~20mA</td><td>CPU 运行、WiFi 连接保持</td><td>自动</td></tr><tr><td>Light-sleep</td><td>~0.8mA</td><td>CPU 暂停、RAM、WiFi</td><td>GPIO/定时/UART</td></tr><tr><td>Deep-sleep</td><td>~10µA</td><td>RTC 内存、RTC 外设</td><td>定时/GPIO/触摸/ULP</td></tr><tr><td>Hibernation</td><td>~2.5µA</td><td>仅 RTC 慢速内存</td><td>仅 RTC GPIO/定时</td></tr></tbody></table>
@@ -576,7 +653,7 @@ esp_sleep_enable_ext0_wakeup((gpio_num_t)0, 0);  // 低电平唤醒
 esp_deep_sleep_start();</code></pre>
 <p>唤醒原因查询：<code>esp_sleep_get_wakeup_cause()</code>。</p>
 <h2>5. 测量工具</h2>
-<ul><li>串口功率计/USB 电流表看平均（含唤醒脉冲需采样快的）。</li><li>专业：PPK2 / Joulescope / 万用表 µA 档串入（注意量程切换压降）。</li><li>没有工具时：用 1Ω 采样电阻 + 示波器看压降波形估算。</li></ul></section><section class="doc" id="sec-04-ESP32单片机-08-常见问题排查" data-title="08 常见问题排查（故障树）"><div class="crumb">04-ESP32单片机</div><h1>08 常见问题排查（故障树）</h1>
+<ul><li>串口功率计/USB 电流表看平均（含唤醒脉冲需采样快的）。</li><li>专业：PPK2 / Joulescope / 万用表 µA 档串入（注意量程切换压降）。</li><li>没有工具时：用 1Ω 采样电阻 + 示波器看压降波形估算。</li></ul></article><nav class="pn" data-ch="04-ESP32单片机" data-id="d-04-ESP32单片机-07-低功耗设计"></nav></section><section class="view docview" id="doc-d-04-ESP32单片机-08-常见问题排查" data-kind="doc" data-parent="#/ch/04-ESP32单片机" data-ch="ESP32 单片机" data-title="08 常见问题排查（故障树）"><article><h1>08 常见问题排查（故障树）</h1>
 <h2>A. 烧录/连接类</h2>
 <table><thead><tr><th>现象</th><th>可能原因</th><th>处理</th></tr></thead><tbody><tr><td>找不到串口</td><td>驱动/线/口选错</td><td>装 CH340/CP2102 驱动；换数据线；macOS 用 /dev/cu.*</td></tr><tr><td>卡 <code>Connecting....</code></td><td>未进下载模式</td><td>按住 BOOT 再上传；检查自动下载电路</td></tr><tr><td>上传后无日志</td><td>波特率/串口被占</td><td>115200；关掉其他串口工具</td></tr><tr><td>反复复位</td><td>电源不足/brownout</td><td>换 5V2A 电源；3V3 加 100~470µF</td></tr></tbody></table>
 <h2>B. 运行类</h2>
@@ -584,7 +661,7 @@ esp_deep_sleep_start();</code></pre>
 <h2>C. 启动类</h2>
 <table><thead><tr><th>现象</th><th>可能原因</th><th>处理</th></tr></thead><tbody><tr><td>上电无反应</td><td>电源/EN</td><td>测 3V3；测 EN 是否≈3.3V</td></tr><tr><td>启动日志乱码</td><td>波特率</td><td>115200</td></tr><tr><td>启动后停住</td><td>GPIO12/15 被外部拉错</td><td>移除上电时的外部驱动</td></tr><tr><td>无限重启</td><td>看门狗/电源/代码</td><td>看复位原因 <code>rtc_get_reset_reason</code></td></tr></tbody></table>
 <h2>D. 调试方法论</h2>
-<ul><li><strong>二分法</strong>：注释一半代码，定位问题区间。</li><li><strong>最小复现</strong>：只留出问题的那 10 行。</li><li><strong>看日志等级</strong>：<code>esp_log_level_set("*", ESP_LOG_DEBUG)</code>。</li><li><strong>量三样</strong>：电压、电流、波形——多数「软件问题」最后是硬件。</li><li><strong>换件交叉验证</strong>：模块、线、板子轮流换。</li><li>记录：每次故障写「现象-假设-验证-结论」四行。</li></ul></section><section class="doc" id="sec-05-工具与焊接-01-工具清单与万用表" data-title="01 工具清单与万用表使用"><div class="crumb">05-工具与焊接</div><h1>01 工具清单与万用表使用</h1>
+<ul><li><strong>二分法</strong>：注释一半代码，定位问题区间。</li><li><strong>最小复现</strong>：只留出问题的那 10 行。</li><li><strong>看日志等级</strong>：<code>esp_log_level_set("*", ESP_LOG_DEBUG)</code>。</li><li><strong>量三样</strong>：电压、电流、波形——多数「软件问题」最后是硬件。</li><li><strong>换件交叉验证</strong>：模块、线、板子轮流换。</li><li>记录：每次故障写「现象-假设-验证-结论」四行。</li></ul></article><nav class="pn" data-ch="04-ESP32单片机" data-id="d-04-ESP32单片机-08-常见问题排查"></nav></section><section class="view docview" id="doc-d-05-工具与焊接-01-工具清单与万用表" data-kind="doc" data-parent="#/ch/05-工具与焊接" data-ch="工具与焊接" data-title="01 工具清单与万用表使用"><article><h1>01 工具清单与万用表使用</h1>
 <p><img loading="lazy" src="figures/multimeter.png" alt="万用表"></p>
 <h2>1. 必备工具（按优先级）</h2>
 <table><thead><tr><th>工具</th><th>预算</th><th>用途</th></tr></thead><tbody><tr><td>万用表（真有效值更好）</td><td>¥60~200</td><td>电压/电流/电阻/通断/二极管</td></tr><tr><td>面包板 + 杜邦线</td><td>¥30</td><td>原型搭建</td></tr><tr><td>恒温焊台</td><td>¥150~400</td><td>焊接/拆焊</td></tr><tr><td>镊子/斜口钳/剥线钳</td><td>¥50</td><td>装配</td></tr><tr><td>USB 转 TTL（备用）</td><td>¥15</td><td>调试串口</td></tr><tr><td>逻辑分析仪 8ch</td><td>¥60~150</td><td>看 I2C/SPI/UART 波形</td></tr><tr><td>可调电源（限流）</td><td>¥200~500</td><td>安全上电、测功耗</td></tr><tr><td>放大镜/显微镜</td><td>¥50~300</td><td>检查焊点</td></tr></tbody></table>
@@ -593,7 +670,7 @@ esp_deep_sleep_start();</code></pre>
 <h2>3. 测量技巧</h2>
 <ul><li>测小电流：串 1Ω 电阻测压降换算，避免 µA 档压降影响电路。</li><li>测纹波：示波器交流耦合 + 20MHz 带宽限制；万用表 AC 档不准。</li><li>测 ESP32 整机电流：断开 3V3 跳线串入电流表（或用 PP2/PPK2）。</li><li>通断排查：先测电源对地是否短路，再逐段测连通。</li></ul>
 <h2>4. 安全</h2>
-<ul><li>测市电/强电：本资料不指导实操；如需请专业电工。</li><li>电容先放电再测电阻。</li><li>表笔插孔与档位匹配后再上电。</li></ul></section><section class="doc" id="sec-05-工具与焊接-02-面包板与杜邦线" data-title="02 面包板与杜邦线"><div class="crumb">05-工具与焊接</div><h1>02 面包板与杜邦线</h1>
+<ul><li>测市电/强电：本资料不指导实操；如需请专业电工。</li><li>电容先放电再测电阻。</li><li>表笔插孔与档位匹配后再上电。</li></ul></article><nav class="pn" data-ch="05-工具与焊接" data-id="d-05-工具与焊接-01-工具清单与万用表"></nav></section><section class="view docview" id="doc-d-05-工具与焊接-02-面包板与杜邦线" data-kind="doc" data-parent="#/ch/05-工具与焊接" data-ch="工具与焊接" data-title="02 面包板与杜邦线"><article><h1>02 面包板与杜邦线</h1>
 <p><img loading="lazy" src="figures/breadboard-anatomy.png" alt="面包板"></p>
 <h2>1. 内部结构</h2>
 <ul><li>中间区：每 <strong>5 孔一列</strong> 横向导通（a-e 一组、f-j 一组），列与列之间绝缘。</li><li>中间凹槽：IC 跨接，两侧不短路。</li><li>上下电源轨：<strong>整条纵向导通</strong>（有的板中间断开，注意看丝印）。</li></ul>
@@ -602,7 +679,7 @@ esp_deep_sleep_start();</code></pre>
 <h2>3. 杜邦线</h2>
 <ul><li>公-公、公-母、母-母各备一把；质量差的线时断时续。</li><li>排查「玄学故障」第一步：换线或换一列。</li><li>长线(&gt;30cm)传 I2C/SPI 易出错：降速或改短。</li></ul>
 <h2>4. 从面包板到成品</h2>
-<p>面包板验证 → 洞洞板/万能板焊接 → KiCad 打样。 每一步都保留接线照片与 BOM，返工不慌。</p></section><section class="doc" id="sec-05-工具与焊接-03-焊接入门" data-title="03 焊接入门"><div class="crumb">05-工具与焊接</div><h1>03 焊接入门</h1>
+<p>面包板验证 → 洞洞板/万能板焊接 → KiCad 打样。 每一步都保留接线照片与 BOM，返工不慌。</p></article><nav class="pn" data-ch="05-工具与焊接" data-id="d-05-工具与焊接-02-面包板与杜邦线"></nav></section><section class="view docview" id="doc-d-05-工具与焊接-03-焊接入门" data-kind="doc" data-parent="#/ch/05-工具与焊接" data-ch="工具与焊接" data-title="03 焊接入门"><article><h1>03 焊接入门</h1>
 <p><img loading="lazy" src="figures/soldering.png" alt="焊接"></p>
 <h2>1. 参数</h2>
 <table><thead><tr><th>项目</th><th>建议</th></tr></thead><tbody><tr><td>温度</td><td>有铅 320°C / 无铅 350°C</td></tr><tr><td>单次加热</td><td>≤3 秒</td></tr><tr><td>锡丝</td><td>0.5~0.8mm 含助焊剂芯</td></tr><tr><td>烙铁头</td><td>刀头(K)通用、尖头(I)细脚</td></tr></tbody></table>
@@ -613,7 +690,7 @@ esp_deep_sleep_start();</code></pre>
 <h2>4. 拆焊</h2>
 <ul><li>吸锡带：压住加热后提起。</li><li>吸锡器：熔化后按键吸走。</li><li>多脚 IC：堆锡拖焊 / 热风 350°C 小风量。</li><li>贴片件：镊子+两头轮流加热。</li></ul>
 <h2>5. 安全与习惯</h2>
-<ul><li>通风或排烟；焊完洗手（含铅锡）。</li><li>烙铁归架、断电收纳；远离杜邦线与塑料。</li><li>静电敏感器件(MOS/模组)：防静电手环或先摸地。</li></ul></section><section class="doc" id="sec-05-工具与焊接-04-调试方法与仪器" data-title="04 调试方法与仪器"><div class="crumb">05-工具与焊接</div><h1>04 调试方法与仪器</h1>
+<ul><li>通风或排烟；焊完洗手（含铅锡）。</li><li>烙铁归架、断电收纳；远离杜邦线与塑料。</li><li>静电敏感器件(MOS/模组)：防静电手环或先摸地。</li></ul></article><nav class="pn" data-ch="05-工具与焊接" data-id="d-05-工具与焊接-03-焊接入门"></nav></section><section class="view docview" id="doc-d-05-工具与焊接-04-调试方法与仪器" data-kind="doc" data-parent="#/ch/05-工具与焊接" data-ch="工具与焊接" data-title="04 调试方法与仪器"><article><h1>04 调试方法与仪器</h1>
 <h2>1. 调试四板斧</h2>
 <ul><li><strong>看</strong>：电源灯、LED、屏幕、串口日志。</li><li><strong>量</strong>：电压→电流→通断→波形，由静到动。</li><li><strong>比</strong>：与正常板/正常值对比。</li><li><strong>换</strong>：模块、线、电源交叉验证。</li></ul>
 <h2>2. 仪器进阶</h2>
@@ -627,7 +704,7 @@ esp_deep_sleep_start();</code></pre>
 现象：
 假设：
 验证步骤与数据：
-结论与修改：</code></pre></section><section class="doc" id="sec-06-项目实战-01-十个循序渐进项目" data-title="01 十个循序渐进项目"><div class="crumb">06-项目实战</div><h1>01 十个循序渐进项目</h1>
+结论与修改：</code></pre></article><nav class="pn" data-ch="05-工具与焊接" data-id="d-05-工具与焊接-04-调试方法与仪器"></nav></section><section class="view docview" id="doc-d-06-项目实战-01-十个循序渐进项目" data-kind="doc" data-parent="#/ch/06-项目实战" data-ch="项目实战" data-title="01 十个循序渐进项目"><article><h1>01 十个循序渐进项目</h1>
 <blockquote>每个项目给出：目标、硬件、知识点、验收标准。做完一个再下一个。</blockquote>
 <table><thead><tr><th>#</th><th>项目</th><th>硬件</th><th>知识点</th><th>验收</th></tr></thead><tbody><tr><td>1</td><td>呼吸灯</td><td>板载 LED</td><td>PWM/LEDC</td><td>平滑渐亮渐灭，无闪烁</td></tr><tr><td>2</td><td>按键计数器</td><td>按键</td><td>输入/消抖/中断</td><td>连按 100 次计数准确</td></tr><tr><td>3</td><td>电位器调光</td><td>电位器+LED</td><td>ADC→PWM 映射</td><td>转动实时跟随</td></tr><tr><td>4</td><td>温湿度上屏</td><td>DHT22+OLED</td><td>单总线/I2C/库</td><td>每 2s 刷新显示</td></tr><tr><td>5</td><td>网页传感器</td><td>+WiFi/WebServer</td><td>WiFi/HTTP</td><td>手机浏览器看到数据</td></tr><tr><td>6</td><td>超声波测距报警</td><td>HC-SR04+蜂鸣器</td><td>时序/电平转换</td><td>&lt;30cm 报警</td></tr><tr><td>7</td><td>舵机云台</td><td>SG90+电位器</td><td>PWM 脉宽/外部供电</td><td>电位器控制角度</td></tr><tr><td>8</td><td>灯带氛围灯</td><td>WS2812</td><td>单线时序/5V 供电</td><td>10 种效果切换</td></tr><tr><td>9</td><td>电池天气站</td><td>+锂电/TP4056/OLED</td><td>低功耗/MQTT</td><td>deep-sleep 续航 ≥30 天</td></tr><tr><td>10</td><td>自己的板子</td><td>KiCad 打样</td><td>原理图/PCB/焊接</td><td>稳定运行 7 天</td></tr></tbody></table>
 <h2>项目 9 参考架构</h2>
@@ -636,7 +713,7 @@ esp_deep_sleep_start();</code></pre>
         [DHT22]─GPIO4   [OLED I2C]   [MQTT over WiFi]
 每 5 分钟：唤醒→读数→上报→deep-sleep</code></pre>
 <h2>做项目的工程习惯</h2>
-<ul><li>先画接线草图再插线。</li><li>分模块调试：显示先亮、传感先读数、网络先连。</li><li>代码用 Git 管理，每个里程碑打 tag。</li><li>写 README：接线表、依赖库、已知问题。</li></ul></section><section class="doc" id="sec-06-项目实战-02-采购清单与预算" data-title="02 采购清单与预算（2026 年参考价）"><div class="crumb">06-项目实战</div><h1>02 采购清单与预算（2026 年参考价）</h1>
+<ul><li>先画接线草图再插线。</li><li>分模块调试：显示先亮、传感先读数、网络先连。</li><li>代码用 Git 管理，每个里程碑打 tag。</li><li>写 README：接线表、依赖库、已知问题。</li></ul></article><nav class="pn" data-ch="06-项目实战" data-id="d-06-项目实战-01-十个循序渐进项目"></nav></section><section class="view docview" id="doc-d-06-项目实战-02-采购清单与预算" data-kind="doc" data-parent="#/ch/06-项目实战" data-ch="项目实战" data-title="02 采购清单与预算（2026 年参考价）"><article><h1>02 采购清单与预算（2026 年参考价）</h1>
 <h2>入门包（约 ¥150）</h2>
 <table><thead><tr><th>物品</th><th>数量</th><th>参考价</th></tr></thead><tbody><tr><td>ESP32 DevKit V1 / DevKitC</td><td>1</td><td>¥25~40</td></tr><tr><td>面包板 830 孔</td><td>1</td><td>¥8</td></tr><tr><td>杜邦线 公母/母母 各 40 根</td><td>2 包</td><td>¥12</td></tr><tr><td>电阻包 1/4W 常用值</td><td>1</td><td>¥10</td></tr><tr><td>电容包 陶瓷+电解</td><td>1</td><td>¥12</td></tr><tr><td>LED 包 多色</td><td>1</td><td>¥6</td></tr><tr><td>轻触按键</td><td>10</td><td>¥3</td></tr><tr><td>电位器 10k</td><td>2</td><td>¥4</td></tr><tr><td>Micro-USB/Type-C 数据线</td><td>2</td><td>¥10</td></tr><tr><td>万用表（入门）</td><td>1</td><td>¥60</td></tr></tbody></table>
 <h2>进阶包（追加约 ¥250）</h2>
@@ -644,20 +721,71 @@ esp_deep_sleep_start();</code></pre>
 <h2>电池与打样（追加约 ¥150）</h2>
 <table><thead><tr><th>物品</th><th>参考价</th></tr></thead><tbody><tr><td>18650/锂聚合物 + 座</td><td>¥30</td></tr><tr><td>TP4056 充电板</td><td>¥5</td></tr><tr><td>KiCad 打样 5 片 + 贴片</td><td>¥60~100</td></tr><tr><td>焊锡丝/吸锡带/助焊剂</td><td>¥40</td></tr></tbody></table>
 <h2>购买建议</h2>
-<ul><li>优先选带「自动下载电路」的开发板。</li><li>模块买「带排针已焊」或自备排针。</li><li>一次买 2 块开发板：交叉验证省时间。</li><li>传感器先买 1 个验证，好用再批量。</li></ul></section>
+<ul><li>优先选带「自动下载电路」的开发板。</li><li>模块买「带排针已焊」或自备排针。</li><li>一次买 2 块开发板：交叉验证省时间。</li><li>传感器先买 1 个验证，好用再批量。</li></ul></article><nav class="pn" data-ch="06-项目实战" data-id="d-06-项目实战-02-采购清单与预算"></nav></section>
 </main>
-<button id="fab">↑ 回顶部</button>
-<script>
-const its=[...document.querySelectorAll('#side .it')];
-const docs=[...document.querySelectorAll('.doc')];
-const q=document.getElementById('q');
-q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();
- its.forEach(a=>{a.style.display=!v||a.dataset.s.includes(v)?'':'none';});
- docs.forEach(d=>{d.style.display=!v||d.dataset.title.toLowerCase().includes(v)||d.textContent.toLowerCase().includes(v)?'':'none';});
-});
-const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){
- its.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id));}});},{rootMargin:'-10% 0px -80% 0px'});
-docs.forEach(d=>obs.observe(d));
-document.getElementById('fab').onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+<button id="fab" aria-label="回顶部">↑</button>
+<div id="search"><div class="box"><input id="si" placeholder="搜索文档标题 / 章节…"><div class="res" id="sres"></div></div></div>
+<script>const SEARCH_INDEX="d-README@@硬件入门学习包：从基础元器件到 ESP32@@home||d-00-学习路线图@@00 学习路线图@@home||d-01-基础元器件-01-电阻@@01 电阻 Resistor@@01-基础元器件||d-01-基础元器件-02-电容@@02 电容 Capacitor@@01-基础元器件||d-01-基础元器件-03-电感与磁珠@@03 电感、磁珠与变压器@@01-基础元器件||d-01-基础元器件-04-二极管与LED@@04 二极管与 LED@@01-基础元器件||d-01-基础元器件-05-三极管与MOS管@@05 三极管 BJT 与 MOS 管@@01-基础元器件||d-01-基础元器件-06-其他常用元器件@@06 其他常用元器件速览@@01-基础元器件||d-02-电路基础与定律-01-电压电流电阻与欧姆定律@@01 电压、电流、电阻与欧姆定律@@02-电路基础与定律||d-02-电路基础与定律-02-串并联-基尔霍夫-分压分流@@02 串并联、基尔霍夫定律、分压与分流@@02-电路基础与定律||d-02-电路基础与定律-03-RC电路与滤波@@03 RC 电路与滤波@@02-电路基础与定律||d-02-电路基础与定律-04-电源与供电@@04 电源与供电：LDO、DC-DC 与电池@@02-电路基础与定律||d-02-电路基础与定律-05-数字信号-逻辑电平-ADC-PWM@@05 数字信号、逻辑电平、ADC 与 PWM@@02-电路基础与定律||d-02-电路基础与定律-06-通信接口UART-I2C-SPI@@06 通信接口：UART / I2C / SPI@@02-电路基础与定律||d-03-小型电路图实战-01-如何读懂一张原理图@@01 如何读懂一张原理图@@03-小型电路图实战||d-03-小型电路图实战-02-十个必会小电路@@02 十个必会小电路（含计算与接线）@@03-小型电路图实战||d-03-小型电路图实战-03-用KiCad画第一张原理图与PCB@@03 用 KiCad 画第一张原理图与 PCB@@03-小型电路图实战||d-04-ESP32单片机-01-认识ESP32家族@@01 认识 ESP32 家族@@04-ESP32单片机||d-04-ESP32单片机-02-引脚图与安全使用@@02 引脚图与安全使用@@04-ESP32单片机||d-04-ESP32单片机-03-最小系统与硬件设计@@03 最小系统与硬件设计@@04-ESP32单片机||d-04-ESP32单片机-04-开发环境搭建@@04 开发环境搭建（Arduino / PlatformIO / ESP-IDF）@@04-ESP32单片机||d-04-ESP32单片机-05-外设编程与代码示例@@05 外设编程与代码示例（Arduino 框架）@@04-ESP32单片机||d-04-ESP32单片机-06-常用模块接线手册@@06 常用模块接线手册@@04-ESP32单片机||d-04-ESP32单片机-07-低功耗设计@@07 低功耗设计：让电池活几个月@@04-ESP32单片机||d-04-ESP32单片机-08-常见问题排查@@08 常见问题排查（故障树）@@04-ESP32单片机||d-05-工具与焊接-01-工具清单与万用表@@01 工具清单与万用表使用@@05-工具与焊接||d-05-工具与焊接-02-面包板与杜邦线@@02 面包板与杜邦线@@05-工具与焊接||d-05-工具与焊接-03-焊接入门@@03 焊接入门@@05-工具与焊接||d-05-工具与焊接-04-调试方法与仪器@@04 调试方法与仪器@@05-工具与焊接||d-06-项目实战-01-十个循序渐进项目@@01 十个循序渐进项目@@06-项目实战||d-06-项目实战-02-采购清单与预算@@02 采购清单与预算（2026 年参考价）@@06-项目实战";
+
+const DOCS = SEARCH_INDEX.split("||").map(s=>{const [id,t,c]=s.split("@@");return {id,t,c};});
+const views=[...document.querySelectorAll(".view")];
+const bar=document.getElementById("bar");
+const ttl=bar.querySelector(".ttl"), crumb=bar.querySelector(".crumb");
+const btnBack=bar.querySelector("#bBack"), btnHome=bar.querySelector("#bHome"), btnSearch=bar.querySelector("#bSearch");
+const fab=document.getElementById("fab");
+let cur=null;
+function show(id){
+  const v=document.getElementById(id);
+  if(!v){location.hash="#/";return;}
+  views.forEach(x=>x.classList.toggle("on",x===v));
+  cur=v;
+  const kind=v.dataset.kind;
+  if(kind==="home"){ttl.textContent="硬件入门学习包";crumb.textContent="首页 · 快捷入口";btnBack.style.visibility="hidden";}
+  else{
+    btnBack.style.visibility="visible";
+    ttl.textContent=v.dataset.title||"";
+    crumb.textContent=kind==="doc"?("文章 · "+(v.dataset.ch||"")):"章节";
+  }
+  if(kind==="doc") buildPN(v);
+  window.scrollTo({top:0,behavior:"instant"});
+  fab.style.display="none";
+}
+function buildPN(v){
+  const nav=v.querySelector(".pn"); const ch=v.dataset.parent; const id=v.id.replace("doc-","");
+  const list=DOCS.filter(d=>d.c===v.getAttribute("data-chraw")||true);
+  // 用 DOM 顺序：同章节文章
+  const all=[...document.querySelectorAll(".docview")];
+  const idx=all.indexOf(v);
+  const same=all.filter(a=>a.dataset.ch===v.dataset.ch);
+  const i=same.indexOf(v);
+  const prev=same[i-1], next=same[i+1];
+  nav.innerHTML="";
+  const mk=(a,cls,label)=>{const el=document.createElement("a");el.className=cls;el.href="#/doc/"+a.id.replace("doc-","");el.innerHTML="<span>"+label+"</span>"+a.dataset.title;return el;};
+  if(prev)nav.appendChild(mk(prev,"pv","上一篇"));
+  const home=document.createElement("a");home.className="home";home.href=ch;home.textContent="目录";nav.appendChild(home);
+  if(next)nav.appendChild(mk(next,"nx","下一篇"));
+}
+function route(){
+  const h=location.hash||"#/";
+  if(h==="#/"||h==="#")show("v-home");
+  else if(h.startsWith("#/ch/"))show("ch-"+decodeURIComponent(h.slice(5)));
+  else if(h.startsWith("#/doc/"))show("doc-"+decodeURIComponent(h.slice(6)));
+  else if(h==="#/fig")show("v-fig");
+  else show("v-home");
+}
+btnBack.onclick=()=>{ if(cur&&cur.dataset.kind==="doc")location.hash=cur.dataset.parent; else if(cur&&cur.dataset.kind==="ch")location.hash="#/"; else history.back(); };
+btnHome.onclick=()=>{location.hash="#/";};
+btnSearch.onclick=()=>{searchEl.classList.add("on");si.focus();};
+const searchEl=document.getElementById("search"), si=document.getElementById("si"), sres=document.getElementById("sres");
+si.oninput=()=>{const q=si.value.trim().toLowerCase();
+  sres.innerHTML=DOCS.filter(d=>!q||d.t.toLowerCase().includes(q)||d.c.toLowerCase().includes(q))
+   .slice(0,30).map(d=>`<a href="#/doc/${d.id}">${d.t}<small>${d.c}</small></a>`).join("")||'<a>无匹配结果</a>';};
+searchEl.onclick=e=>{if(e.target===searchEl)searchEl.classList.remove("on");};
+sres.onclick=e=>{const a=e.target.closest("a");if(a&&a.getAttribute("href"))searchEl.classList.remove("on");};
+window.addEventListener("hashchange",route);
+window.addEventListener("scroll",()=>{fab.style.display=window.scrollY>600?"block":"none";},{passive:true});
+fab.onclick=()=>window.scrollTo({top:0,behavior:"smooth"});
+si.value="";si.oninput();
+route();
 </script>
 </body></html>
