@@ -7,7 +7,7 @@
 :root{--ink:#16202e;--mut:#68727f;--line:#e4e8ee;--bg:#f2f5f9;--card:#fff;--acc:#2563eb;--acc-d:#1d4ed8;--rad:16px}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html{scroll-behavior:smooth}
-body{margin:0;font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--bg)}
+html,body{max-width:100%;overflow-x:hidden}body{margin:0;font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--bg)}
 /* 顶栏 */
 #bar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:10px;padding:10px 14px;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 #bar button{border:0;background:#eef2f7;border-radius:10px;width:38px;height:38px;font-size:17px;cursor:pointer;flex:0 0 auto}
@@ -25,8 +25,8 @@ main{max-width:860px;margin:0 auto;padding:16px 14px 90px}
 .hero .stats{display:flex;gap:18px;margin-top:14px;font-size:13px}
 .hero .stats b{display:block;font-size:20px}
 .sec-t{font-size:14px;color:var(--mut);margin:18px 4px 10px;font-weight:600;letter-spacing:.04em}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--rad);padding:16px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:4px;position:relative;transition:transform .12s,box-shadow .12s}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.card{min-width:0;background:var(--card);border:1px solid var(--line);border-radius:var(--rad);padding:16px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:4px;position:relative;transition:transform .12s,box-shadow .12s}
 .card:active{transform:scale(.98)}
 .card .ico{font-size:26px}
 .card .t{font-weight:700;font-size:15.5px}
@@ -39,7 +39,7 @@ main{max-width:860px;margin:0 auto;padding:16px 14px 90px}
 .chhead h2{margin:0;font-size:19px}
 .chhead p{margin:2px 0 0;color:var(--mut);font-size:13px}
 .doclist{display:flex;flex-direction:column;gap:10px}
-.doccard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:3px}
+.doccard{min-width:0;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;text-decoration:none;color:var(--ink);display:flex;flex-direction:column;gap:3px}
 .doccard:active{background:#f6f8fb}
 .doccard .t{font-weight:600;font-size:15px}
 .doccard .d{color:var(--mut);font-size:12.5px}
@@ -68,7 +68,7 @@ article a{color:var(--acc)}
 .pn a:empty{display:none}
 .pn .home{flex:0 0 auto;display:flex;align-items:center;background:var(--acc);color:#fff;border:0;font-weight:600}
 /* 图例 */
-.figgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.figgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .figgrid figure{margin:0}
 .figgrid img{width:100%;border:1px solid var(--line);border-radius:12px;background:#fff}
 .figgrid figcaption{font-size:12px;color:var(--mut);margin-top:5px;text-align:center}
@@ -86,7 +86,7 @@ article a{color:var(--acc)}
 @media (max-width:640px){
  body{font-size:15.5px}
  main{padding:12px 10px 90px}
- .grid{grid-template-columns:1fr 1fr;gap:10px}
+ .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
  .card{padding:13px}
  .card .ico{font-size:22px}
  .card .t{font-size:14px}
@@ -95,10 +95,10 @@ article a{color:var(--acc)}
  .hero h1{font-size:20px}
  article{padding:16px 14px;border-radius:14px}
  article h1{font-size:20px}
- .figgrid{grid-template-columns:1fr}
+ .figgrid{grid-template-columns:minmax(0,1fr)}
  .pn{flex-wrap:wrap}
 }
-@media (min-width:900px){.grid{grid-template-columns:repeat(3,1fr)}.figgrid{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:900px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.figgrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media print{#bar,#fab,#search,.pn{display:none!important}article{border:0}}
 </style></head>
 <body>
@@ -114,7 +114,7 @@ article a{color:var(--acc)}
 <div class="hero"><h1>硬件入门学习包</h1><p>从基础元器件到 ESP32 · 图例齐全 · 离线可读</p>
 <div class="stats"><span><b>31</b>篇文档</span><span><b>24</b>组图例</span><span><b>6</b>大章节</span><span><b>12</b>段代码</span></div></div>
 <div class="sec-t">📚 按章节学习</div>
-<div class="grid">['<a class="card ch" href="#/ch/01-基础元器件"><span class="ico">🔩</span><span class="t">基础元器件</span><span class="d">电阻 / 电容 / 二极管 / 三极管 / MOS / 继电器</span><span class="n">6 篇</span></a>', '<a class="card ch" href="#/ch/02-电路基础与定律"><span class="ico">⚡</span><span class="t">电路基础与定律</span><span class="d">欧姆定律 / 分压 / RC / 电源 / ADC / 总线</span><span class="n">6 篇</span></a>', '<a class="card ch" href="#/ch/03-小型电路图实战"><span class="ico">🧩</span><span class="t">小型电路图实战</span><span class="d">读图方法 / 10 个必会电路 / KiCad 画板</span><span class="n">3 篇</span></a>', '<a class="card ch" href="#/ch/04-ESP32单片机"><span class="ico">📶</span><span class="t">ESP32 单片机</span><span class="d">引脚 / 烧录 / 代码示例 / 模块接线 / 低功耗</span><span class="n">8 篇</span></a>', '<a class="card ch" href="#/ch/05-工具与焊接"><span class="ico">🛠️</span><span class="t">工具与焊接</span><span class="d">万用表 / 面包板 / 焊接 / 调试仪器</span><span class="n">4 篇</span></a>', '<a class="card ch" href="#/ch/06-项目实战"><span class="ico">🚀</span><span class="t">项目实战</span><span class="d">10 个递进项目 / 采购清单与预算</span><span class="n">2 篇</span></a>']</div>
+<div class="grid"><a class="card ch" href="#/ch/01-基础元器件"><span class="ico">🔩</span><span class="t">基础元器件</span><span class="d">电阻 / 电容 / 二极管 / 三极管 / MOS / 继电器</span><span class="n">6 篇</span></a><a class="card ch" href="#/ch/02-电路基础与定律"><span class="ico">⚡</span><span class="t">电路基础与定律</span><span class="d">欧姆定律 / 分压 / RC / 电源 / ADC / 总线</span><span class="n">6 篇</span></a><a class="card ch" href="#/ch/03-小型电路图实战"><span class="ico">🧩</span><span class="t">小型电路图实战</span><span class="d">读图方法 / 10 个必会电路 / KiCad 画板</span><span class="n">3 篇</span></a><a class="card ch" href="#/ch/04-ESP32单片机"><span class="ico">📶</span><span class="t">ESP32 单片机</span><span class="d">引脚 / 烧录 / 代码示例 / 模块接线 / 低功耗</span><span class="n">8 篇</span></a><a class="card ch" href="#/ch/05-工具与焊接"><span class="ico">🛠️</span><span class="t">工具与焊接</span><span class="d">万用表 / 面包板 / 焊接 / 调试仪器</span><span class="n">4 篇</span></a><a class="card ch" href="#/ch/06-项目实战"><span class="ico">🚀</span><span class="t">项目实战</span><span class="d">10 个递进项目 / 采购清单与预算</span><span class="n">2 篇</span></a></div>
 <div class="sec-t">⚡ 快捷入口</div>
 <div class="grid"><a class="card q" href="#/doc/d-00-学习路线图"><span class="ico">🗺️</span><span class="t">学习路线图</span><span class="d">六阶段怎么走</span></a><a class="card q" href="#/fig"><span class="ico">🖼️</span><span class="t">图例画廊</span><span class="d">24 张图一次看全</span></a><a class="card q" href="工具箱.html"><span class="ico">🧮</span><span class="t">计算工具箱</span><span class="d">色环/分压/RC/续航</span></a><a class="card q" href="#/doc/d-04-ESP32单片机-02-引脚图与安全使用"><span class="ico">📌</span><span class="t">ESP32 引脚图</span><span class="d">哪些脚不能用</span></a><a class="card q" href="#/doc/d-04-ESP32单片机-05-外设编程与代码示例"><span class="ico">💻</span><span class="t">代码示例</span><span class="d">12 段可直接编译</span></a><a class="card q" href="#/doc/d-04-ESP32单片机-08-常见问题排查"><span class="ico">🚑</span><span class="t">故障排查</span><span class="d">烧录/连网/读数问题</span></a><a class="card q" href="https://github.com/mawenhao147-stack/hardware-learning-kit"><span class="ico">☁️</span><span class="t">GitHub 仓库</span><span class="d">源码与更新</span></a></div>
 </section>
