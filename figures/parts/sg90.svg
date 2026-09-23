@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="150" viewBox="0 0 340 150" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif"><rect width="340" height="150" fill="#ffffff"/><rect x="144.0" y="59.0" width="52.0" height="32.0" rx="4" fill="#1d4ed8" stroke="#1e3a8a" stroke-width="1.6" opacity="1"/>
+<rect x="180.0" y="51.0" width="12.0" height="10.0" rx="2" fill="#e5e7eb" stroke="#64748b" stroke-width="1.2" opacity="1"/>
+<circle cx="186.0" cy="51.0" r="6.0" fill="#f8fafc" stroke="#64748b" stroke-width="1.4"/>
+<line x1="150.0" y1="91.0" x2="150.0" y2="105.0" stroke="#78350f" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="156.0" y1="91.0" x2="156.0" y2="105.0" stroke="#dc2626" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="162.0" y1="91.0" x2="162.0" y2="105.0" stroke="#f97316" stroke-width="2.2" stroke-linecap="round"/>
+<text x="170.0" y="117.0" font-size="8.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">棕GND 红5V 橙信号</text></svg>

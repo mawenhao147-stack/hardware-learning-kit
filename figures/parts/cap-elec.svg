@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="150" viewBox="0 0 340 150" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif"><rect width="340" height="150" fill="#ffffff"/><rect x="148.0" y="41.0" width="44.0" height="62.0" rx="5" fill="#243447" stroke="#0b1220" stroke-width="1.6" opacity="1"/>
+<rect x="148.0" y="41.0" width="9.0" height="62.0" rx="0" fill="#e5e7eb" stroke="none" stroke-width="0" opacity="1"/>
+<line x1="157.0" y1="41.0" x2="157.0" y2="103.0" stroke="#9ca3af" stroke-width="1.2" stroke-linecap="round"/>
+<text x="153.0" y="55.0" font-size="13" fill="#374151" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">−</text>
+<text x="153.0" y="77.0" font-size="13" fill="#374151" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">−</text>
+<line x1="162.0" y1="103.0" x2="162.0" y2="119.0" stroke="#b8bcc4" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="178.0" y1="103.0" x2="178.0" y2="119.0" stroke="#b8bcc4" stroke-width="2.6" stroke-linecap="round"/>
+<text x="176.0" y="61.0" font-size="10" fill="#cbd5e1" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">25V</text>
+<text x="176.0" y="77.0" font-size="10" fill="#cbd5e1" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">100µF</text></svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="150" viewBox="0 0 340 150" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif"><rect width="340" height="150" fill="#ffffff"/><rect x="140.0" y="61.0" width="60.0" height="28.0" rx="4" fill="#1f2937" stroke="#0b1220" stroke-width="1.6" opacity="1"/>
+<rect x="128.0" y="66.0" width="12.0" height="18.0" rx="2" fill="#b8bcc4" stroke="#64748b" stroke-width="1.2" opacity="1"/>
+<circle cx="155.0" cy="85.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="162.0" cy="85.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="169.0" cy="85.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="176.0" cy="85.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="183.0" cy="85.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="190.0" cy="85.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<text x="170.0" y="101.0" font-size="8.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">3V3 TX RX GND</text></svg>

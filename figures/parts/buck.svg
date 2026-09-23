@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="150" viewBox="0 0 340 150" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif"><rect width="340" height="150" fill="#ffffff"/><rect x="134.0" y="57.0" width="72.0" height="36.0" rx="4" fill="#1e40af" stroke="#1e3a8a" stroke-width="1.6" opacity="1"/>
+<circle cx="150.0" cy="73.0" r="8.0" fill="#1d4ed8" stroke="#1e3a8a" stroke-width="1.4"/>
+<line x1="146.0" y1="73.0" x2="154.0" y2="73.0" stroke="#dbeafe" stroke-width="1.6" stroke-linecap="round"/>
+<rect x="172.0" y="65.0" width="18.0" height="14.0" rx="2" fill="#1f2937" stroke="#000" stroke-width="1.2" opacity="1"/>
+<circle cx="142.0" cy="89.0" r="2.0" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="150.0" cy="89.0" r="2.0" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="182.0" cy="89.0" r="2.0" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="190.0" cy="89.0" r="2.0" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<text x="170.0" y="105.0" font-size="8.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">IN− IN+ OUT− OUT+</text></svg>

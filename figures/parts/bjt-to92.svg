@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="150" viewBox="0 0 340 150" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif"><rect width="340" height="150" fill="#ffffff"/><path d="M 152 55 A 18 18 0 0 1 188 55 L 188 89 L 152 89 Z" fill="#1f2937" stroke="#0b1220" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="170.0" y="79.0" font-size="9.5" fill="#cbd5e1" text-anchor="middle" font-weight="normal" font-family="'SF Mono','Menlo',monospace" opacity="1">S8050</text>
+<line x1="160.0" y1="89.0" x2="160.0" y2="107.0" stroke="#b8bcc4" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="170.0" y1="89.0" x2="170.0" y2="107.0" stroke="#b8bcc4" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="180.0" y1="89.0" x2="180.0" y2="107.0" stroke="#b8bcc4" stroke-width="2.4" stroke-linecap="round"/>
+<text x="160.0" y="119.0" font-size="11" fill="#2563eb" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">E</text>
+<text x="170.0" y="119.0" font-size="11" fill="#2563eb" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">B</text>
+<text x="180.0" y="119.0" font-size="11" fill="#2563eb" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">C</text>
+<text x="170.0" y="47.0" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">平面朝自己：E-B-C</text></svg>

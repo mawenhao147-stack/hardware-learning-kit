@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="150" viewBox="0 0 340 150" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif"><rect width="340" height="150" fill="#ffffff"/><rect x="126.0" y="63.0" width="88.0" height="24.0" rx="3" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.4" opacity="1"/>
+<rect x="140.0" y="67.0" width="16.0" height="16.0" rx="2" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.2" opacity="1"/>
+<circle cx="148.0" cy="75.0" r="4.0" fill="#fde68a" stroke="#ca8a04" stroke-width="1"/>
+<rect x="176.0" y="67.0" width="16.0" height="16.0" rx="2" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.2" opacity="1"/>
+<circle cx="184.0" cy="75.0" r="4.0" fill="#fde68a" stroke="#ca8a04" stroke-width="1"/>
+<rect x="130.0" y="87.0" width="5.0" height="6.0" rx="0" fill="#b45309" stroke="none" stroke-width="0" opacity="1"/>
+<rect x="138.0" y="87.0" width="5.0" height="6.0" rx="0" fill="#b45309" stroke="none" stroke-width="0" opacity="1"/>
+<rect x="146.0" y="87.0" width="5.0" height="6.0" rx="0" fill="#b45309" stroke="none" stroke-width="0" opacity="1"/>
+<text x="134.0" y="105.0" font-size="8.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">5V DIN GND</text>
+<line x1="200.0" y1="75.0" x2="214.0" y2="75.0" stroke="#059669" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M 214.0 75.0 L 208.5 77.4 L 208.5 72.6 Z" fill="#059669" stroke="#059669" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/></svg>

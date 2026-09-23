@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="150" viewBox="0 0 340 150" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif"><rect width="340" height="150" fill="#ffffff"/><rect x="136.0" y="31.0" width="68.0" height="88.0" rx="5" fill="#1e40af" stroke="#1e3a8a" stroke-width="1.6" opacity="1"/>
+<rect x="160.0" y="23.0" width="20.0" height="10.0" rx="2" fill="#b8bcc4" stroke="#64748b" stroke-width="1.2" opacity="1"/>
+<rect x="150.0" y="45.0" width="40.0" height="34.0" rx="2" fill="#b8bcc4" stroke="#64748b" stroke-width="1.2" opacity="1"/>
+<text x="170.0" y="65.0" font-size="8" fill="#334155" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">WROOM</text>
+<circle cx="146.0" cy="91.0" r="4.0" fill="#e5e7eb" stroke="#64748b" stroke-width="1.2"/>
+<circle cx="158.0" cy="91.0" r="4.0" fill="#e5e7eb" stroke="#64748b" stroke-width="1.2"/>
+<text x="146.0" y="105.0" font-size="7.5" fill="#dbeafe" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">EN</text>
+<text x="158.0" y="105.0" font-size="7.5" fill="#dbeafe" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">IO0</text>
+<circle cx="140.0" cy="39.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="200.0" cy="39.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="140.0" cy="49.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="200.0" cy="49.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="140.0" cy="59.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="200.0" cy="59.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="140.0" cy="69.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="200.0" cy="69.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="140.0" cy="79.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="200.0" cy="79.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="140.0" cy="89.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="200.0" cy="89.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="140.0" cy="99.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="200.0" cy="99.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="140.0" cy="109.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="200.0" cy="109.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="192.0" cy="105.0" r="2.5" fill="#dc2626" stroke="none" stroke-width="0"/></svg>
