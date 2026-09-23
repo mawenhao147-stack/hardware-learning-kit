@@ -124,8 +124,9 @@ a.prow{color:inherit;text-decoration:none}
 .pg{width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:#fff;font-size:17px;cursor:pointer;color:var(--ink)}
 .pg:disabled{opacity:.35}
 .pind{font-size:12.5px;color:var(--mut);min-width:34px;text-align:center}
-.ptrack{display:flex;overflow:hidden;border:1px solid var(--line);border-radius:14px;background:#fff}
-.page{flex:0 0 100%;min-width:0;padding:14px 16px;transition:transform .22s ease}
+.ptrack{border:1px solid var(--line);border-radius:14px;background:#fff}
+.page{display:none;padding:14px 16px;word-break:break-word}
+.page.cur{display:block;animation:fade .18s ease}
 .page h4{margin:0 0 8px;font-size:14.5px;color:var(--acc)}
 .page table{margin:0}
 .pdots{display:flex;gap:6px;justify-content:center;margin-top:8px}
@@ -1303,7 +1304,7 @@ function initPagers(){
   const track=pg.querySelector('.ptrack'), pages=[...track.children], ind=pg.querySelector('.pind'), dots=[...pg.querySelectorAll('.pdots i')];
   let i=0;
   const go=n=>{i=Math.max(0,Math.min(pages.length-1,n));
-   pages.forEach((p,k)=>p.style.transform=`translateX(-${i*100}%)`);
+   pages.forEach((p,k)=>p.classList.toggle('cur',k===i));
    ind.textContent=(i+1)+"/"+pages.length;
    dots.forEach((d,k)=>d.classList.toggle('on',k===i));
    pg.querySelector('.prev').disabled=(i===0); pg.querySelector('.next').disabled=(i===pages.length-1);
