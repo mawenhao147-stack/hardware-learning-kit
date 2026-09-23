@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1210" height="720" viewBox="0 0 1210 720" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif"><rect width="1210" height="720" fill="#ffffff"/><text x="24.0" y="40.0" font-size="24" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">元器件实物图鉴 · 半导体器件</text>
+<text x="24.0" y="66.0" font-size="14" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">黑环/色环/平边/缺口/圆点都在告诉你「1 脚或负极在哪」；拿不准就查 datasheet 或用万用表</text>
+<rect x="25.0" y="95.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<line x1="113.0" y1="157.0" x2="143.0" y2="157.0" stroke="#b8bcc4" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="183.0" y1="157.0" x2="213.0" y2="157.0" stroke="#b8bcc4" stroke-width="2.6" stroke-linecap="round"/>
+<rect x="143.0" y="148.0" width="40.0" height="18.0" rx="8" fill="#fbbf24" stroke="#b45309" stroke-width="1.4" opacity="1"/>
+<rect x="171.0" y="148.0" width="7.0" height="18.0" rx="0" fill="#1f2937" stroke="none" stroke-width="0" opacity="1"/>
+<text x="163.0" y="231.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">1N4148 开关二极管</text>
+<text x="163.0" y="251.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">黑环 = 阴极</text>
+<text x="163.0" y="268.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">玻璃封装，小信号</text>
+<rect x="315.0" y="95.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<line x1="401.0" y1="157.0" x2="429.0" y2="157.0" stroke="#b8bcc4" stroke-width="3" stroke-linecap="round"/>
+<line x1="477.0" y1="157.0" x2="505.0" y2="157.0" stroke="#b8bcc4" stroke-width="3" stroke-linecap="round"/>
+<rect x="429.0" y="145.0" width="48.0" height="24.0" rx="6" fill="#1f2937" stroke="#0b1220" stroke-width="1.6" opacity="1"/>
+<rect x="465.0" y="145.0" width="7.0" height="24.0" rx="0" fill="#b8bcc4" stroke="none" stroke-width="0" opacity="1"/>
+<text x="447.0" y="161.0" font-size="9" fill="#cbd5e1" text-anchor="middle" font-weight="normal" font-family="'SF Mono','Menlo',monospace" opacity="1">1N4007</text>
+<text x="453.0" y="231.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">1N4007 整流二极管</text>
+<text x="453.0" y="251.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">银环 = 阴极</text>
+<text x="453.0" y="268.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">1A/1000V，速度慢</text>
+<rect x="605.0" y="95.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="721.0" y="143.0" width="44.0" height="28.0" rx="3" fill="#1f2937" stroke="#0b1220" stroke-width="1.4" opacity="1"/>
+<rect x="721.0" y="143.0" width="44.0" height="7.0" rx="0" fill="#b8bcc4" stroke="none" stroke-width="0" opacity="1"/>
+<rect x="713.0" y="141.0" width="8.0" height="32.0" rx="0" fill="#b8bcc4" stroke="none" stroke-width="0" opacity="1"/>
+<rect x="765.0" y="141.0" width="8.0" height="32.0" rx="0" fill="#b8bcc4" stroke="none" stroke-width="0" opacity="1"/>
+<text x="743.0" y="165.0" font-size="10" fill="#cbd5e1" text-anchor="middle" font-weight="normal" font-family="'SF Mono','Menlo',monospace" opacity="1">SS34</text>
+<text x="743.0" y="231.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">SS34 肖特基 (SMA)</text>
+<text x="743.0" y="251.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">色带 = 阴极</text>
+<text x="743.0" y="268.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">低压降快恢复，续流首选</text>
+<rect x="895.0" y="95.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<path d="M 1019.0 151 A 14 14 0 0 1 1047.0 151 L 1047.0 167 L 1019.0 167 Z" fill="#fecaca" stroke="#dc2626" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1016.0" y="167.0" width="34.0" height="6.0" rx="2" fill="#fecaca" stroke="#dc2626" stroke-width="1.4" opacity="1"/>
+<line x1="1027.0" y1="173.0" x2="1027.0" y2="195.0" stroke="#b8bcc4" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="1039.0" y1="173.0" x2="1039.0" y2="187.0" stroke="#b8bcc4" stroke-width="2.6" stroke-linecap="round"/>
+<text x="1019.0" y="201.0" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">长脚+</text>
+<text x="1047.0" y="193.0" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">短脚−</text>
+<line x1="1047.0" y1="155.0" x2="1047.0" y2="167.0" stroke="#dc2626" stroke-width="2.2" stroke-linecap="round"/>
+<text x="1063.0" y="161.0" font-size="10" fill="#dc2626" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">平边</text>
+<text x="1033.0" y="231.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">5mm LED</text>
+<text x="1033.0" y="251.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">长脚+/短脚−；平边=−</text>
+<text x="1033.0" y="268.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">必须串限流电阻</text>
+<rect x="25.0" y="295.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<path d="M 145.0 337 A 18 18 0 0 1 181.0 337 L 181.0 371 L 145.0 371 Z" fill="#1f2937" stroke="#0b1220" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="163.0" y="361.0" font-size="9.5" fill="#cbd5e1" text-anchor="middle" font-weight="normal" font-family="'SF Mono','Menlo',monospace" opacity="1">S8050</text>
+<line x1="153.0" y1="371.0" x2="153.0" y2="389.0" stroke="#b8bcc4" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="163.0" y1="371.0" x2="163.0" y2="389.0" stroke="#b8bcc4" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="173.0" y1="371.0" x2="173.0" y2="389.0" stroke="#b8bcc4" stroke-width="2.4" stroke-linecap="round"/>
+<text x="153.0" y="401.0" font-size="11" fill="#2563eb" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">E</text>
+<text x="163.0" y="401.0" font-size="11" fill="#2563eb" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">B</text>
+<text x="173.0" y="401.0" font-size="11" fill="#2563eb" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">C</text>
+<text x="163.0" y="329.0" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">平面朝自己：E-B-C</text>
+<text x="163.0" y="431.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">S8050 (TO-92)</text>
+<text x="163.0" y="451.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">平面朝自己 E-B-C</text>
+<text x="163.0" y="468.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">NPN 小功率开关</text>
+<rect x="315.0" y="295.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="431.0" y="331.0" width="44.0" height="16.0" rx="2" fill="#b8bcc4" stroke="#64748b" stroke-width="1.4" opacity="1"/>
+<circle cx="453.0" cy="339.0" r="4.0" fill="#fff" stroke="#64748b" stroke-width="1.4"/>
+<rect x="435.0" y="347.0" width="36.0" height="26.0" rx="3" fill="#1f2937" stroke="#0b1220" stroke-width="1.6" opacity="1"/>
+<line x1="442.0" y1="373.0" x2="442.0" y2="391.0" stroke="#b8bcc4" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="453.0" y1="373.0" x2="453.0" y2="391.0" stroke="#b8bcc4" stroke-width="2.6" stroke-linecap="round"/>
+<line x1="464.0" y1="373.0" x2="464.0" y2="391.0" stroke="#b8bcc4" stroke-width="2.6" stroke-linecap="round"/>
+<text x="442.0" y="403.0" font-size="11" fill="#2563eb" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">B</text>
+<text x="453.0" y="403.0" font-size="11" fill="#2563eb" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">C</text>
+<text x="464.0" y="403.0" font-size="11" fill="#2563eb" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">E</text>
+<text x="453.0" y="431.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">TIP122 (TO-220)</text>
+<text x="453.0" y="451.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">带散热片 B-C-E</text>
+<text x="453.0" y="468.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">达林顿，大电流</text>
+<rect x="605.0" y="295.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="729.0" y="347.0" width="28.0" height="20.0" rx="2" fill="#1f2937" stroke="#0b1220" stroke-width="1.4" opacity="1"/>
+<circle cx="735.0" cy="353.0" r="2.0" fill="#e5e7eb" stroke="none" stroke-width="0"/>
+<line x1="733.0" y1="367.0" x2="733.0" y2="375.0" stroke="#b8bcc4" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="753.0" y1="367.0" x2="753.0" y2="375.0" stroke="#b8bcc4" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="743.0" y1="347.0" x2="743.0" y2="339.0" stroke="#b8bcc4" stroke-width="2.4" stroke-linecap="round"/>
+<text x="733.0" y="387.0" font-size="11" fill="#2563eb" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">G</text>
+<text x="753.0" y="387.0" font-size="11" fill="#2563eb" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">S</text>
+<text x="743.0" y="333.0" font-size="11" fill="#2563eb" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">D</text>
+<text x="765.0" y="361.0" font-size="9.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'SF Mono','Menlo',monospace" opacity="1">AO3400</text>
+<text x="743.0" y="431.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">AO3400 (SOT-23)</text>
+<text x="743.0" y="451.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">圆点=1脚 G；S/D 见图</text>
+<text x="743.0" y="468.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">NMOS 逻辑电平</text>
+<rect x="895.0" y="295.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="1007.0" y="339.0" width="52.0" height="36.0" rx="3" fill="#1f2937" stroke="#0b1220" stroke-width="1.6" opacity="1"/>
+<path d="M 1027.0 339 A 6 6 0 0 0 1039.0 339" fill="#0b1220" stroke="#334155" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1015.0" cy="347.0" r="2.2" fill="#e5e7eb" stroke="none" stroke-width="0"/>
+<line x1="1015.0" y1="339.0" x2="1015.0" y2="331.0" stroke="#b8bcc4" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="1015.0" y1="375.0" x2="1015.0" y2="383.0" stroke="#b8bcc4" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="1027.0" y1="339.0" x2="1027.0" y2="331.0" stroke="#b8bcc4" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="1027.0" y1="375.0" x2="1027.0" y2="383.0" stroke="#b8bcc4" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="1039.0" y1="339.0" x2="1039.0" y2="331.0" stroke="#b8bcc4" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="1039.0" y1="375.0" x2="1039.0" y2="383.0" stroke="#b8bcc4" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="1051.0" y1="339.0" x2="1051.0" y2="331.0" stroke="#b8bcc4" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="1051.0" y1="375.0" x2="1051.0" y2="383.0" stroke="#b8bcc4" stroke-width="2.2" stroke-linecap="round"/>
+<text x="1015.0" y="327.0" font-size="9" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">1</text>
+<text x="1027.0" y="327.0" font-size="9" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">2</text>
+<text x="1039.0" y="327.0" font-size="9" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">3</text>
+<text x="1051.0" y="327.0" font-size="9" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">4</text>
+<text x="1015.0" y="395.0" font-size="9" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">8</text>
+<text x="1027.0" y="395.0" font-size="9" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">7</text>
+<text x="1039.0" y="395.0" font-size="9" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">6</text>
+<text x="1051.0" y="395.0" font-size="9" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">5</text>
+<text x="1035.0" y="361.0" font-size="9.5" fill="#cbd5e1" text-anchor="middle" font-weight="normal" font-family="'SF Mono','Menlo',monospace" opacity="1">NE555</text>
+<text x="1033.0" y="431.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">NE555 / 运放 (DIP-8)</text>
+<text x="1033.0" y="451.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">缺口/圆点定 1 脚</text>
+<text x="1033.0" y="468.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">逆时针数脚</text>
+<rect x="25.0" y="495.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="145.0" y="543.0" width="36.0" height="28.0" rx="3" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.6" opacity="1"/>
+<circle cx="152.0" cy="550.0" r="2.0" fill="#dc2626" stroke="none" stroke-width="0"/>
+<line x1="154.0" y1="543.0" x2="154.0" y2="535.0" stroke="#b8bcc4" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="154.0" y1="571.0" x2="154.0" y2="579.0" stroke="#b8bcc4" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="172.0" y1="543.0" x2="172.0" y2="535.0" stroke="#b8bcc4" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="172.0" y1="571.0" x2="172.0" y2="579.0" stroke="#b8bcc4" stroke-width="2.2" stroke-linecap="round"/>
+<text x="163.0" y="563.0" font-size="9" fill="#334155" text-anchor="middle" font-weight="normal" font-family="'SF Mono','Menlo',monospace" opacity="1">PC817</text>
+<text x="163.0" y="631.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">PC817 光耦 (DIP-4)</text>
+<text x="163.0" y="651.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">红点=1脚(阳极)</text>
+<text x="163.0" y="668.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">隔离驱动/反馈</text>
+<rect x="315.0" y="495.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="429.0" y="535.0" width="48.0" height="44.0" rx="4" fill="#1f2937" stroke="#0b1220" stroke-width="1.6" opacity="1"/>
+<text x="453.0" y="551.0" font-size="13" fill="#fff" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">+</text>
+<text x="453.0" y="571.0" font-size="14" fill="#fff" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">−</text>
+<line x1="441.0" y1="535.0" x2="441.0" y2="525.0" stroke="#b8bcc4" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="465.0" y1="535.0" x2="465.0" y2="525.0" stroke="#b8bcc4" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="441.0" y1="579.0" x2="441.0" y2="589.0" stroke="#b8bcc4" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="465.0" y1="579.0" x2="465.0" y2="589.0" stroke="#b8bcc4" stroke-width="2.4" stroke-linecap="round"/>
+<text x="441.0" y="521.0" font-size="12" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">~</text>
+<text x="465.0" y="521.0" font-size="12" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">~</text>
+<text x="453.0" y="631.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">整流桥</text>
+<text x="453.0" y="651.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">+ − 直流输出</text>
+<text x="453.0" y="668.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">~ ~ 接交流输入</text>
+<rect x="605.0" y="495.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="723.0" y="543.0" width="40.0" height="24.0" rx="2" fill="#1f2937" stroke="#0b1220" stroke-width="1.4" opacity="1"/>
+<rect x="733.0" y="533.0" width="20.0" height="10.0" rx="2" fill="#b8bcc4" stroke="#64748b" stroke-width="1.2" opacity="1"/>
+<line x1="731.0" y1="567.0" x2="731.0" y2="577.0" stroke="#b8bcc4" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="743.0" y1="567.0" x2="743.0" y2="577.0" stroke="#b8bcc4" stroke-width="2.4" stroke-linecap="round"/>
+<line x1="755.0" y1="567.0" x2="755.0" y2="577.0" stroke="#b8bcc4" stroke-width="2.4" stroke-linecap="round"/>
+<text x="731.0" y="589.0" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">1</text>
+<text x="743.0" y="589.0" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">2</text>
+<text x="755.0" y="589.0" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">3</text>
+<text x="743.0" y="527.0" font-size="9.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">TAB=2脚</text>
+<text x="769.0" y="559.0" font-size="9.5" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'SF Mono','Menlo',monospace" opacity="1">AMS1117</text>
+<text x="743.0" y="631.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">AMS1117 (SOT-223)</text>
+<text x="743.0" y="651.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">1入 2地 3出；TAB=地</text>
+<text x="743.0" y="668.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">压差约 1.1V</text>
+<rect x="895.0" y="495.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="1003.0" y="543.0" width="60.0" height="28.0" rx="3" fill="#1f2937" stroke="#0b1220" stroke-width="1.4" opacity="1"/>
+<rect x="999.0" y="543.0" width="6.0" height="28.0" rx="0" fill="#b8bcc4" stroke="none" stroke-width="0" opacity="1"/>
+<rect x="1061.0" y="543.0" width="6.0" height="28.0" rx="0" fill="#b8bcc4" stroke="none" stroke-width="0" opacity="1"/>
+<text x="1033.0" y="562.0" font-size="14" fill="#fff" text-anchor="middle" font-weight="700" font-family="'SF Mono','Menlo',monospace" opacity="1">103</text>
+<text x="1033.0" y="631.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">贴片 LED 0805</text>
+<text x="1033.0" y="651.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">绿色三角/缺口=阴极</text>
+<text x="1033.0" y="668.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">焊台 300°C 快焊</text></svg>

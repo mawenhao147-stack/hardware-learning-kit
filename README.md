@@ -56,6 +56,10 @@
 | ![面包板](figures/breadboard-anatomy.png) | 面包板内部结构 |
 | ![万用表](figures/multimeter.png) | 万用表三种测量 |
 | ![焊接](figures/soldering.png) | 焊接要点与好焊点 |
+| ![无源实物](figures/physical-passive.png) | 无源/机电件实物图鉴 |
+| ![半导体实物](figures/physical-semi.png) | 半导体实物与引脚 |
+| ![模块实物](figures/physical-modules.png) | 常用模块实物图鉴 |
+| ![开发板解剖](figures/esp32-board-anatomy.png) | ESP32 开发板解剖 |
 
 ## 约定与安全
 

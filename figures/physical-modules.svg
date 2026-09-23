@@ -1,0 +1,244 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1210" height="920" viewBox="0 0 1210 920" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif"><rect width="1210" height="920" fill="#ffffff"/><text x="24.0" y="40.0" font-size="24" fill="#111827" text-anchor="start" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">常用模块实物图鉴 · 传感器/显示/执行/电源</text>
+<text x="24.0" y="66.0" font-size="14" fill="#6b7280" text-anchor="start" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">买模块认准外形与引脚丝印；所有模块与 ESP32 共地，5V 信号进 GPIO 前必须分压</text>
+<rect x="25.0" y="95.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="129.0" y="113.0" width="68.0" height="88.0" rx="5" fill="#1e40af" stroke="#1e3a8a" stroke-width="1.6" opacity="1"/>
+<rect x="153.0" y="105.0" width="20.0" height="10.0" rx="2" fill="#b8bcc4" stroke="#64748b" stroke-width="1.2" opacity="1"/>
+<rect x="143.0" y="127.0" width="40.0" height="34.0" rx="2" fill="#b8bcc4" stroke="#64748b" stroke-width="1.2" opacity="1"/>
+<text x="163.0" y="147.0" font-size="8" fill="#334155" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">WROOM</text>
+<circle cx="139.0" cy="173.0" r="4.0" fill="#e5e7eb" stroke="#64748b" stroke-width="1.2"/>
+<circle cx="151.0" cy="173.0" r="4.0" fill="#e5e7eb" stroke="#64748b" stroke-width="1.2"/>
+<text x="139.0" y="187.0" font-size="7.5" fill="#dbeafe" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">EN</text>
+<text x="151.0" y="187.0" font-size="7.5" fill="#dbeafe" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">IO0</text>
+<circle cx="133.0" cy="121.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="193.0" cy="121.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="133.0" cy="131.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="193.0" cy="131.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="133.0" cy="141.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="193.0" cy="141.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="133.0" cy="151.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="193.0" cy="151.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="133.0" cy="161.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="193.0" cy="161.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="133.0" cy="171.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="193.0" cy="171.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="133.0" cy="181.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="193.0" cy="181.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="133.0" cy="191.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="193.0" cy="191.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="185.0" cy="187.0" r="2.5" fill="#dc2626" stroke="none" stroke-width="0"/>
+<text x="163.0" y="231.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ESP32 DevKit 开发板</text>
+<text x="163.0" y="251.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">USB 烧录供电；EN/IO0 两键</text>
+<text x="163.0" y="268.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">排针引出全部 GPIO</text>
+<rect x="315.0" y="95.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="423.0" y="131.0" width="60.0" height="52.0" rx="3" fill="#b8bcc4" stroke="#64748b" stroke-width="1.6" opacity="1"/>
+<rect x="423.0" y="117.0" width="60.0" height="14.0" rx="2" fill="#1e40af" stroke="#1e3a8a" stroke-width="1.4" opacity="1"/>
+<path d="M 429.0 124 l 6 0 l 0 -5 l 6 0 l 0 5 l 6 0 l 0 -5 l 6 0 l 0 5 l 6 0" fill="none" stroke="#fbbf24" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="425.0" y="183.0" width="4.0" height="5.0" rx="0" fill="#fbbf24" stroke="none" stroke-width="0" opacity="1"/>
+<rect x="435.0" y="183.0" width="4.0" height="5.0" rx="0" fill="#fbbf24" stroke="none" stroke-width="0" opacity="1"/>
+<rect x="445.0" y="183.0" width="4.0" height="5.0" rx="0" fill="#fbbf24" stroke="none" stroke-width="0" opacity="1"/>
+<rect x="455.0" y="183.0" width="4.0" height="5.0" rx="0" fill="#fbbf24" stroke="none" stroke-width="0" opacity="1"/>
+<rect x="465.0" y="183.0" width="4.0" height="5.0" rx="0" fill="#fbbf24" stroke="none" stroke-width="0" opacity="1"/>
+<rect x="475.0" y="183.0" width="4.0" height="5.0" rx="0" fill="#fbbf24" stroke="none" stroke-width="0" opacity="1"/>
+<text x="453.0" y="161.0" font-size="8.5" fill="#334155" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ESP32-WROOM-32</text>
+<text x="453.0" y="231.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ESP32-WROOM 模组</text>
+<text x="453.0" y="251.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">屏蔽罩+PCB 天线</text>
+<text x="453.0" y="268.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">做产品用模组省认证</text>
+<rect x="605.0" y="95.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="711.0" y="131.0" width="64.0" height="52.0" rx="4" fill="#1e40af" stroke="#1e3a8a" stroke-width="1.6" opacity="1"/>
+<rect x="719.0" y="137.0" width="48.0" height="34.0" rx="2" fill="#0b1220" stroke="#000" stroke-width="1.4" opacity="1"/>
+<text x="743.0" y="155.0" font-size="9" fill="#7dd3fc" text-anchor="middle" font-weight="normal" font-family="'SF Mono','Menlo',monospace" opacity="1">128×64</text>
+<circle cx="728.0" cy="177.0" r="2.0" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="738.0" cy="177.0" r="2.0" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="748.0" cy="177.0" r="2.0" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="758.0" cy="177.0" r="2.0" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<text x="743.0" y="191.0" font-size="8.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">VCC GND SCL SDA</text>
+<text x="743.0" y="231.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">0.96" OLED SSD1306</text>
+<text x="743.0" y="251.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">I2C 4 线；地址 0x3C</text>
+<text x="743.0" y="268.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">3.3V 供电</text>
+<rect x="895.0" y="95.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="1007.0" y="133.0" width="52.0" height="44.0" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.6" opacity="1"/>
+<rect x="1015.0" y="141.0" width="5.0" height="20.0" rx="2" fill="#e2e8f0" stroke="#94a3b8" stroke-width="0.8" opacity="1"/>
+<rect x="1025.0" y="141.0" width="5.0" height="20.0" rx="2" fill="#e2e8f0" stroke="#94a3b8" stroke-width="0.8" opacity="1"/>
+<rect x="1035.0" y="141.0" width="5.0" height="20.0" rx="2" fill="#e2e8f0" stroke="#94a3b8" stroke-width="0.8" opacity="1"/>
+<rect x="1045.0" y="141.0" width="5.0" height="20.0" rx="2" fill="#e2e8f0" stroke="#94a3b8" stroke-width="0.8" opacity="1"/>
+<line x1="1018.0" y1="177.0" x2="1018.0" y2="189.0" stroke="#b8bcc4" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="1028.0" y1="177.0" x2="1028.0" y2="189.0" stroke="#b8bcc4" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="1038.0" y1="177.0" x2="1038.0" y2="189.0" stroke="#b8bcc4" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="1048.0" y1="177.0" x2="1048.0" y2="189.0" stroke="#b8bcc4" stroke-width="2.2" stroke-linecap="round"/>
+<text x="1033.0" y="201.0" font-size="8.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">VCC DATA NC GND</text>
+<text x="1033.0" y="231.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">DHT22 温湿度</text>
+<text x="1033.0" y="251.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">4 脚，DATA 需上拉</text>
+<text x="1033.0" y="268.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">比 DHT11 更准</text>
+<rect x="25.0" y="295.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="123.0" y="337.0" width="80.0" height="40.0" rx="4" fill="#1e40af" stroke="#1e3a8a" stroke-width="1.6" opacity="1"/>
+<circle cx="141.0" cy="357.0" r="13.0" fill="#b8bcc4" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="185.0" cy="357.0" r="13.0" fill="#b8bcc4" stroke="#64748b" stroke-width="1.6"/>
+<circle cx="141.0" cy="357.0" r="5.0" fill="#94a3b8" stroke="none" stroke-width="1"/>
+<circle cx="185.0" cy="357.0" r="5.0" fill="#94a3b8" stroke="none" stroke-width="1"/>
+<circle cx="148.0" cy="373.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="158.0" cy="373.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="168.0" cy="373.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="178.0" cy="373.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<text x="163.0" y="389.0" font-size="8.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">VCC TRIG ECHO GND</text>
+<text x="163.0" y="431.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">HC-SR04 超声波</text>
+<text x="163.0" y="451.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">两眼=发射/接收</text>
+<text x="163.0" y="468.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">ECHO 5V 需分压</text>
+<rect x="315.0" y="295.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="429.0" y="337.0" width="48.0" height="40.0" rx="4" fill="#7c3aed" stroke="#5b21b6" stroke-width="1.6" opacity="1"/>
+<rect x="445.0" y="349.0" width="16.0" height="16.0" rx="2" fill="#1f2937" stroke="#000" stroke-width="1.2" opacity="1"/>
+<circle cx="438.0" cy="373.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="448.0" cy="373.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="458.0" cy="373.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="468.0" cy="373.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<text x="453.0" y="389.0" font-size="8.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">VIN GND SCL SDA</text>
+<text x="453.0" y="431.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">MPU6050 六轴</text>
+<text x="453.0" y="451.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">I2C；测姿态/计步</text>
+<text x="453.0" y="468.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">注意 VIN 3.3~5V 跳线</text>
+<rect x="605.0" y="295.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="699.0" y="345.0" width="88.0" height="24.0" rx="3" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.4" opacity="1"/>
+<rect x="713.0" y="349.0" width="16.0" height="16.0" rx="2" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.2" opacity="1"/>
+<circle cx="721.0" cy="357.0" r="4.0" fill="#fde68a" stroke="#ca8a04" stroke-width="1"/>
+<rect x="749.0" y="349.0" width="16.0" height="16.0" rx="2" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.2" opacity="1"/>
+<circle cx="757.0" cy="357.0" r="4.0" fill="#fde68a" stroke="#ca8a04" stroke-width="1"/>
+<rect x="703.0" y="369.0" width="5.0" height="6.0" rx="0" fill="#b45309" stroke="none" stroke-width="0" opacity="1"/>
+<rect x="711.0" y="369.0" width="5.0" height="6.0" rx="0" fill="#b45309" stroke="none" stroke-width="0" opacity="1"/>
+<rect x="719.0" y="369.0" width="5.0" height="6.0" rx="0" fill="#b45309" stroke="none" stroke-width="0" opacity="1"/>
+<text x="707.0" y="387.0" font-size="8.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">5V DIN GND</text>
+<line x1="773.0" y1="357.0" x2="787.0" y2="357.0" stroke="#059669" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M 787.0 357.0 L 781.5 359.4 L 781.5 354.6 Z" fill="#059669" stroke="#059669" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="743.0" y="431.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">WS2812 灯带</text>
+<text x="743.0" y="451.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">5V 供电+330Ω 数据</text>
+<text x="743.0" y="468.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">箭头方向=数据流向</text>
+<rect x="895.0" y="295.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="1007.0" y="341.0" width="52.0" height="32.0" rx="4" fill="#1d4ed8" stroke="#1e3a8a" stroke-width="1.6" opacity="1"/>
+<rect x="1043.0" y="333.0" width="12.0" height="10.0" rx="2" fill="#e5e7eb" stroke="#64748b" stroke-width="1.2" opacity="1"/>
+<circle cx="1049.0" cy="333.0" r="6.0" fill="#f8fafc" stroke="#64748b" stroke-width="1.4"/>
+<line x1="1013.0" y1="373.0" x2="1013.0" y2="387.0" stroke="#78350f" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="1019.0" y1="373.0" x2="1019.0" y2="387.0" stroke="#dc2626" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="1025.0" y1="373.0" x2="1025.0" y2="387.0" stroke="#f97316" stroke-width="2.2" stroke-linecap="round"/>
+<text x="1033.0" y="399.0" font-size="8.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">棕GND 红5V 橙信号</text>
+<text x="1033.0" y="431.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">SG90 舵机</text>
+<text x="1033.0" y="451.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">50Hz PWM 0.5~2.5ms</text>
+<text x="1033.0" y="468.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">外部 5~6V 供电</text>
+<rect x="25.0" y="495.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="123.0" y="537.0" width="80.0" height="40.0" rx="4" fill="#1e40af" stroke="#1e3a8a" stroke-width="1.6" opacity="1"/>
+<rect x="133.0" y="543.0" width="26.0" height="22.0" rx="3" fill="#1d4ed8" stroke="#1e3a8a" stroke-width="1.4" opacity="1"/>
+<rect x="169.0" y="545.0" width="26.0" height="16.0" rx="2" fill="#059669" stroke="#14532d" stroke-width="1.4" opacity="1"/>
+<circle cx="175.0" cy="553.0" r="2.4" fill="#0b1220" stroke="none" stroke-width="0"/>
+<circle cx="183.0" cy="553.0" r="2.4" fill="#0b1220" stroke="none" stroke-width="0"/>
+<circle cx="191.0" cy="553.0" r="2.4" fill="#0b1220" stroke="none" stroke-width="0"/>
+<circle cx="139.0" cy="573.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="147.0" cy="573.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="155.0" cy="573.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<text x="163.0" y="589.0" font-size="8.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">VCC IN GND（光耦隔离）</text>
+<text x="163.0" y="631.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">继电器模块</text>
+<text x="163.0" y="651.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">光耦隔离；低/高触发跳线</text>
+<text x="163.0" y="668.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">端子接负载</text>
+<rect x="315.0" y="495.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="419.0" y="541.0" width="68.0" height="32.0" rx="4" fill="#dc2626" stroke="#7f1d1d" stroke-width="1.6" opacity="1"/>
+<rect x="413.0" y="549.0" width="8.0" height="16.0" rx="2" fill="#b8bcc4" stroke="#64748b" stroke-width="1.2" opacity="1"/>
+<circle cx="441.0" cy="569.0" r="2.0" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="450.0" cy="569.0" r="2.0" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="459.0" cy="569.0" r="2.0" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="468.0" cy="569.0" r="2.0" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<text x="453.0" y="585.0" font-size="8.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">B+ B− OUT+ OUT−</text>
+<circle cx="475.0" cy="549.0" r="2.5" fill="#059669" stroke="none" stroke-width="0"/>
+<text x="453.0" y="631.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">TP4056 充电板</text>
+<text x="453.0" y="651.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">锂电充电 1A</text>
+<text x="453.0" y="668.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">B± 接电池 OUT± 接负载</text>
+<rect x="605.0" y="495.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="729.0" y="523.0" width="28.0" height="68.0" rx="8" fill="#059669" stroke="#14532d" stroke-width="1.6" opacity="1"/>
+<line x1="729.0" y1="531.0" x2="757.0" y2="531.0" stroke="#14532d" stroke-width="1.4" stroke-linecap="round"/>
+<circle cx="743.0" cy="523.0" r="5.0" fill="#b8bcc4" stroke="#64748b" stroke-width="1.2"/>
+<text x="743.0" y="561.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">3.7V</text>
+<text x="743.0" y="603.0" font-size="8.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">带保护板再用</text>
+<text x="743.0" y="631.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">18650 锂电池</text>
+<text x="743.0" y="651.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">3.7V 标称；必须带保护板</text>
+<text x="743.0" y="668.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">禁过放/短路/高温</text>
+<rect x="895.0" y="495.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="997.0" y="539.0" width="72.0" height="36.0" rx="4" fill="#1e40af" stroke="#1e3a8a" stroke-width="1.6" opacity="1"/>
+<circle cx="1013.0" cy="555.0" r="8.0" fill="#1d4ed8" stroke="#1e3a8a" stroke-width="1.4"/>
+<line x1="1009.0" y1="555.0" x2="1017.0" y2="555.0" stroke="#dbeafe" stroke-width="1.6" stroke-linecap="round"/>
+<rect x="1035.0" y="547.0" width="18.0" height="14.0" rx="2" fill="#1f2937" stroke="#000" stroke-width="1.2" opacity="1"/>
+<circle cx="1005.0" cy="571.0" r="2.0" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="1013.0" cy="571.0" r="2.0" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="1045.0" cy="571.0" r="2.0" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="1053.0" cy="571.0" r="2.0" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<text x="1033.0" y="587.0" font-size="8.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">IN− IN+ OUT− OUT+</text>
+<text x="1033.0" y="631.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">MP1584 降压模块</text>
+<text x="1033.0" y="651.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">电位器调输出</text>
+<text x="1033.0" y="668.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">IN 4.5~28V → OUT</text>
+<rect x="25.0" y="695.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="133.0" y="743.0" width="60.0" height="28.0" rx="4" fill="#1f2937" stroke="#0b1220" stroke-width="1.6" opacity="1"/>
+<rect x="121.0" y="748.0" width="12.0" height="18.0" rx="2" fill="#b8bcc4" stroke="#64748b" stroke-width="1.2" opacity="1"/>
+<circle cx="148.0" cy="767.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="155.0" cy="767.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="162.0" cy="767.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="169.0" cy="767.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="176.0" cy="767.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<circle cx="183.0" cy="767.0" r="1.8" fill="#fbbf24" stroke="none" stroke-width="0"/>
+<text x="163.0" y="783.0" font-size="8.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">3V3 TX RX GND</text>
+<text x="163.0" y="831.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">CH340 USB-TTL</text>
+<text x="163.0" y="851.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">电脑↔串口桥梁</text>
+<text x="163.0" y="868.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">TX-RX 交叉接</text>
+<rect x="315.0" y="695.0" width="276.0" height="186.0" rx="10" fill="#fcfdff" stroke="#d7dee8" stroke-width="1" opacity="1"/>
+<rect x="409.0" y="731.0" width="88.0" height="52.0" rx="4" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.6" opacity="1"/>
+<line x1="409.0" y1="739.0" x2="497.0" y2="739.0" stroke="#dc2626" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="409.0" y1="775.0" x2="497.0" y2="775.0" stroke="#1d4ed8" stroke-width="1.6" stroke-linecap="round"/>
+<circle cx="417.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="417.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="417.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="426.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="426.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="426.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="435.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="435.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="435.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="444.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="444.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="444.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="453.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="453.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="453.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="462.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="462.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="462.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="471.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="471.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="471.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="480.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="480.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="480.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="489.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="489.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="489.0" cy="749.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="417.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="417.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="417.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="426.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="426.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="426.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="435.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="435.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="435.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="444.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="444.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="444.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="453.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="453.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="453.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="462.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="462.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="462.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="471.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="471.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="471.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="480.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="480.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="480.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="489.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="489.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<circle cx="489.0" cy="765.0" r="1.4" fill="#475569" stroke="none" stroke-width="0"/>
+<text x="453.0" y="831.0" font-size="14.5" fill="#111827" text-anchor="middle" font-weight="700" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">面包板 + 杜邦线</text>
+<text x="453.0" y="851.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">5 孔一列导通</text>
+<text x="453.0" y="868.0" font-size="11.5" fill="#6b7280" text-anchor="middle" font-weight="normal" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',sans-serif" opacity="1">电源轨整条导通</text></svg>
